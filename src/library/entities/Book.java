@@ -9,7 +9,7 @@ public class Book implements IBook {
 	@Override
 	public void borrow(ILoan loan) {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
