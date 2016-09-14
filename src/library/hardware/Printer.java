@@ -12,7 +12,7 @@ import javax.swing.JTextArea;
 public class Printer extends JFrame implements IPrinter {
 
 	private static final long serialVersionUID = 1L;
-	private JTextArea textArea;
+	private JTextArea textArea;  // TESTING
 
 	public Printer() {
         setBounds(50, 450, 400, 350);

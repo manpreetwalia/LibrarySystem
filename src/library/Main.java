@@ -1,6 +1,6 @@
 package library;
 
-import library.hardware.CardReader;
+import library.hardware.CardReader; // import
 import library.hardware.Display;
 import library.hardware.Printer;
 import library.hardware.Scanner;

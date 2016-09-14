@@ -24,7 +24,7 @@ public class Scanner extends JFrame implements IScanner {
 	private static final long serialVersionUID = 1L;
 	private JTextField textField;
 	private JButton btnScan;
-	private IScannerListener listener;
+	private IScannerListener listener; // testing
 
 	public Scanner() {
 		setTitle("Scanner");

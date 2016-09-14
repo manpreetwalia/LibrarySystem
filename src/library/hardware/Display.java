@@ -23,7 +23,7 @@ public class Display extends JFrame implements IDisplay {
 
 	@Override
 	public JPanel getDisplay() {
-		return current;		
+		return current;		// returns value
 	}
 	
 	
