@@ -1,5 +1,5 @@
 /**
- * 
+* Gives author name, Title, call Number and id. 
  */
 package library.daos;
 
@@ -10,5 +10,6 @@ import junit.framework.TestCase;
  *
  */
 public class BookHelperTest1 extends TestCase {
+	
 
 }
