@@ -7,9 +7,9 @@ import library.interfaces.entities.ILoan;
 public class Book implements IBook {
 
 	
-	private String author; // 
+	private String author; // private variable
 	private String title;
-	private String callNumber; // 
+	private String callNumber; // private variable
 	private int id; // integer variable
 	
 	private ILoan loan;
