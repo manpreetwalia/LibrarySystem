@@ -1,4 +1,4 @@
-package library.interfaces;
+package library.interfaces; // interface
 
 public interface IBorrowUI {
 

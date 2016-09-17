@@ -9,7 +9,7 @@ import library.interfaces.entities.IMember;
 
 public interface ILoanDAO {
 		
-	public ILoan createLoan(IMember borrower, IBook book);
+	public ILoan createLoan(IMember borrower, IBook book); // loan
 
 	public void commitLoan(ILoan loan);
 	

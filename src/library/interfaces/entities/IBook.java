@@ -2,7 +2,7 @@ package library.interfaces.entities;
 
 public interface IBook {
 	
-	public void borrow(ILoan loan);
+	public void borrow(ILoan loan); // function
 	
 	public ILoan getLoan();
 	
