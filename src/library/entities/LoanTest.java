@@ -18,7 +18,7 @@ public class LoanTest {
 		//Loan L= new Loan(book1, borrower1, borrowDate, dueDate);
 		
 	System.out.println("" + borrower1.getFirstName());
-	
+	System.out.println("" + borrower1.getLastName());
 	
 	}
 	
