@@ -21,7 +21,7 @@ public class LoanTest {
 		
 		// Create object borrower1 of Member class
 		
-		Member borrower1 = new Member("Preet", "Walia", "045231654", "manpreetwalia.2008@rediffmail.com", 2222);
+		Member borrower1 = new Member("Japgun", "Walia", "045231854", "japgunwalia.2014@gmail.com", 1214);
 		
 		int year = 2016;
 		int month = 10;
