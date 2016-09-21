@@ -16,8 +16,8 @@ public class BookMapDAOTest
 	
 	public static void main(String[] args)
 	{
-		String Author = null;  // Initializing string Author
-		String Title = null;//  Initializing the title
+		String Author;  // Initializing string Author
+		String Title;//  Initializing the title
 		
 		Scanner in = new Scanner(System.in);  //Taking the input as Author
 		 
@@ -28,10 +28,18 @@ public class BookMapDAOTest
 	      System.out.println("Enter Title of book");//Inputs for Title 
 	      Title = in.nextLine();//accessing input title
 	      
-	      if(Author== "JK Rowling" && Title=="Harry Potter")
+	      if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter1"))
+	      {
+	    	  System.out.println("Book edition is : Socceres stone");
+	      }
+	      
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter2"))
 	      {
 	    	  System.out.println("Book edition is : Chamber of Secrets");
 	      }
+	      
+	      
+	      
 	     
 
 	}
