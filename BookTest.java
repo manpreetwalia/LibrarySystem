@@ -1,107 +1,40 @@
+// Start of Test class for Book entity
 package library.entities;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
-import java.util.*;
-import java.util.Date;
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
-
-import library.interfaces.entities.ELoanState;
-import library.interfaces.entities.IBook;
-import library.interfaces.entities.IMember;
+// Start of class TestBook class
 public class BookTest
 {
-
-	@Test
-	public void testBook() 
+	
+// Start of main function
+	public static void main(String[] args)
 	{
-		fail("Not yet implemented"); // have to implement
+		
+// Create object b1 of class book
+		
+		Book b1 = new Book("Manpreet Walia", " Introductio to JAVA", "158643", 456);
+		
+// Test the function getAuthor()
+		System.out.println("The Name of author is:    " + b1.getAuthor());
+		
+// Test the function getTitle()
+		
+		System.out.println("The title of book is:    " + b1.getTitle());
+		
+// Test the function getCallNumber()
+		
+		System.out.println("The callNumber of book is:   " + b1.getCallNumber());
+		
+// Test the function getID()
+		System.out.println("The ID of book is:    " + b1.getID());
+		
+// Test the function toString()
+		System.out.println("Details of b1 are    " + b1.toString());
+		
+// Test the function getState()		
+		System.out.println("The state of book is:     " + b1.getState());
+		
+// Test the function getLoan()
+		System.out.println("The loan of book is:   " + b1.getLoan());
+
 	}
-
-	@Test
-	public void testBorrow() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testObject()
-	{
-		fail("Not yet implemented"); //have to implement
-	}
-
-	@Test
-	public void testGetClass() 
-	{
-		fail("Not yet implemented"); // have to imlement
-	}
-
-	@Test
-	public void testHashCode() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testEquals()
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testClone()
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testToString() 
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testNotify() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testNotifyAll()
-	{
-		fail("Not yet implemented"); // have to implement
-	} 
-
-	@Test
-	public void testWaitLong()
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testWaitLongInt() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testWait()
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testFinalize() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
 }
