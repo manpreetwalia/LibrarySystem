@@ -35,6 +35,7 @@ public class BookTest
 		
 // Test the function getLoan()
 		System.out.println("The loan of book is:   " + b1.getLoan());
+// Test the function 
 
 	}
 }
