@@ -29,7 +29,7 @@ public class BookMapDAOTest
 	      System.out.println("Enter Title of book");//Inputs for Title 
 	      Title = in.nextLine();//accessing input title
 	   
-	      if()
+	      if(Pattern.matches("[a-zA-Z]+", Author) == false)
 	      {
 	      if( Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter1"))
 	      {
@@ -69,6 +69,10 @@ public class BookMapDAOTest
 	    	  System.out.println("Either of the values do not match our records.Pls enter correct values!");
 	      }
 	      
+	      }
+	      else
+	      {
+	    	  System.out.println("Pls enter valid charecters");
 	      }
 
 	}
