@@ -9,7 +9,7 @@ public class TestBookMapDAO {
 	public static void main(String[] args)
 	{
 		
-// Create object b1 of class book
+		
 
 }
 }
