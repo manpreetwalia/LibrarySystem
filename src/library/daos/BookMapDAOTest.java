@@ -44,7 +44,7 @@ public class BookMapDAOTest
 	    	  System.out.println("Book edition is : Prisnor of Askaban");//Print the output if condition satisfies
 	      }
 	      
-	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter4"))
+	      else if(Pattern.matches("[a-zA-Z]+", Author) == true && Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter4"))
 	      {
 	    	  System.out.println("Book edition is : Goblet of Fire");//Print the output if condition satisfies
 	      }
