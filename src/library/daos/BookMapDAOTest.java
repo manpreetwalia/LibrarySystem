@@ -43,6 +43,13 @@ public class BookMapDAOTest
 	    	  System.out.println("Book edition is : Prisnor of Askaban");
 	      }
 	      
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter4"))
+	      {
+	    	  System.out.println("Book edition is : Goblet of Fire");
+	      }
+	      
+	      
+	      
 	     
 
 	}
