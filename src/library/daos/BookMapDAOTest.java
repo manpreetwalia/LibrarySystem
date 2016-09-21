@@ -29,12 +29,12 @@ public class BookMapDAOTest
 	      System.out.println("Enter Title of book");//Inputs for Title 
 	      Title = in.nextLine();//accessing input title
 	      
-	      if(Pattern.matches("[a-zA-Z]+", Author) == false && Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter1"))
+	      if(Pattern.matches("[a-zA-Z]+", Author) == true && Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter1"))
 	      {
 	    	  System.out.println("Book edition is : Socceres stone");//Print the output if condition satisfies
 	      }
 	      
-	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter2"))
+	      else if(Pattern.matches("[a-zA-Z]+", Author) == true && Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter2"))
 	      {
 	    	  System.out.println("Book edition is : Chamber of Secrets");//Print the output if condition satisfies
 	      }
