@@ -56,6 +56,10 @@ public class BookMapDAOTest
 	      {
 	    	  System.out.println("Book edition is : Half Blood Prince");
 	      }
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter7"))
+	      {
+	    	  System.out.println("Book edition is : Deathly Hallows");
+	      }
 	      
 	      
 	     
