@@ -39,7 +39,7 @@ public class BookMapDAOTest
 	    	  System.out.println("Book edition is : Chamber of Secrets");//Print the output if condition satisfies
 	      }
 	      
-	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter3"))
+	      else if(Pattern.matches("[a-zA-Z]+", Author) == true && Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter3"))
 	      {
 	    	  System.out.println("Book edition is : Prisnor of Askaban");//Print the output if condition satisfies
 	      }
