@@ -28,23 +28,25 @@ public class BookMapDAOTest
 	 
 	      System.out.println("Enter Title of book");//Inputs for Title 
 	      Title = in.nextLine();//accessing input title
-	      
-	      if(Pattern.matches("[a-zA-Z]+", Author) == true && Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter1"))
+	   
+	      if()
+	      {
+	      if( Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter1"))
 	      {
 	    	  System.out.println("Book edition is : Socceres stone");//Print the output if condition satisfies
 	      }
 	      
-	      else if(Pattern.matches("[a-zA-Z]+", Author) == true && Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter2"))
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter2"))
 	      {
 	    	  System.out.println("Book edition is : Chamber of Secrets");//Print the output if condition satisfies
 	      }
 	      
-	      else if(Pattern.matches("[a-zA-Z]+", Author) == true && Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter3"))
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter3"))
 	      {
 	    	  System.out.println("Book edition is : Prisnor of Askaban");//Print the output if condition satisfies
 	      }
 	      
-	      else if(Pattern.matches("[a-zA-Z]+", Author) == true && Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter4"))
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter4"))
 	      {
 	    	  System.out.println("Book edition is : Goblet of Fire");//Print the output if condition satisfies
 	      }
@@ -67,7 +69,7 @@ public class BookMapDAOTest
 	    	  System.out.println("Either of the values do not match our records.Pls enter correct values!");
 	      }
 	      
-	     
+	      }
 
 	}
 }
