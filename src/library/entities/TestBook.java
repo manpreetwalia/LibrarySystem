@@ -1,9 +1,9 @@
+
 // Start of Test class for Book entity
 package library.entities;
 
 // Start of class TestBook class
-public class BookTest
-{
+public class TestBook {
 	
 // Start of main function
 	public static void main(String[] args)

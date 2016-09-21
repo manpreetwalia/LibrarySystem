@@ -5,7 +5,7 @@ package library.daos;
 import library.entities.Book;
 
 // Start of the class TestBookHepler
-public class BookHelperTest {
+public class TestBookHelper {
 	
 // Start of the main function
 	

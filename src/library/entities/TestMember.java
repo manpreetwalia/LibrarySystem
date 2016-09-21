@@ -7,7 +7,7 @@ import java.util.Date;
 
 // Test class loan starts
 
-public class LoanTest {
+public class TestMember {
 
 	// Start of main function
 	
@@ -17,7 +17,7 @@ public class LoanTest {
 	
 		// Create object book1 of Book class
 	
-		Book book1= new Book("Manpreet", " ABC","2343",444);
+		//Book book1= new Book("Manpreet", " ABC","2343",444);
 		
 		// Create object borrower1 of Member class
 		
