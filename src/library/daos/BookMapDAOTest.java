@@ -61,6 +61,10 @@ public class BookMapDAOTest
 	    	  System.out.println("Book edition is : Deathly Hallows");//Print the output if condition satisfies
 	      }
 	      
+	      else
+	      {
+	    	  System.out.println("Either of the values do not match our records.Pls enter correct values");
+	      }
 	      
 	     
 
