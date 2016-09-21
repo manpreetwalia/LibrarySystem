@@ -4,7 +4,7 @@ import library.interfaces.entities.EBookState;
 import library.interfaces.entities.IBook;
 import library.interfaces.entities.ILoan;
 
-public class Book implements IBook {
+public class Book1 implements IBook {
 
 	
 	private String author;
@@ -16,7 +16,7 @@ public class Book implements IBook {
 	private EBookState state;
 	
 	
-	public Book(String author, String title, String callNumber, int bookID) {
+	public Book1(String author, String title, String callNumber, int bookID) {
 		if ( !sane(author, title, callNumber, bookID)) {
 			throw new IllegalArgumentException("Member: constructor : bad parameters");
 		}

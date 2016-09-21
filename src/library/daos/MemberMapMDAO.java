@@ -10,13 +10,13 @@ import library.interfaces.daos.IMemberDAO;
 import library.interfaces.entities.IMember;
 import library.interfaces.daos.IMemberHelper;
 
-public class MemberMapDAOM implements IMemberDAO {
+public class MemberMapMDAO implements IMemberDAO {
 
 	private IMemberHelper helper;
 	private Map<Integer, IMember> memberMap;
 	private int nextID;
 	
-	public MemberMapDAOM(IMemberHelper helper) {
+	public MemberMapMDAO(IMemberHelper helper) {
 		if (helper == null ) {
 			throw new IllegalArgumentException(
 				String.format("MemberMapDAO : constructor : helper cannot be null."));
@@ -26,7 +26,7 @@ public class MemberMapDAOM implements IMemberDAO {
 		this.nextID = 1;
 	}
 
-	public MemberMapDAOM(IMemberHelper helper, Map<Integer,IMember> memberMap) {
+	public MemberMapMDAO(IMemberHelper helper, Map<Integer,IMember> memberMap) {
 		this(helper);
 		if (memberMap == null ) {
 			throw new IllegalArgumentException(
