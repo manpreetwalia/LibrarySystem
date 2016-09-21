@@ -29,7 +29,7 @@ public class BookMapDAOTest
 	      System.out.println("Enter Title of book");//Inputs for Title 
 	      Title = in.nextLine();//accessing input title
 	   
-	      if(Pattern.matches("[a-zA-Z]+", Author) == false)
+	      if(Pattern.matches("[a-zA-Z]+", Author) == false && Author != null && Title != null)
 	      {
 	      if( Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter1"))
 	      {
