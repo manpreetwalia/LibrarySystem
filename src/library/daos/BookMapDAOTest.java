@@ -30,7 +30,7 @@ public class BookMapDAOTest
 	      
 	      if(Author== "JK Rowling" && Title=="Harry Potter")
 	      {
-	    	  
+	    	  System.out.println("Book edition is : Chamber of Secrets");
 	      }
 	     
 
