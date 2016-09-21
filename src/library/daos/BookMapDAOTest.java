@@ -73,7 +73,7 @@ public class BookMapDAOTest
 	      }
 	      else
 	      {
-	    	  System.out.println("Pls enter valid charecters");
+	    	  System.out.println("Pls enter valid charecters");//if the conditions dosent satisfy then this statement is executed
 	      }
 
 	}
