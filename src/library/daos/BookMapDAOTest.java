@@ -45,7 +45,7 @@ public class BookMapDAOTest
 	      
 	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter4"))
 	      {
-	    	  System.out.println("Book edition is : Goblet of Fire");
+	    	  System.out.println("Book edition is : Goblet of Fire");//Print the output if condition satisfies
 	      }
 	      
 	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter5"))
