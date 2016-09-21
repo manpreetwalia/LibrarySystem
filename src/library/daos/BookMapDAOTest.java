@@ -12,7 +12,7 @@ public class BookMapDAOTest {
 
 	// Start of main function
 	public static void main(String[] args) {
-		String Author = null;
+		String Author = null;//initialising string Author
 		String Title = null;
 		
 		Scanner in = new Scanner(System.in);
