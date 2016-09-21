@@ -19,9 +19,9 @@ public class BookMapDAOTest {
 		 
 	      System.out.println("Enter Author name");
 	      Author = in.nextLine();
-	      System.out.println("You entered string "+s);
+	     
 	 
-	      System.out.println("Enter an integer");
+	      System.out.println("Enter Title of book");
 	      Title = in.nextLine();
 	      System.out.println("You entered integer "+a);
 
