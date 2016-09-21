@@ -17,13 +17,13 @@ public class BookMapDAOTest {
 		
 		Scanner in = new Scanner(System.in);//Taking the input as Author
 		 
-	      System.out.println("Enter Author name");
+	      System.out.println("Enter Author name");//Inputs for Author name
 	      Author = in.nextLine();
 	     
 	 
-	      System.out.println("Enter Title of book");
+	      System.out.println("Enter Title of book");//Inputs for Title 
 	      Title = in.nextLine();
-	      System.out.println("You entered integer "+a);
+	     
 
 	}
 }
