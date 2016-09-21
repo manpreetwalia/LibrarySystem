@@ -30,7 +30,7 @@ public class BookTest
 // Test the function toString()
 		System.out.println("Details of b1 are    " + b1.toString());
 		
-// Test the function getState()		
+// Test the function getState()	
 		System.out.println("The state of book is:     " + b1.getState());
 		
 // Test the function getLoan()
