@@ -27,6 +27,11 @@ public class BookMapDAOTest
 	 
 	      System.out.println("Enter Title of book");//Inputs for Title 
 	      Title = in.nextLine();//accessing input title
+	      
+	      if(Author== "JK Rowling" && Title=="Harry Potter")
+	      {
+	    	  
+	      }
 	     
 
 	}
