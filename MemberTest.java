@@ -1,191 +1,82 @@
+// Test class for Loan entity
+
 package library.entities;
 
-import static org.junit.Assert.*;
+import java.util.Date;
 
-import org.junit.Test;
 
-public class MemberTest
-{
+// Test class loan starts
 
-	@Test
-	public void testMember() 
+public class Membertest1 {
+
+	// Start of main function
+	
+	public static void main(String[] args)
+	
 	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testHasOverDueLoans()
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testHasReachedLoanLimit() 
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testHasFinesPayable()
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testHasReachedFineLimit() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testGetFineAmount() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testAddFine() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testPayFine() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testAddLoan()
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testGetLoans()
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testRemoveLoan() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testGetState()
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testGetFirstName() 
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testGetLastName()
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testGetContactPhone()
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testGetEmailAddress() 
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testGetID()
-	 {
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testToString()
-	{
-		fail("Not yet implemented"); // have to implement
-	}
-
-	@Test
-	public void testObject()
-	{
-		fail("Not yet implemented");  // have to implement
+	
+		// Create object book1 of Book class
+	
+		//Book book1= new Book("Manpreet", " ABC","2343",444);
 		
-	}
+		// Create object borrower1 of Member class
+		
+		Member borrower1 = new Member("Japgun", "Walia", "045231854", "japgunwalia.2014@gmail.com", 1214);
+		
+		int year = 2016;
+		int month = 10;
+		int date = 02;
+		Date borrowDate = new Date(year,month,date);
+		Date dueDate = new Date(2016, 05, 06);
+		
+		// Loan L= new Loan(book1, borrower1, borrowDate, dueDate);
+	
+		// Test the getFirstName()	function
+	
+		System.out.println("First Name of Borrower is: " + borrower1.getFirstName());
+	
+	// test the getLastNAme() function
 
-	@Test
-	public void testGetClass()
-	{
-		fail("Not yet implemented");  // have to implement
-	}
+		System.out.println("Last Name of Borrower is:" + borrower1.getLastName());
+	
+	//Test the getContactPhone() Function
+	
+		System.out.println("The COntact Number of borrower is:" + borrower1.getContactPhone());
+	
+	
+	// Test the getEmailAddress() function
+	System.out.println("The E-mail address of borrower is:" + borrower1.getEmailAddress());
 
-	@Test
-	public void testHashCode() 
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testEquals() 
-	 {
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testClone() 
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testToString1()
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testNotify()
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testNotifyAll() 
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testWaitLong() 
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testWaitLongInt()
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testWait()
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
-	@Test
-	public void testFinalize()
-	{
-		fail("Not yet implemented");  // have to implement
-	}
-
+	// Test the getID() function
+	
+	System.out.println("The ID of borrower is:" + borrower1.getID());
+	
+	// Test the toString() function
+	
+	//System.out.println("The detail of loan is:" + borrower1.toString());
+	
+	// Test the getState()  function 
+	System.out.println("The state of borrower is:" + borrower1.getState());
+	
+	// Test the getFineAmount function
+	System.out.println("The fine of borrower is:" + borrower1.getFineAmount());
+	
+	// Test the hasReacehdLoanLimit() function
+	System.out.println("Is borrower reached to the loan limit:" + borrower1.hasReachedLoanLimit());
+	
+	// Test the hasFinePAyable() function
+	System.out.println("Has the borrower fine payable:" + borrower1.hasFinesPayable());
+	
+	// Test the hasReachedFineLimit() function
+	System.out.println("IS borrower reached to the fine limit:" + borrower1.hasReachedFineLimit());
+	
+	// Test the getFineAmount() function
+	System.out.println("The fine amount of borrower is:" + borrower1.getFineAmount());
+	
+	//
+	
+	}	
+	// End of Main Function
+	
 }
+// End of Test class loan
