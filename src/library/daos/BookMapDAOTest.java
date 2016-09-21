@@ -48,6 +48,14 @@ public class BookMapDAOTest
 	    	  System.out.println("Book edition is : Goblet of Fire");
 	      }
 	      
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter5"))
+	      {
+	    	  System.out.println("Book edition is : Order of Phoenix");
+	      }
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter6"))
+	      {
+	    	  System.out.println("Book edition is : Half Blood Prince");
+	      }
 	      
 	      
 	     
