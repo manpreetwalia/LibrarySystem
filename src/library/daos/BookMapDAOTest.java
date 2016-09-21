@@ -15,14 +15,14 @@ public class BookMapDAOTest {
 		String Author = null;//initialising string Author
 		String Title = null;// initialising the title
 		
-		Scanner in = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);//Taking the input as Author
 		 
 	      System.out.println("Enter Author name");
 	      Author = in.nextLine();
 	      System.out.println("You entered string "+s);
 	 
 	      System.out.println("Enter an integer");
-	      a = in.nextInt();
+	      Title = in.nextLine();
 	      System.out.println("You entered integer "+a);
 
 	}
