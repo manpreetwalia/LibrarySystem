@@ -28,12 +28,15 @@ public class BookTest
 		
 		System.out.println("The callNumber of book is:   " + b1.getCallNumber());
 		System.out.println("The callNumber of book is:   " + Book1.getCallNumber());
+		
 // Test the function getID()
 		System.out.println("The ID of book is:    " + b1.getID());
 			System.out.println("The ID of book is:    " + b1.getID());
+			
 // Test the function toString()
 		System.out.println("Details of b1 are    " + b1.toString());
 		System.out.println("Details of b1 are    " + Book1.toString());
+		
 // Test the function getState()	
 		System.out.println("The state of book is:     " + b1.getState());
 		System.out.println("The state of book is:     " + b1.getState());
@@ -41,7 +44,8 @@ public class BookTest
 // Test the function getLoan()
 		System.out.println("The loan of book is:   " + b1.getLoan());
 		System.out.println("The loan of book is:   " + b1.getLoan());
-// Test the function 
+		
+
 
 	}
 }
