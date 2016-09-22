@@ -4,3 +4,20 @@ import java.awt.event.*;
 import javax.swing.table.*;
 import java.sql.*;
 import java.util.*;
+public class MyLibrarian
+{
+static JFrame fr2,fr3,fr4,fr5,fr6,fr7,fr8,fr9,fr10,fr11,fr12,fr13,fr14;
+static JPanel p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14;
+JButton LOGIN=new JButton("LOGIN");
+JButton ADD,AddNewBook,DELETE,DelOldBook,ADDNEWUSER,AddThisUser,DELEXISTUSER,DelThisUser,CHANGEPW;
+JButton MARKEOI,CHANGEMYPW,QUERY,RUNQUERY,REPORT,ISSUE_BOOK,ADD_BORROWER,AddThisBorrower;
+JButton CLOSE_BORROWER,CloseThisBorrower,VIEW_REC,MODIFY_REC,showItButton;
+JLabel jLabel, jLabel1, jLabel2,l1,l2,l3,l4,l5,l6,l7,l8,l9,l10;
+JTextField section,bookname,author,price,availcode,currentborrower,serno,boname,boaddress;
+JTextField bophoneno,borrowerNewMagazine,borrowerPhoneNo,borrowerLastMagazine;
+JPasswordField loginname,loginpass,oldpw,newpw,newpwc;
+JTextField username,password,Designation,loginpassback,usrname,fboserial;
+JTextField borrowerSerialno,borrowerName,borrowerAddress,borrowerLastBook,borrowerStatus;
+JTextField borrowerNewBook;
+//JTextField loginname = new JTextField(20);	
+//JTextField loginpass = new JTextField(20);
