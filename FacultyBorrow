@@ -15,3 +15,14 @@ public String searchTitle(String titleSearch) {
     }
     return "\n No Books Avaliable "; //reachable only if no book found
 }
+public String toString()
+{
+    String total = "\n ";
+    for (int i=0; i<collection.size(); i++)
+    {
+        Book b = collection.get(i);
+        total = total + b.toString();
+    }
+
+    return total;
+}
