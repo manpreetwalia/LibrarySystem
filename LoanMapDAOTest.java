@@ -49,6 +49,7 @@ public class LoanMapDAOTest {
 				System.out.println("This book is on loan.");
 				//return true;
 			}
+			//this else block is executed if the book is not in loan
 			else
 			{
 				System.out.println("Book is not on by any student loan.");			
