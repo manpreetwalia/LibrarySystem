@@ -52,7 +52,19 @@ public class LoanMapDAOTest {
 			{
 				System.out.println("Book is not on loan.");			
 				
-			}					
+			}	
+			/*
+			public String toString()
+			{
+			    String total = "\n ";
+			    for (int i=0; i<collection.size(); i++)
+			    {
+			        Book b = collection.get(i);
+			        total = total + b.toString();
+			    }
+
+			    return total;
+			} */
 			
 			//System.out.println(book2.getLoan());
 			//System.out.println("" + hlpr.getClass());
