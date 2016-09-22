@@ -32,7 +32,7 @@ public class TestBookMapDAO
 	      System.out.println("Enter the id of book"); // Enter the id of book
 	      ID= in.nextInt(); // Accept the ID of as input
 	   
-	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null
+	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null // checks the condition
 	    		  )
 	      {
 	      if( Author.equalsIgnoreCase("Y. Liang") && Title.equalsIgnoreCase("Introduction to java"))
