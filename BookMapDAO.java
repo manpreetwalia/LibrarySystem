@@ -84,7 +84,11 @@ public class BookMapDAO implements IBookDAO {
 		}
 		return Collections.unmodifiableList(list);
 	}
-
+		/* else if(member.equalsIgnoreCase("member5"))
+				 {
+					 member5=  member5 - 10;//member5 loses book points for loan
+		 		 System.out.println("Remaining balance is : "+ member1);
+		 		 }*/
 	@Override
 	public List<IBook> findBooksByAuthorTitle(String author, String title) {
 		if ( title == null || title.isEmpty() ||  author == null || author.isEmpty()) {
