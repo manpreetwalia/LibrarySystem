@@ -37,7 +37,14 @@ public class BookHelperTest {
 		// Test the function getLoan()
 				System.out.println("The loan of book is:   " + book1.getLoan());
 
-			}
+		if(Author.equalsIgnoreCase("Y. Liang") && ID==123);	
+		
+		
+		
+	}
+			
+			
+			
 		
 
 }
