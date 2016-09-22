@@ -39,10 +39,14 @@ public class Book implements IBook {
 
 	
 	@Override
-	public void borrow(ILoan loan) {
+	public void borrow(ILoan loan)
+	{
+		// checks the condition
 		if (loan == null) {
 			throw new IllegalArgumentException(String.format("Book: borrow : Bad parameter: loan cannot be null"));
 		}
+		
+		// checks the condition
 		if (!(state == EBookState.AVAILABLE)) {
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
@@ -57,7 +61,7 @@ public class Book implements IBook {
 		return loan;
 	}
 
-	
+	//
 	@Override
 	public void returnBook(boolean damaged) {
 		if (!(state == EBookState.ON_LOAN || state == EBookState.LOST)) {
