@@ -54,14 +54,14 @@ public class Book implements IBook {
 		state = EBookState.ON_LOAN;
 
 	}
-
+// 	// declare the getloan functio
 	
 	@Override
 	public ILoan getLoan() {
 		return loan;
 	}
 
-	//
+	// declare the returnbook function
 	@Override
 	public void returnBook(boolean damaged) {
 		if (!(state == EBookState.ON_LOAN || state == EBookState.LOST)) {
