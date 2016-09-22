@@ -27,7 +27,7 @@ public class BookTest
 // Test the function getCallNumber()
 		
 		System.out.println("The callNumber of book is:   " + b1.getCallNumber());
-		
+		System.out.println("The callNumber of book is:   " + Book1.getCallNumber());
 // Test the function getID()
 		System.out.println("The ID of book is:    " + b1.getID());
 		
