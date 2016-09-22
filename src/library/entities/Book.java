@@ -3,32 +3,23 @@ package library.entities;
 import library.interfaces.entities.EBookState;
 import library.interfaces.entities.IBook;
 import library.interfaces.entities.ILoan;
-// Start of IBook class
 
 public class Book implements IBook {
 
 	
-	private String author;  // Declare name of author as string
-	private String title;   // Declare title of book as string
-	private String callNumber;  // Declare call number of author as string
-	private int id;   //Declare the id of author as integer
-
-	// create instance of I loan
+	private String author;
+	private String title;
+	private String callNumber;
+	private int id;
 	
 	private ILoan loan;
-	
-	// create instance of EBookSate
 	private EBookState state;
 	
-// Declare function Book which accepts four variables
 	
-	public Book(String author, String title, String callNumber, int bookID) 
-	{
-		if ( !sane(author, title, callNumber, bookID)) 
-		{
+	public Book(String author, String title, String callNumber, int bookID) {
+		if ( !sane(author, title, callNumber, bookID)) {
 			throw new IllegalArgumentException("Member: constructor : bad parameters");
 		}
-		
 		this.author = author;
 		this.title = title;
 		this.callNumber = callNumber;
@@ -48,24 +39,19 @@ public class Book implements IBook {
 
 	
 	@Override
-	public void borrow(ILoan loan)
-	{
-		if (loan == null)
-		{
+	public void borrow(ILoan loan) {
+		if (loan == null) {
 			throw new IllegalArgumentException(String.format("Book: borrow : Bad parameter: loan cannot be null"));
 		}
-		
-		if (!(state == EBookState.AVAILABLE)) 
-		{
+		if (!(state == EBookState.AVAILABLE)) {
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
-		
 		this.loan = loan;
 		state = EBookState.ON_LOAN;
 
 	}
 
-	// declare function getLoan()
+	
 	@Override
 	public ILoan getLoan() {
 		return loan;
@@ -85,7 +71,7 @@ public class Book implements IBook {
 			state = EBookState.AVAILABLE;
 		}
 	}
-// declare function Lose() as void type
+
 	
 	@Override
 	public void lose() {
@@ -95,7 +81,7 @@ public class Book implements IBook {
 		state = EBookState.LOST;
 	}
 
-	// declare function repair as void type
+	
 	@Override
 	public void repair() {
 		if (!(state == EBookState.DAMAGED)) {
@@ -103,7 +89,7 @@ public class Book implements IBook {
 		}
 		state = EBookState.AVAILABLE;
 	}
-	// declare function dispose as void type
+
 	
 	@Override
 	public void dispose() {
@@ -113,37 +99,37 @@ public class Book implements IBook {
 		state = EBookState.DISPOSED;
 	}
 
-	// declare function getState()
+	
 	@Override
 	public EBookState getState() {
 		return state;
 	}
 
-	// declare function getAuthor()
+	
 	@Override
 	public String getAuthor() {
 		return author;
 	}
 
-	// declare function getTitle()
+	
 	@Override
 	public String getTitle() {
 		return title;
 	}
 
-	// declare function getCallNumber()	
+	
 	@Override
 	public String getCallNumber() {
 		return callNumber;
 	}
 
-	// declare function getID()	
+	
 	@Override
 	public int getID() {
 		return id;
 	}
 
-	// declare function toString()
+	
 	@Override
 	public String toString() {
 		return String.format("Id: %d\nAuthor: %s\nTitle: %s\nCall Number %s",
