@@ -19,7 +19,7 @@ public class TestBookMapDAO
 	{
 		String Author;  // Initializing string Author
 		String Title;//  Initializing the title
-		
+		int ID; // Initializing the iD of book
 		Scanner in = new Scanner(System.in);  //Taking the input as Author
 		 
 	      System.out.println("Enter the Author name");  //Inputs for Author name
