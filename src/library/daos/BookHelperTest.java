@@ -5,11 +5,13 @@ package library.daos;
 import library.entities.Book;
 
 // Start of the class TestBookHepler
-public class BookHelperTest {
+public class BookHelperTest
+{
 	
 // Start of the main function
 	
 	public static void main(String[] args)
+	
 	{
 		
 // Create object book1 of class IBook, makebook
