@@ -23,7 +23,7 @@ public class LoanHelperTest {
 		
 		Date borrowDate = new Date();
 		Date dueDate = new Date();		
-		
+		//getting book details
 		System.out.println("Book details:");
 		System.out.println("");
 		System.out.println("The author name is " + book2.getAuthor());
