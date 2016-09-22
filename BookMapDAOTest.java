@@ -27,7 +27,7 @@ public class BookMapDAOTest
 	 
 	      System.out.println("Enter Title of book");//Inputs for Title 
 	      Title = in.nextLine();//accessing input title
-	   
+	   //A conditional statement for checking the pattern
 	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null)
 	    		  
 	      {
