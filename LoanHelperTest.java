@@ -45,9 +45,9 @@ public class LoanHelperTest {
 		System.out.println("First Name: " + borrower2.getFirstName());		
 		System.out.println("Last Name: " + borrower2.getLastName());
 		System.out.println("ID is: " + borrower2.getID());
-		//System.out.println("Loan is: " + borrower2.getLoans());
-		//System.out.println(borrower2.getState());
-		//System.out.println(damaged);			
+		System.out.println("Loan is: " + borrower2.getLoans());
+		System.out.println(borrower2.getState()); //Is borrowing allowed.
+		System.out.println(damaged);				
 		
 		//if(borrowDate.compareTo(dueDate)<0)
 		//{
