@@ -7,7 +7,7 @@ import library.interfaces.daos.ILoanHelper;
 import library.interfaces.entities.IBook;
 import library.interfaces.entities.ILoan;
 import library.interfaces.entities.IMember;
-
+//Analyzer code for the program
 public class LoanHelper implements ILoanHelper {
 
 	@Override
