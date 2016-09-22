@@ -1,8 +1,9 @@
 package library.interfaces.entities;
 
-import java.util.List; // import
+import java.util.List; 
 
-public interface IMember {
+public interface IMember
+{
 	
 	public static final int   LOAN_LIMIT = 5; 
 	
