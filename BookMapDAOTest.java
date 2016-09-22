@@ -90,7 +90,7 @@ public class BookMapDAOTest
 	      else
 	      {
 	    	  
-	    	  System.out.println("The Characters need to be validates")
+	    	  System.out.println("The Characters need to be validates")//this is to display output for validation
 	      }
 	      
 
