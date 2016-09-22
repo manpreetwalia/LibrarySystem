@@ -25,6 +25,7 @@ public class LoanMapDAOTest {
 			//Date dueDate = new Date();
 						
 			//Date dt = new Date();
+			//instantantiating variables with respect to class
 			Book book2 = new Book("Gagan", "Java", "123456789", 1111);
 			Member borrower2 = new Member("Gagan", "Saini", "123456789", "gagansaini@gmail.com", 111);
 			//LoanMapDAO lmd = new LoanMapDAO(hlpr);			
