@@ -22,6 +22,7 @@ public class BookMemberEligibilityTest {
 		 if(member.equalsIgnoreCase("member1"))
 		 {
 			  member1=  member1 -10;//member1 loses book points for loan
+			  System.out.println();
 			  
 		 }
 	}
