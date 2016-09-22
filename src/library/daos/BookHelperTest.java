@@ -37,7 +37,7 @@ public class BookHelperTest {
 		// Test the function getLoan()
 				System.out.println("The loan of book is:   " + book1.getLoan()); // display output
 
-		if(Author.equalsIgnoreCase("Y. Liang") && ID==123);
+		if(Author.equalsIgnoreCase("Y. Liang") && ID==123); // checks the condition
 		System.out.println(" The author of book is : Y. Liang");
 		
 		
