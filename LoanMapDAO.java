@@ -126,6 +126,9 @@ public class LoanMapDAO implements ILoanDAO {
 			if (loan.isOverDue()) {
 				list.add(loan);
 			}
+			else{
+				System.out.println("Entered else block ");
+			}
 		}
 		return Collections.unmodifiableList(list);
 	}
