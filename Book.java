@@ -7,18 +7,18 @@ import library.interfaces.entities.ILoan;
 public class Book implements IBook {
 
 	
-	private String author;
-	private String title;
-	private String callNumber;
-	private int id;
+	private String author;  // declare author as string
+	private String title;  // declare title of book as string variable
+	private String callNumber; // declare the callnumber as string
+	private int id; // declare id as integer
+	 
+	private ILoan loan; // create the object of ILoan class
+	private EBookState state; // cretae tyhe object of EBookState
 	
-	private ILoan loan;
-	private EBookState state;
-	
-	
+	// declare the  parametrize constructor of book entity/class with four parameters
 	public Book(String author, String title, String callNumber, int bookID) {
 		if ( !sane(author, title, callNumber, bookID)) {
-			throw new IllegalArgumentException("Member: constructor : bad parameters");
+			throw new IllegalArgumentException("Member: constructor : bad parameters"); // throw exception
 		}
 		this.author = author;
 		this.title = title;
@@ -39,10 +39,14 @@ public class Book implements IBook {
 
 	
 	@Override
-	public void borrow(ILoan loan) {
+	public void borrow(ILoan loan)
+	{
+		// checks the condition
 		if (loan == null) {
 			throw new IllegalArgumentException(String.format("Book: borrow : Bad parameter: loan cannot be null"));
 		}
+		
+		// checks the condition
 		if (!(state == EBookState.AVAILABLE)) {
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
@@ -50,14 +54,14 @@ public class Book implements IBook {
 		state = EBookState.ON_LOAN;
 
 	}
-
+// 	// declare the getloan functio
 	
 	@Override
 	public ILoan getLoan() {
 		return loan;
 	}
 
-	
+	// declare the returnbook function
 	@Override
 	public void returnBook(boolean damaged) {
 		if (!(state == EBookState.ON_LOAN || state == EBookState.LOST)) {
@@ -71,7 +75,7 @@ public class Book implements IBook {
 			state = EBookState.AVAILABLE;
 		}
 	}
-
+//declare the lose function with condition
 	
 	@Override
 	public void lose() {
@@ -80,7 +84,7 @@ public class Book implements IBook {
 		}
 		state = EBookState.LOST;
 	}
-
+// declare the repair function which donot return any value
 	
 	@Override
 	public void repair() {
@@ -90,7 +94,7 @@ public class Book implements IBook {
 		state = EBookState.AVAILABLE;
 	}
 
-	
+	// declare the disposek functio	
 	@Override
 	public void dispose() {
 		if (!(state == EBookState.AVAILABLE || state == EBookState.DAMAGED || state == EBookState.LOST)) {
@@ -98,38 +102,38 @@ public class Book implements IBook {
 		}
 		state = EBookState.DISPOSED;
 	}
-
+	// declare the ebookstate function
 	
 	@Override
 	public EBookState getState() {
 		return state;
 	}
-
+// declare the getauthor function
 	
 	@Override
 	public String getAuthor() {
 		return author;
 	}
 
-	
+// declare the gettitle function	
 	@Override
 	public String getTitle() {
 		return title;
 	}
-
+// declare thegetcall number function
 	
 	@Override
 	public String getCallNumber() {
 		return callNumber;
 	}
 
-	
+// declare the getide function	
 	@Override
 	public int getID() {
 		return id;
 	}
 
-	
+// declare the tostring function	
 	@Override
 	public String toString() {
 		return String.format("Id: %d\nAuthor: %s\nTitle: %s\nCall Number %s",
