@@ -54,3 +54,9 @@ String Combo1sel="SerialNo", Combo2sel="=";
 String sr;
 String condsel="No Condition";
 String qry = "";
+//Following is required for Book Reports
+Object[] data = new Object[5];
+//DefaultTableModel defaulttablemodel = new DefaultTableModel();
+JTable jtable = new JTable(defaulttablemodel);
+String tempname = "";
+int tempcnt;
