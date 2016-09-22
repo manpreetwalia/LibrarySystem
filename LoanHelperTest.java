@@ -1,6 +1,8 @@
 package library.daos;
 
-//import java.util.Date;
+import java.util.Calendar;
+
+import java.util.Date;
 import library.entities.Book;
 import library.entities.Member;
 //import library.interfaces.entities.IBook;
@@ -28,6 +30,7 @@ public class LoanHelperTest {
 		System.out.println("Book is " + book2.getState());
 		System.out.println("");
 		System.out.println("");
+		
 		System.out.println("Borrower details:");
 		System.out.println("");
 		System.out.println("Contact Number: " + borrower2.getContactPhone());
@@ -38,9 +41,15 @@ public class LoanHelperTest {
 		System.out.println("Last Name: " + borrower2.getLastName());
 		System.out.println("Loan is: " + borrower2.getLoans());
 		System.out.println(borrower2.getState());
+		System.out.println(damaged);			
 		
-		System.out.println(damaged);
+		Date borrowDate = new Date();
+		Date dueDate = new Date();
 		
-				//System.out.println("" + borrower2.getClass());		
+		if(dueDate.getDate() > borrowDate.getDate())
+		{
+			System.out.println("There are overdues loan!");
+		}
+	  //System.out.println("" + borrower2.getClass());		
 	}
 }
