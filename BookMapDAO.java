@@ -57,6 +57,7 @@ public class BookMapDAO implements IBookDAO {
 	}
 
 	@Override
+	//initializing a list of books
 	public List<IBook> findBooksByAuthor(String author) {
 		if ( author == null || author.isEmpty()) {
 			throw new IllegalArgumentException(
