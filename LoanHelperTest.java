@@ -31,10 +31,11 @@ public class LoanHelperTest {
 		System.out.println("The callNumber is: " + book2.getCallNumber());
 		System.out.println("ID: " + book2.getID());
 		System.out.println("Book title: " + book2.getTitle());		
-		//System.out.println("Loan is " + book2.getLoan());
-		//System.out.println("Book is " + book2.getState());
-		//System.out.println("");
-		//System.out.println("");
+		System.out.println("Loan is " + book2.getLoan());
+		System.out.println("Book is " + book2.getState());
+		System.out.println("");
+		System.out.println("");
+		
 		//getting borrower details
 		//System.out.println("Borrower details:");
 		//System.out.println("");
