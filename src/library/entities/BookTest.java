@@ -16,6 +16,7 @@ public class BookTest
 		
 // Test the function getAuthor()
 		System.out.println("The Name of author is:    " + b1.getAuthor());
+			System.out.println("The Name of author is:    " + Book1.getAuthor());
 		
 // Test the function getTitle()
 		
