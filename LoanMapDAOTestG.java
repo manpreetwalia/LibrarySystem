@@ -29,7 +29,7 @@ public class LoanMapDAOTestG {
 			System.out.println("Loan on this book is: " + book2.toString());
 			
 			//get LoanById
-			//System.out.println("This StudentId has loans: " + borrower2.getID());
+			System.out.println("This StudentId has loans: " + borrower2.getID());
 	}
 		
 }
