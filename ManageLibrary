@@ -188,5 +188,29 @@ void USERDEL()
 			  {
 
 			  }
-		
+		void CHPW()
+{
+	 fr9=new JFrame("Change Password My Librarian v1.0 ");
+     fr9.setVisible(true);
+	 fr9.setSize(600,300);
+	 p9=new JPanel();
+	 p9.setLayout(gridbag);
+
+
+	 l1=new JLabel("Enter User Name : ");
+	    c.ipady=2;
+		c.ipadx=2;
+		c.anchor=GridBagConstraints.WEST;
+		c.gridx=0;
+		c.gridy=0;
+		gridbag.setConstraints(l1,c);
+		p9.add(l1,c);
+
+	usrname= new JTextField("                                           ");
+	    c.ipady=2;
+		c.ipadx=2;
+		c.gridx=1;
+		c.gridy=0;
+		gridbag.setConstraints(usrname,c);
+		p9.add(usrname);
 		        
