@@ -40,7 +40,7 @@ public class BookMapDAOTest
 	      {
 	    	  System.out.println("The Book edition is : Chamber of Secrets");//Print the output if condition satisfies
 	      }
-	      
+	      //else statement for authors placement
 	      else if(Author.equalsIgnoreCase("Mr. JK Rowling") && Title.equalsIgnoreCase("Harry Potter3"))
 	      {
 	    	  System.out.println("The Book edition is : Prisnor of Askaban");//Print the output if condition satisfies

@@ -99,6 +99,7 @@ public class BookMapDAO implements IBookDAO {
 			throw new IllegalArgumentException(
 				String.format("BookDAO : findBooksByAuthor : author and title cannot be null or blank"));
 		}
+		//List of items
 		List<IBook> list = new ArrayList<IBook>();
 		for (IBook b : bookMap.values()) {
 			if (author.equals(b.getAuthor()) && title.equals(b.getTitle())) {
