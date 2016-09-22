@@ -22,11 +22,11 @@ public class BookMapDAOTest
 		
 		Scanner in = new Scanner(System.in);  //Taking the input as Author
 		 
-	      System.out.println("Enter the Author name");//Inputs for Author name
+	      System.out.println("Enter the Author name");  //Inputs for Author name
 	      Author = in.nextLine();// Accept the input as Author Name
 	     
 	 
-	      System.out.println("Enter Title of book");//Inputs for Title 
+	      System.out.println("Enter the Title of book");  //Inputs for Title 
 	      Title = in.nextLine();//accessing input title
 	   
 	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null
