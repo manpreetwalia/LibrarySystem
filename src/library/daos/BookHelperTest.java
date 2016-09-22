@@ -29,7 +29,7 @@ public class BookHelperTest {
 				System.out.println("The ID of book is:    " + book1.getID());
 				
 		// Test the function toString()
-				System.out.println("Details of b1 are    " + book1.toString());
+				System.out.println("Details of b1 are    " + book1.toString());  // display output
 				
 		// Test the function getState()		
 				System.out.println("The state of book is:     " + book1.getState()); // display output
