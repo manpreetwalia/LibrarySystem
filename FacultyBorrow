@@ -65,3 +65,7 @@ public int getISBN()
 {
     return isbn;
 }
+public String getAuthor()
+{
+    return author;
+}
