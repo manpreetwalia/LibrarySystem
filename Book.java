@@ -16,8 +16,10 @@ public class Book implements IBook {
 	private EBookState state; // cretae tyhe object of EBookState
 	
 	// declare the  parametrize constructor of book entity/class with four parameters
-	public Book(String author, String title, String callNumber, int bookID) {
-		if ( !sane(author, title, callNumber, bookID)) {
+	public Book(String author, String title, String callNumber, int bookID)
+	{
+		if ( !sane(author, title, callNumber, bookID))
+		{
 			throw new IllegalArgumentException("Member: constructor : bad parameters"); // throw exception
 		}
 		this.author = author;
@@ -42,12 +44,14 @@ public class Book implements IBook {
 	public void borrow(ILoan loan)
 	{
 		// checks the condition
-		if (loan == null) {
+		if (loan == null)
+		{
 			throw new IllegalArgumentException(String.format("Book: borrow : Bad parameter: loan cannot be null"));
 		}
 		
 		// checks the condition
-		if (!(state == EBookState.AVAILABLE)) {
+		if (!(state == EBookState.AVAILABLE))
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
 		this.loan = loan;
@@ -63,15 +67,20 @@ public class Book implements IBook {
 
 	// declare the returnbook function
 	@Override
-	public void returnBook(boolean damaged) {
-		if (!(state == EBookState.ON_LOAN || state == EBookState.LOST)) {
+	public void returnBook(boolean damaged)
+	{
+		if (!(state == EBookState.ON_LOAN || state == EBookState.LOST))
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
+		
 		loan = null;
-		if (damaged) {
+		if (damaged) 
+		{
 			state = EBookState.DAMAGED;
 		}
-		else {
+		else
+		{
 			state = EBookState.AVAILABLE;
 		}
 	}
@@ -96,46 +105,55 @@ public class Book implements IBook {
 
 	// declare the disposek functio	
 	@Override
-	public void dispose() {
-		if (!(state == EBookState.AVAILABLE || state == EBookState.DAMAGED || state == EBookState.LOST)) {
+	public void dispose()
+	{
+		if (!(state == EBookState.AVAILABLE || state == EBookState.DAMAGED || state == EBookState.LOST))
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
+		
 		state = EBookState.DISPOSED;
 	}
 	// declare the ebookstate function
 	
 	@Override
-	public EBookState getState() {
+	public EBookState getState()
+	{
 		return state;
 	}
 // declare the getauthor function
 	
 	@Override
-	public String getAuthor() {
+	public String getAuthor() 
+	{
 		return author;
 	}
 
 // declare the gettitle function	
 	@Override
-	public String getTitle() {
+	public String getTitle() 
+	{
 		return title;
 	}
 // declare thegetcall number function
 	
 	@Override
-	public String getCallNumber() {
+	public String getCallNumber() 
+	{
 		return callNumber;
 	}
 
 // declare the getide function	
 	@Override
-	public int getID() {
+	public int getID()
+	{
 		return id;
 	}
 
 // declare the tostring function	
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return String.format("Id: %d\nAuthor: %s\nTitle: %s\nCall Number %s",
 				id, author, title, callNumber);
 	}
