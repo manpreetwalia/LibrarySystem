@@ -15,7 +15,7 @@ public class Book implements IBook {
 	private ILoan loan; // create the object of ILoan class
 	private EBookState state; // cretae tyhe object of EBookState
 	
-	
+	// declare the  parametrize constructor of book entity/class with four parameters
 	public Book(String author, String title, String callNumber, int bookID) {
 		if ( !sane(author, title, callNumber, bookID)) {
 			throw new IllegalArgumentException("Member: constructor : bad parameters");
