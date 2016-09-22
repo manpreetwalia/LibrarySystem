@@ -213,4 +213,21 @@ void USERDEL()
 		c.gridy=0;
 		gridbag.setConstraints(usrname,c);
 		p9.add(usrname);
+		 l2=new JLabel("Enter Old Password : ");
+	    c.ipady=2;
+		c.ipadx=2;
+		c.anchor=GridBagConstraints.WEST;
+		c.gridx=0;
+		c.gridy=1;
+		gridbag.setConstraints(l2,c);
+		p9.add(l2,c);
+
+	oldpw= new JPasswordField(10);
+	oldpw.setEchoChar('*');
+		c.ipady=2;
+		c.ipadx=2;
+		c.gridx=1;
+		c.gridy=1;
+		gridbag.setConstraints(oldpw,c);
+		p9.add(oldpw);
 		        
