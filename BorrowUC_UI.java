@@ -163,5 +163,4 @@ public class BorrowUC_UI extends JPanel implements IBorrowUI
 		ui.displayErrorMessage(errorMesg);		
 	}
 
-
 }
