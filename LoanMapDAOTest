@@ -228,5 +228,20 @@ public class LoanMapDAOTest {
 	public void testFinalize() {
 		fail("Not yet implemented");
 	}
+	
+	/**
+	 * Test method for {@link java.lang.Object#wait()}.
+	 */
+	@Test
+	public void testWait() {
+		fail("Not yet implemented");
+	}
+
+	/**
+	 * Test method for {@link java.lang.Object#finalize()}.
+	 */
+	@Test
+	public void testFinalize() {
+		fail("Not yet implemented");
 
 }
