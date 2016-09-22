@@ -8,7 +8,8 @@ import library.interfaces.entities.ILoan;
 import library.interfaces.entities.IMember;
 import library.interfaces.entities.EMemberState;
 
-public class Member1 implements IMember {
+public class Member1 implements IMember
+{
 
 	private final String firstName;
 	private final String lastName;
@@ -21,10 +22,13 @@ public class Member1 implements IMember {
 	private float totalFines;
 	
 	public Member1(String firstName, String lastName, String contactPhone,
-			String email, int memberID) {
-		if ( !sane(firstName, lastName, contactPhone, email, memberID)) {
+			String email, int memberID)
+			{
+		if ( !sane(firstName, lastName, contactPhone, email, memberID)) 
+		{
 			throw new IllegalArgumentException("Member: constructor : bad parameters");
 		}
+		
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.contactPhone = contactPhone;
@@ -43,14 +47,18 @@ public class Member1 implements IMember {
 				  contactPhone != null && !contactPhone.isEmpty() &&
 				  emailAddress != null && !emailAddress.isEmpty() &&
 				  memberID > 0 
+				  
 				);
 	}
 
 
 	@Override
-	public boolean hasOverDueLoans() {
-		for (ILoan loan : loanList) {
-			if (loan.isOverDue()) {
+	public boolean hasOverDueLoans() 
+	{
+		for (ILoan loan : loanList) 
+		{
+			if (loan.isOverDue())
+			{
 				return true;
 			}
 		}
@@ -76,13 +84,16 @@ public class Member1 implements IMember {
 	}
 
 	@Override
-	public float getFineAmount() {
+	public float getFineAmount() 
+	{
 		return totalFines;
 	}
 
 	@Override
-	public void addFine(float fine) {
-		if (fine < 0) {
+	public void addFine(float fine)
+	{
+		if (fine < 0) 
+		{
 			throw new RuntimeException(String.format("Member: addFine : fine cannot be negative"));
 		}
 		totalFines += fine;
@@ -90,8 +101,10 @@ public class Member1 implements IMember {
 	}
 
 	@Override
-	public void payFine(float payment) {
-		if (payment < 0 || payment > totalFines) {
+	public void payFine(float payment)
+	{
+		if (payment < 0 || payment > totalFines)
+		{
 			throw new RuntimeException(String.format("Member: addFine : payment cannot be negative or greater than totalFines"));
 		}
 		totalFines -= payment;
@@ -99,8 +112,10 @@ public class Member1 implements IMember {
 	}
 
 	@Override
-	public void addLoan(ILoan loan) {
-		if (!borrowingAllowed()) {
+	public void addLoan(ILoan loan) 
+	{
+		if (!borrowingAllowed())
+		{
 			throw new RuntimeException(String.format("Member: addLoan : illegal operation in state: %s", state));
 		}
 		loanList.add(loan);
@@ -108,13 +123,16 @@ public class Member1 implements IMember {
 	}
 
 	@Override
-	public List<ILoan> getLoans() {
+	public List<ILoan> getLoans()
+	{
 		return Collections.unmodifiableList(loanList);
 	}
 
 	@Override
-	public void removeLoan(ILoan loan) {
-		if (loan == null || !loanList.contains(loan)) {
+	public void removeLoan(ILoan loan)
+	{
+		if (loan == null || !loanList.contains(loan)) 
+		{
 			throw new RuntimeException(String.format("Member: removeLoan : loan is null or not found in loanList"));
 		}
 		loanList.remove(loan);
@@ -123,13 +141,15 @@ public class Member1 implements IMember {
 
 	
 	@Override
-	public EMemberState getState() {
+	public EMemberState getState()
+	{
 		return state;
 	}
 
 	
 	@Override
-	public String getFirstName() {
+	public String getFirstName()
+	{
 		return firstName;
 	}
 
@@ -153,30 +173,37 @@ public class Member1 implements IMember {
 
 	
 	@Override
-	public int getID() {
+	public int getID()
+	{
 		return id;
 	}
 
 	
 	@Override
-	public String toString() {
-		return String.format(
+	public String toString() 
+	{
+		return String.format
+		(
 				"Id: %d\nName: %s %s\nContact Phone: %s\nEmail: %s\nOutstanding Charges: %0.2f", id,
 				firstName, lastName, contactPhone, emailAddress, totalFines);
 	}
 
-	private Boolean borrowingAllowed() {
+	private Boolean borrowingAllowed() 
+	{
 		boolean b = !hasOverDueLoans() &&
 				!hasReachedFineLimit() &&
 				!hasReachedLoanLimit();
 		return b;
 	}
 
-	private void updateState() {
-		if (borrowingAllowed()) {
+	private void updateState() 
+	{
+		if (borrowingAllowed())
+		{
 			state = EMemberState.BORROWING_ALLOWED;
 		}
-		else {
+		else
+		{
 			state = EMemberState.BORROWING_DISALLOWED;
 		}
 	}
