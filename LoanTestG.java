@@ -17,7 +17,7 @@ public class LoanTestG {
 		Book book1 = new Book("Liang", "Java", "044246789", 11);
 		Member borrower1 = new Member("Gagan", "Saini", "0449783587", "gagansaini@gmail.com", 111);
 		Loan l1 = new Loan(book1, borrower1, borrowDate, dueDate);
-				
+			int monpl=12; 	
 		//System.out.println(l1.getBook());
 		//System.out.println(l1.toString());		
 		//System.out.println(l1.getState());	
