@@ -68,7 +68,7 @@ public class BorrowUC_CTL implements ICardReaderListener,IScannerListener, IBorr
 	@Override
 	public void cardSwiped(int memberID) 
 	{
-		throw new RuntimeException("Not implemented yet"); // have to implement
+		throw new RuntimeException("Not implemented yet"); 
 	}
 	
 	
@@ -76,13 +76,13 @@ public class BorrowUC_CTL implements ICardReaderListener,IScannerListener, IBorr
 	@Override
 	public void bookScanned(int barcode) 
 	{
-		throw new RuntimeException("Not implemented yet");  // have to implement
+		throw new RuntimeException("Not implemented yet"); 
 	} 
 
 	
 	private void setState(EBorrowState state)
 	{
-		throw new RuntimeException("Not implemented yet"); // have to implement
+		throw new RuntimeException("Not implemented yet");
 	}
 
 	@Override
@@ -94,19 +94,19 @@ public class BorrowUC_CTL implements ICardReaderListener,IScannerListener, IBorr
 	@Override
 	public void scansCompleted() 
 	{
-		throw new RuntimeException("Not implemented yet");  // have to implement 
+		throw new RuntimeException("Not implemented yet");  
 	}
 
 	@Override
 	public void loansConfirmed()
 	{
-		throw new RuntimeException("Not implemented yet");   // have to implement
+		throw new RuntimeException("Not implemented yet");  
 	}
 
 	@Override
 	public void loansRejected() 
 	{
-		throw new RuntimeException("Not implemented yet");  // have to implement
+		throw new RuntimeException("Not implemented yet");  
 	}
 
 	private String buildLoanListDisplay(List<ILoan> loans)
