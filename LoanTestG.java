@@ -31,6 +31,12 @@ public class LoanTestG {
 		//int month = 10;
 		//int date2 = 31;		
 			//getting borrower details
+			//A method for conversion to toString
+			public String toString()
+			{
+			    return "\nISBN: " +isbn + "\nAuthor: " +author + "\nTitle: " +title + 
+			  "\nGenre: " +genre + "\nNumber Of Copies " +numcopies +"\n ";
+			}
 		System.out.println("Borrower detail are as follow:");
 		System.out.println("");
 		System.out.println("Borrower first name: " + borrower1.getFirstName());
