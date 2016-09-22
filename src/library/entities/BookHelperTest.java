@@ -22,10 +22,12 @@ public class BookHelperTest {
 		// Test the function getTitle()
 				
 				System.out.println("The title of book is:    " + b1.getTitle()); // display the out
+				System.out.println("The title of book is:    " + bk1.getTitle()); // display the out
 				
 		// Test the function getCallNumber()
 				
 				System.out.println("The callNumber of book is:   " + b1.getCallNumber()); // display the out
+					System.out.println("The callNumber of book is:   " + b1.getCallNumber()); // display the out
 				
 		// Test the function getID()
 				System.out.println("The ID of book is:    " + b1.getID()); // display the out
