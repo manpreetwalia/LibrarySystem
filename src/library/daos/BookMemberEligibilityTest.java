@@ -30,7 +30,7 @@ public class BookMemberEligibilityTest {
 		 {
 			 
 		 }
-		 else if()
+		 else if(member.equalsIgnoreCase("member3"))
 		 {
 			 
 		 }
