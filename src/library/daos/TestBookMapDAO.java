@@ -30,7 +30,7 @@ public class TestBookMapDAO
 	      Title = in.nextLine(); //accept the input as title of book
 	      
 	      System.out.println("Enter the id of book"); // Enter the id of book
-	      ID= in.nextInt();
+	      ID= in.nextInt(); // Accept the ID of as input
 	   
 	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null
 	    		  )
