@@ -20,6 +20,10 @@ public class LoanHelperTest {
 		//int date = 15;
 		//Date borrowDate = new Date(year,month,date);
 		boolean damaged = false;
+		
+		Date borrowDate = new Date();
+		Date dueDate = new Date();		
+		
 		System.out.println("Book details:");
 		System.out.println("");
 		System.out.println("The author name is " + book2.getAuthor());
@@ -43,12 +47,14 @@ public class LoanHelperTest {
 		System.out.println(borrower2.getState());
 		System.out.println(damaged);			
 		
-		Date borrowDate = new Date();
-		Date dueDate = new Date();
-		
-		if(dueDate.getDate() > borrowDate.getDate())
+		if(borrowDate.compareTo(dueDate)<0)
 		{
-			System.out.println("There are overdues loan!");
+			System.out.println("Overdue loan!");
+		}
+		else
+		{
+			System.out.println("No overdue loan!");
+			
 		}
 	  //System.out.println("" + borrower2.getClass());		
 	}
