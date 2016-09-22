@@ -15,7 +15,7 @@ public class BookMapDAO implements IBookDAO {
 	private int nextId;
 	private Map<Integer, IBook> bookMap;
 	private IBookHelper helper;
-
+//Book map for data access objects
 	public BookMapDAO(IBookHelper helper) {
 		if (helper == null ) {
 			throw new IllegalArgumentException(String.format("BookDAO : constructor : helper cannot be null."));
