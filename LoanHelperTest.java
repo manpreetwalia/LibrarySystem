@@ -31,31 +31,34 @@ public class LoanHelperTest {
 		System.out.println("The callNumber is: " + book2.getCallNumber());
 		System.out.println("ID: " + book2.getID());
 		System.out.println("Book title: " + book2.getTitle());		
-		//System.out.println("Loan is " + book2.getLoan());
-		//System.out.println("Book is " + book2.getState());
-		//System.out.println("");
-		//System.out.println("");
-		//getting borrower details
-		//System.out.println("Borrower details:");
-		//System.out.println("");
-		//System.out.println("Contact Number: " + borrower2.getContactPhone());
-		//System.out.println("Email ID: " + borrower2.getEmailAddress());
-		//System.out.println("The fine amount is: " + borrower2.getFineAmount());
-		//System.out.println("First Name: " + borrower2.getFirstName());
-		//System.out.println("ID is: " + borrower2.getID());
-		//System.out.println("Last Name: " + borrower2.getLastName());
-		//System.out.println("Loan is: " + borrower2.getLoans());
-		//System.out.println(borrower2.getState());
-		//System.out.println(damaged);			
+		System.out.println("Loan is " + book2.getLoan());
+		System.out.println("Book is " + book2.getState());
+		System.out.println("");
+		System.out.println("");
 		
-		//if(borrowDate.compareTo(dueDate)<0)
-		//{
-			//System.out.println("Overdue loan!");
-		//}
-		//else
-		//{
-			//System.out.println("No overdue loan!");			
-		//}
+		//getting borrower details
+		System.out.println("Borrower details:");
+		System.out.println("");
+		System.out.println("Contact Number: " + borrower2.getContactPhone());
+		System.out.println("Email ID: " + borrower2.getEmailAddress());
+		System.out.println("The fine amount is: " + borrower2.getFineAmount());
+		System.out.println("First Name: " + borrower2.getFirstName());		
+		System.out.println("Last Name: " + borrower2.getLastName());
+		System.out.println("ID is: " + borrower2.getID());
+		System.out.println("Loan is: " + borrower2.getLoans());
+		System.out.println(borrower2.getState()); //Is borrowing allowed.
+		System.out.println(damaged);				
+		
+		//Checking overdues
+		
+		if(borrowDate.compareTo(dueDate)<0)
+		{
+			System.out.println("Overdue loan!");
+		}
+		else
+		{
+			System.out.println("No overdue loan!");			
+		}
 	  //System.out.println("" + borrower2.getClass());		
 	}
 }
