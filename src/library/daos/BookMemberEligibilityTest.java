@@ -36,7 +36,7 @@ public class BookMemberEligibilityTest {
 		 }
 		 else if(member.equalsIgnoreCase("member4"))
 		 {
-			 member4=  member4 - 10;
+			 member4=  member4 - 10;//member4 loses book points for loan
 		 }
 		 else if(member.equalsIgnoreCase("member5"))
 		 {
