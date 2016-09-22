@@ -44,6 +44,12 @@ public class BookMapDAOTest {
 	@After
 	public void tearDown() throws Exception {
 	}
+	//@Override
+	//public ILoan makeLoan(IBook book, IMember borrower, Date borrowDate,
+			//Date dueDate) {
+
+		//return new Loan(book, borrower, borrowDate, dueDate);
+	//}
 
 	/**
 	 * Test method for {@link library.daos.BookMapDAO#BookMapDAO(library.interfaces.daos.IBookHelper)}.
