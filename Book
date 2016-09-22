@@ -6,7 +6,7 @@ import library.interfaces.entities.ILoan;
 
 public class Book implements IBook {
 //Test
-	
+	// variable initializations 
 	private String author;
 	private String title;
 	private String callNumber;
