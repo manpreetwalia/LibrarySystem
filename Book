@@ -40,6 +40,7 @@ public class Book implements IBook {
 
 	
 	@Override
+	//an overrider class for borrow
 	public void borrow(ILoan loan) {
 		if (loan == null) {
 			throw new IllegalArgumentException(String.format("Book: borrow : Bad parameter: loan cannot be null"));
