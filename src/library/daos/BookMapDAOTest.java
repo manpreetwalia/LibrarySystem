@@ -10,7 +10,7 @@ import library.entities.Book;
 
 // Start of TestBookMapDAO class
 
-<<<<<<< HEAD
+
 public class BookMapDAOTest
 {
 
