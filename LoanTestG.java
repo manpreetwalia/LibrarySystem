@@ -39,10 +39,11 @@ public class LoanTestG {
 		System.out.println("Borrower EmailID: " + borrower1.getEmailAddress());
 		System.out.println("Fine amount for this borrower is: " + borrower1.getFineAmount());
 		System.out.println("Member(Borrower) ID is: " + borrower1.getID());
-		//System.out.println("" + borrower1.getClass());
+		System.out.println("" + borrower1.getClass());
 		System.out.println("Loan is: " + borrower1.getLoans());
 		System.out.println("Borrowing Allowed to member? :" + borrower1.getState());
-		 
+		System.out.println("");
+		
 		//getting book details
 		System.out.println("Book detail are as follow:");
 		System.out.println("");
@@ -50,17 +51,20 @@ public class LoanTestG {
 		System.out.println("Book callNumber is: " + book1.getCallNumber());
 		System.out.println("Book ID is: " + book1.getID());
 		System.out.println("Book title is: " + book1.getTitle());
-		//System.out.println("" + book1.getClass());
+		System.out.println("" + book1.getClass());
 		System.out.println("Book available? : " + book1.getState());
-				
+		System.out.println("");
+		
 		//get borrowDate and dueDate
+		System.out.println("Important dates to remember to avoid fine:");
+		System.out.println("");
 		Calendar clndr = Calendar.getInstance();
 		Date today = clndr.getTime();
 	    System.out.println("Borrowed on: " + today);
 	    clndr.add(Calendar.DAY_OF_YEAR, 15);
 	    
 	    System.out.println("Due on: " + clndr.getTime());	
-	    
+	    System.out.println("");
 	    System.out.println("Overdue loan: " + l1.isOverDue());	
 		System.out.println("Loan Id: " + loanId); 
 }	
