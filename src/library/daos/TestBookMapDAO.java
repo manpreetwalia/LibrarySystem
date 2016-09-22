@@ -63,7 +63,7 @@ public class TestBookMapDAO
 	      {
 	    	  System.out.println("Book edition is : Half Blood Prince");//Print the output if condition satisfies
 	      }
-	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter7"))
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter7"))// checks the condition
 	      {
 	    	  System.out.println("Book edition is : Deathly Hallows");//Print the output if condition satisfies
 	      }
