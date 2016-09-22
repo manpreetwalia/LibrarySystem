@@ -37,14 +37,14 @@ public class LoanHelperTest {
 		System.out.println("");
 		
 		//getting borrower details
-		//System.out.println("Borrower details:");
-		//System.out.println("");
-		//System.out.println("Contact Number: " + borrower2.getContactPhone());
-		//System.out.println("Email ID: " + borrower2.getEmailAddress());
-		//System.out.println("The fine amount is: " + borrower2.getFineAmount());
-		//System.out.println("First Name: " + borrower2.getFirstName());
-		//System.out.println("ID is: " + borrower2.getID());
-		//System.out.println("Last Name: " + borrower2.getLastName());
+		System.out.println("Borrower details:");
+		System.out.println("");
+		System.out.println("Contact Number: " + borrower2.getContactPhone());
+		System.out.println("Email ID: " + borrower2.getEmailAddress());
+		System.out.println("The fine amount is: " + borrower2.getFineAmount());
+		System.out.println("First Name: " + borrower2.getFirstName());		
+		System.out.println("Last Name: " + borrower2.getLastName());
+		System.out.println("ID is: " + borrower2.getID());
 		//System.out.println("Loan is: " + borrower2.getLoans());
 		//System.out.println(borrower2.getState());
 		//System.out.println(damaged);			
