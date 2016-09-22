@@ -12,8 +12,8 @@ public class Book implements IBook {
 	private String callNumber; // declare the callnumber as string
 	private int id; // declare id as integer
 	 
-	private ILoan loan;
-	private EBookState state;
+	private ILoan loan; // create the object of ILoan class
+	private EBookState state; // cretae tyhe object of EBookState
 	
 	
 	public Book(String author, String title, String callNumber, int bookID) {
