@@ -48,3 +48,16 @@ public void borrowBook(String title) {
         System.out.println("You successfully borrowed " + title);
     }
 }
+
+public Book(int isbn, String author, String title, String genre, int  
+ numcopies)
+{
+
+    this.isbn = isbn;
+    this.author = author;
+    this.title = title;
+    this.genre = genre;
+    this.numcopies = numcopies;
+
+
+}
