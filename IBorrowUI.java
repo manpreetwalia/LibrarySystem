@@ -1,6 +1,7 @@
 package library.interfaces; 
 
-public interface IBorrowUI {
+public interface IBorrowUI
+{
 
 	public void setState(EBorrowState state);
 	
