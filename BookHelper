@@ -3,23 +3,15 @@ package library.daos;
 import library.entities.Book;
 import library.interfaces.daos.IBookHelper;
 import library.interfaces.entities.IBook;
-//Test
+
 public class BookHelper implements IBookHelper {
 
 	@Override
-	public IBook makeBook(String author, String title, String callNumber, int id) {
+	public IBook makeBook(String author, String title, String callNumber, int id)
+	{
+		
 		return new Book(author, title, callNumber, id);		
-	
-	
-		public IBook getBookByID(int id) {
-		if (bookMap.containsKey(Integer.valueOf(id))) {
-			return bookMap.get(Integer.valueOf(id));
-		}
-		return null;
-	}
-	
-	}
-	
-	
 
+	}
+	
 }
