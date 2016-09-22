@@ -94,7 +94,7 @@ public class Book implements IBook {
 		state = EBookState.AVAILABLE;
 	}
 
-	
+	// declare the disposek functio	
 	@Override
 	public void dispose() {
 		if (!(state == EBookState.AVAILABLE || state == EBookState.DAMAGED || state == EBookState.LOST)) {
@@ -102,7 +102,7 @@ public class Book implements IBook {
 		}
 		state = EBookState.DISPOSED;
 	}
-
+	// declare the ebookstate function
 	
 	@Override
 	public EBookState getState() {
