@@ -133,7 +133,7 @@ public class Book implements IBook {
 		return id;
 	}
 
-	
+// declare the tostring function	
 	@Override
 	public String toString() {
 		return String.format("Id: %d\nAuthor: %s\nTitle: %s\nCall Number %s",
