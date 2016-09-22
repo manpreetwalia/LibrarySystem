@@ -13,7 +13,7 @@ public class BookHelperTest {
 	{
 		
 // Create object book1 of class IBook, makebook
-		//Book book1 = new Book("Japgun", "Database", "98765432", 6666);
+		Book book1 = new Book("Japgun", "Database", "98765432", 6666);
 		// Test the function getAuthor()
 				System.out.println("The Name of author is:    " + book1.getAuthor());
 				
