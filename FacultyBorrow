@@ -82,3 +82,22 @@ public String toString()
     return "\nISBN: " +isbn + "\nAuthor: " +author + "\nTitle: " +title + 
   "\nGenre: " +genre + "\nNumber Of Copies " +numcopies +"\n ";
 }
+
+
+ public void borrowBook(String title) 
+ {
+    int found = 0;
+    for (Book b : collection) 
+    {
+        if (b.getTitle().equals(title)) 
+        {
+           if (found == 0) 
+    {
+            found = 1;
+        }
+        if (!b.isBorrowed()) 
+    {
+            b.borrowed=true;
+            found = 2;
+            break;
+        }
