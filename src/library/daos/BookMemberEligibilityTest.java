@@ -13,6 +13,7 @@ public class BookMemberEligibilityTest {
 		int member4= 100;
 		int member5=100;
 		
+		
 		Scanner in = new Scanner(System.in);  //Taking the input as member
 		 
 		 System.out.println("Enter the Author name");  //Inputs for member-name
@@ -20,7 +21,8 @@ public class BookMemberEligibilityTest {
 		 
 		 if(member.equalsIgnoreCase("member1"))
 		 {
-			 
+			  member1=  member1 -10;
+			  
 		 }
 	}
 
