@@ -75,7 +75,7 @@ public class Book implements IBook {
 			state = EBookState.AVAILABLE;
 		}
 	}
-
+//declare the lose function with condition
 	
 	@Override
 	public void lose() {
@@ -84,7 +84,7 @@ public class Book implements IBook {
 		}
 		state = EBookState.LOST;
 	}
-
+// declare the repair function which donot return any value
 	
 	@Override
 	public void repair() {
