@@ -10,7 +10,7 @@ import library.entities.Book;
 
 // Start of TestBookMapDAO class
 
-public class BookMapDAOTest
+public class TestBookMapDAO
 {
 
 // Start of main function
@@ -19,7 +19,7 @@ public class BookMapDAOTest
 	{
 		String Author;  // Initializing string Author
 		String Title;//  Initializing the title
-		
+		int ID; // Initializing the iD of book
 		Scanner in = new Scanner(System.in);  //Taking the input as Author
 		 
 	      System.out.println("Enter the Author name");  //Inputs for Author name
@@ -56,13 +56,13 @@ public class BookMapDAOTest
 	      {
 	    	  System.out.println("Book edition is : Basics of networking");//Print the output if condition satisfies
 	      }
-	      else if(Author.equalsIgnoreCase("R. Kapuno") && Title.equalsIgnoreCase("C/C++"))
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter6"))
 	      {
-	    	  System.out.println("Book edition is : Basics of programming");//Print the output if condition satisfies
+	    	  System.out.println("Book edition is : Half Blood Prince");//Print the output if condition satisfies
 	      }
-	      else if(Author.equalsIgnoreCase("Rajiv Malhotra ") && Title.equalsIgnoreCase("Introduction to dot net"))
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter7"))
 	      {
-	    	  System.out.println("Book edition is : Basics of .net");//Print the output if condition satisfies
+	    	  System.out.println("Book edition is : Deathly Hallows");//Print the output if condition satisfies
 	      }
 	      
 	      else
