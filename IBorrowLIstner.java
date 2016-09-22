@@ -1,8 +1,11 @@
 package library.interfaces;
 
-public interface IBorrowUIListener {
-	
-	public void cancelled(); // function
+public interface IBorrowUIListener 
+{
+
+// Declare functions as void type
+
+	public void cancelled(); 
 	
 	public void scansCompleted();
 	
