@@ -44,6 +44,11 @@ public class MemberMapDAO implements IMemberDAO {
 		memberMap.put(Integer.valueOf(id), mem);
 		return mem;
 	}
+	if(char==true)
+  	      {
+     	  System.out.println("Pls enter valid charecters");//if the conditions dosent satisfy then this statement is executed
+     	  System.out.println("Pls enter valid charecters");//if the conditions dosen't satisfy then this statement is executed
+  	      }
 
 	@Override
 	public IMember getMemberByID(int id) {
