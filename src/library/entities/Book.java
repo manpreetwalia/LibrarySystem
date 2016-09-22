@@ -35,6 +35,7 @@ public class Book implements IBook {
 				  callNumber != null && !callNumber.isEmpty() &&
 				  bookID > 0 
 				);
+				
 	}
 
 	
