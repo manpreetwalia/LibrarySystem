@@ -1,4 +1,4 @@
-/*package library.daos;
+package library.daos;
 
  
 
@@ -46,4 +46,4 @@ public class LoanMapDAOTest {
 
                         }
 
-}*/
+}
