@@ -22,8 +22,8 @@ public class LoanMapDAOTestG {
 			System.out.println(book2.getLoan());
 			System.out.println("" + hlpr.getClass());
 			System.out.println(lmd.getLoanByID(1));
-			//System.out.println("" + lmd.getLoanByBook(book2));
-			//System.out.println(hlpr.makeLoan(book2, borrower2, borrowDate, dueDate));	
+			System.out.println("" + lmd.getLoanByBook(book2));
+			System.out.println(hlpr.makeLoan(book2, borrower2, borrowDate, dueDate));	
 			
 			//get LoanByBook
 			System.out.println("Loan on this book is: " + book2.toString());
