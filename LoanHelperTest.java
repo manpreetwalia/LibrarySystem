@@ -49,14 +49,16 @@ public class LoanHelperTest {
 		System.out.println(borrower2.getState()); //Is borrowing allowed.
 		System.out.println(damaged);				
 		
-		//if(borrowDate.compareTo(dueDate)<0)
-		//{
-			//System.out.println("Overdue loan!");
-		//}
-		//else
-		//{
-			//System.out.println("No overdue loan!");			
-		//}
+		//Checking overdues
+		
+		if(borrowDate.compareTo(dueDate)<0)
+		{
+			System.out.println("Overdue loan!");
+		}
+		else
+		{
+			System.out.println("No overdue loan!");			
+		}
 	  //System.out.println("" + borrower2.getClass());		
 	}
 }
