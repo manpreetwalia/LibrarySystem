@@ -1,8 +1,10 @@
 package library.interfaces.entities;
 
-public interface IBook {
-	
-	public void borrow(ILoan loan); // function
+public interface IBook 
+{
+// Declare various functions
+
+	public void borrow(ILoan loan); 
 	
 	public ILoan getLoan();
 	
