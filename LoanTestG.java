@@ -40,8 +40,8 @@ public class LoanTestG {
 		System.out.println("Borrower detail are as follow:");
 		System.out.println("");
 		System.out.println("Borrower first name: " + borrower1.getFirstName());
-		//System.out.println("Borrower last name: " + borrower1.getLastName());
-		//System.out.println("Borrower contact number: " + borrower1.getContactPhone());
+		System.out.println("Borrower last name: " + borrower1.getLastName());
+		System.out.println("Borrower contact number: " + borrower1.getContactPhone());
 		//System.out.println("Borrower EmailID: " + borrower1.getEmailAddress());
 		//System.out.println("Fine amount for this borrower is: " + borrower1.getFineAmount());
 		//System.out.println("Member(Borrower) ID is: " + borrower1.getID());
