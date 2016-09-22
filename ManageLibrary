@@ -76,7 +76,7 @@ public static void main(String[] args)
 		login();
 	}
 	
-	
+	//a function with no return value for login
 	void login()
 	{
 	 fr2=new JFrame("Login Panel MyLibrarian v1.0");
