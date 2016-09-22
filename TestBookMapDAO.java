@@ -44,7 +44,7 @@ public class BookMapDAOTest
 	      
 	      else if(Author.equalsIgnoreCase("Daniel T. Larose") && Title.equalsIgnoreCase("Introduction to data minig"))
 	      {
-	    	  System.out.println("Book edition is : Prisnor of Askaban");//Print the output if condition satisfies
+	    	  System.out.println("Book edition is : Big Data");//Print the output if condition satisfies
 	      }
 	      
 	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter4"))
