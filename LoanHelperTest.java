@@ -28,9 +28,9 @@ public class LoanHelperTest {
 		System.out.println("Book details:");
 		System.out.println("");
 		System.out.println("The author name is " + book2.getAuthor());
-		//System.out.println("The callNumber is: " + book2.getCallNumber());
-		//System.out.println("ID: " + book2.getID());
-		//System.out.println("Book title: " + book2.getTitle());		
+		System.out.println("The callNumber is: " + book2.getCallNumber());
+		System.out.println("ID: " + book2.getID());
+		System.out.println("Book title: " + book2.getTitle());		
 		//System.out.println("Loan is " + book2.getLoan());
 		//System.out.println("Book is " + book2.getState());
 		//System.out.println("");
