@@ -5,6 +5,7 @@ import library.interfaces.daos.IMemberHelper; // import library interfaces of DA
 import library.interfaces.entities.IMember;  // import library interfaces of entities for IMember
 
 public class MemberHelper implements IMemberHelper 
+
 {
 
 	@Override
