@@ -11,7 +11,12 @@ public class BookHelper implements IBookHelper {
 		return new Book(author, title, callNumber, id);		
 	
 	
-	
+		public IBook getBookByID(int id) {
+		if (bookMap.containsKey(Integer.valueOf(id))) {
+			return bookMap.get(Integer.valueOf(id));
+		}
+		return null;
+	}
 	
 	}
 	
