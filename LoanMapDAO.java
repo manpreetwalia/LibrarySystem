@@ -50,6 +50,8 @@ public class LoanMapDAO implements ILoanDAO {
 		}
 		return null;
 	}
+	
+	
 
 	@Override
 	public ILoan getLoanByBook(IBook book) {
@@ -109,7 +111,14 @@ public class LoanMapDAO implements ILoanDAO {
 			loan.checkOverDue(currentDate);
 		}
 	}
-
+	/*@Override
+	public ILoan getLoanByID(int id) {
+		if (loanMap.containsKey(Integer.valueOf(id))) {
+			return loanMap.get(Integer.valueOf(id));
+		}
+		return null;
+	}
+*/
 	@Override
 	public List<ILoan> findOverDueLoans() {
 		List<ILoan> list = new ArrayList<ILoan>();
