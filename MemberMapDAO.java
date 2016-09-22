@@ -32,6 +32,7 @@ public class MemberMapDAO implements IMemberDAO {
 			throw new IllegalArgumentException(
 				String.format("MemberMapDAO : constructor : memberMap cannot be null."));
 		}
+		//using this variable to instantiate
 		this.memberMap = memberMap;
 	}
 
