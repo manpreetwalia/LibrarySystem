@@ -19,7 +19,7 @@ public class LoanMapDAOTestG {
 			
 			//LoanMapDAO lmd = new LoanMapDAO(hlpr);			
 						
-			//System.out.println(book2.getLoan());
+			System.out.println(book2.getLoan());
 			//System.out.println("" + hlpr.getClass());
 			//System.out.println(lmd.getLoanByID(1));
 			//System.out.println("" + lmd.getLoanByBook(book2));
@@ -27,6 +27,7 @@ public class LoanMapDAOTestG {
 			
 			//get LoanByBook
 			System.out.println("Loan on this book is: " + book2.toString());
+			
 			//get LoanById
 			System.out.println("This StudentId has loans: " + borrower2.getID());
 	}
