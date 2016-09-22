@@ -1,8 +1,9 @@
 package library.interfaces.entities;
 
-import java.util.Date; // imort
+import java.util.Date;
 
-public interface ILoan {
+public interface ILoan 
+{
 	
 	public static final int LOAN_PERIOD = 14;
 	
