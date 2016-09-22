@@ -36,6 +36,7 @@ public class BookTest
 		System.out.println("Details of b1 are    " + Book1.toString());
 // Test the function getState()	
 		System.out.println("The state of book is:     " + b1.getState());
+		System.out.println("The state of book is:     " + b1.getState());
 		
 // Test the function getLoan()
 		System.out.println("The loan of book is:   " + b1.getLoan());
