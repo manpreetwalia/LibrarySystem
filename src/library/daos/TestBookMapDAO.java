@@ -10,7 +10,7 @@ import library.entities.Book;
 
 // Start of TestBookMapDAO class
 
-public class BookMapDAOTest
+public class TestBookMapDAO
 {
 
 // Start of main function
