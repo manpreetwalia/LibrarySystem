@@ -77,3 +77,8 @@ public String getGenre()
 {
     return genre;
 }
+public String toString()
+{
+    return "\nISBN: " +isbn + "\nAuthor: " +author + "\nTitle: " +title + 
+  "\nGenre: " +genre + "\nNumber Of Copies " +numcopies +"\n ";
+}
