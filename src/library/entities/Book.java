@@ -8,7 +8,7 @@ public class Book implements IBook {
 
 	
 	private String author;  // declare author as string
-	private String title;
+	private String title;  // declare title of book as string variable
 	private String callNumber;
 	private int id;
 	
