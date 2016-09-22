@@ -21,3 +21,9 @@ JTextField borrowerSerialno,borrowerName,borrowerAddress,borrowerLastBook,borrow
 JTextField borrowerNewBook;
 //JTextField loginname = new JTextField(20);	
 //JTextField loginpass = new JTextField(20);
+GridBagLayout gridbag = new GridBagLayout();
+GridBagConstraints c = new GridBagConstraints();
+String t1;
+String url="jdbc:odbc:BANK";
+String driver="sun.jdbc.odbc.JdbcOdbcDriver";
+String sql,sq,sqUsr,sbookd,sdUsr,squpdate,dialogmessage,serialno,squpdate_book,squpdate_mag;
