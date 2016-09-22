@@ -1,10 +1,11 @@
 package library.interfaces.daos;
 
-import java.util.List; // import
+import java.util.List;
 
 import library.interfaces.entities.IMember;
 
-public interface IMemberDAO {
+public interface IMemberDAO
+{
 
 		public IMember addMember(String firstName, String lastName, String ContactPhone, String emailAddress);
 		
