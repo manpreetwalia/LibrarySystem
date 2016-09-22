@@ -13,7 +13,8 @@ public class LoanHelper implements ILoanHelper
 
 	@Override
 	public ILoan makeLoan(IBook book, IMember borrower, Date borrowDate,
-			Date dueDate) {
+			Date dueDate)
+			{
 
 		return new Loan(book, borrower, borrowDate, dueDate); // returns new values of loan
 	}
