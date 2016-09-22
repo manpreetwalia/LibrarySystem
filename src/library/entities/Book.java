@@ -7,7 +7,7 @@ import library.interfaces.entities.ILoan;
 public class Book implements IBook {
 
 	
-	private String author;
+	private String author;  // declare author as string
 	private String title;
 	private String callNumber;
 	private int id;
