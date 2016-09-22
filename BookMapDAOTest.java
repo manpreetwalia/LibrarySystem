@@ -87,6 +87,12 @@ public class BookMapDAOTest
 	      {
 	    	  System.out.println("Please enter valid charecters");//if the conditions doesn't satisfy then this statement is executed
 	      }
+	      else
+	      {
+	    	  
+	    	  System.out.println("The Characters need to be validates")
+	      }
+	      
 
 	}
 }
