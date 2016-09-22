@@ -5,11 +5,11 @@ import junit.framework.TestCase;
 public class BookHelperTest extends TestCase {
 
 	protected void setUp() throws Exception {
-		super.setUp();
+		super.setUp();//super with setUp function
 	}
 //Exception handling using throws clause
 	protected void tearDown() throws Exception {
-		super.tearDown();
+		super.tearDown();//calling tearDown function with super class
 	}
 
 }
