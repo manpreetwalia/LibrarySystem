@@ -59,20 +59,21 @@ public class LoanTestG {
 		System.out.println("Book title is: " + book1.getTitle());
 		System.out.println("" + book1.getClass());
 		System.out.println("Book available? : " + book1.getState());
-		//System.out.println("");
+		System.out.println("");
 		
 		//get borrowDate and dueDate
-		//System.out.println("Important dates to remember to avoid fine:");
-		//System.out.println("");
-		//Calendar clndr = Calendar.getInstance();
-		//Date today = clndr.getTime();
-	   // System.out.println("Borrowed on: " + today);
-	    //clndr.add(Calendar.DAY_OF_YEAR, 15);
+		System.out.println("Important dates to remember to avoid fine:");
+		System.out.println("");
+		Calendar clndr = Calendar.getInstance();
+		Date today = clndr.getTime();
+	   System.out.println("Borrowed on: " + today);
+	    clndr.add(Calendar.DAY_OF_YEAR, 15);
 	    
-	    //System.out.println("Due on: " + clndr.getTime());	
-	    //System.out.println("");
-	    //System.out.println("Overdue loan: " + l1.isOverDue());	
-		//System.out.println("Loan Id: " + loanId); 
+	    //Checking Overdues
+	    System.out.println("Due on: " + clndr.getTime());	
+	    System.out.println("");
+	    System.out.println("Overdue loan: " + l1.isOverDue());	
+		System.out.println("Loan Id: " + loanId); 
 }	
 	//A method to auto generate the stubs
 	private static Date addDays(Date borrowDate, int i) {

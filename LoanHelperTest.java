@@ -1,6 +1,6 @@
 package library.daos;
 
-import java.util.Calendar;
+//import java.util.Calendar;
 
 import java.util.Date;
 import library.entities.Book;
@@ -22,7 +22,8 @@ public class LoanHelperTest {
 		boolean damaged = false;
 		
 		Date borrowDate = new Date();
-		Date dueDate = new Date();		
+		Date dueDate = new Date();	
+		
 		//getting book details
 		System.out.println("Book details:");
 		System.out.println("");
@@ -30,31 +31,31 @@ public class LoanHelperTest {
 		System.out.println("The callNumber is: " + book2.getCallNumber());
 		System.out.println("ID: " + book2.getID());
 		System.out.println("Book title: " + book2.getTitle());		
-		System.out.println("Loan is " + book2.getLoan());
-		System.out.println("Book is " + book2.getState());
-		System.out.println("");
-		System.out.println("");
+		//System.out.println("Loan is " + book2.getLoan());
+		//System.out.println("Book is " + book2.getState());
+		//System.out.println("");
+		//System.out.println("");
 		//getting borrower details
-		System.out.println("Borrower details:");
-		System.out.println("");
-		System.out.println("Contact Number: " + borrower2.getContactPhone());
-		System.out.println("Email ID: " + borrower2.getEmailAddress());
-		System.out.println("The fine amount is: " + borrower2.getFineAmount());
-		System.out.println("First Name: " + borrower2.getFirstName());
-		System.out.println("ID is: " + borrower2.getID());
-		System.out.println("Last Name: " + borrower2.getLastName());
-		System.out.println("Loan is: " + borrower2.getLoans());
-		System.out.println(borrower2.getState());
-		System.out.println(damaged);			
+		//System.out.println("Borrower details:");
+		//System.out.println("");
+		//System.out.println("Contact Number: " + borrower2.getContactPhone());
+		//System.out.println("Email ID: " + borrower2.getEmailAddress());
+		//System.out.println("The fine amount is: " + borrower2.getFineAmount());
+		//System.out.println("First Name: " + borrower2.getFirstName());
+		//System.out.println("ID is: " + borrower2.getID());
+		//System.out.println("Last Name: " + borrower2.getLastName());
+		//System.out.println("Loan is: " + borrower2.getLoans());
+		//System.out.println(borrower2.getState());
+		//System.out.println(damaged);			
 		
-		if(borrowDate.compareTo(dueDate)<0)
-		{
-			System.out.println("Overdue loan!");
-		}
-		else
-		{
-			System.out.println("No overdue loan!");			
-		}
+		//if(borrowDate.compareTo(dueDate)<0)
+		//{
+			//System.out.println("Overdue loan!");
+		//}
+		//else
+		//{
+			//System.out.println("No overdue loan!");			
+		//}
 	  //System.out.println("" + borrower2.getClass());		
 	}
 }
