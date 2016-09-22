@@ -16,10 +16,13 @@ public class Book implements IBook {
 	private EBookState state; // cretae tyhe object of EBookState
 	
 	// declare the  parametrize constructor of book entity/class with four parameters
-	public Book(String author, String title, String callNumber, int bookID) {
-		if ( !sane(author, title, callNumber, bookID)) {
+	public Book(String author, String title, String callNumber, int bookID)
+	{
+		if ( !sane(author, title, callNumber, bookID))
+		{
 			throw new IllegalArgumentException("Member: constructor : bad parameters"); // throw exception
 		}
+		
 		this.author = author;
 		this.title = title;
 		this.callNumber = callNumber;
@@ -29,11 +32,13 @@ public class Book implements IBook {
 	}
 
 
-	private boolean sane(String author, String title, String callNumber, int bookID) {
+	private boolean sane(String author, String title, String callNumber, int bookID)
+	{
 		return  ( author != null     && !author.isEmpty()     &&
 				  title != null      && !title.isEmpty()      &&
 				  callNumber != null && !callNumber.isEmpty() &&
 				  bookID > 0 
+				  
 				);
 				
 	}
@@ -43,7 +48,8 @@ public class Book implements IBook {
 	public void borrow(ILoan loan)
 	{
 		// checks the condition
-		if (loan == null) {
+		if (loan == null)
+		{
 			throw new IllegalArgumentException(String.format("Book: borrow : Bad parameter: loan cannot be null"));
 		}
 		
@@ -51,6 +57,7 @@ public class Book implements IBook {
 		if (!(state == EBookState.AVAILABLE)) {
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
+		
 		this.loan = loan;
 		state = EBookState.ON_LOAN;
 
@@ -58,14 +65,17 @@ public class Book implements IBook {
 // 	// declare the getloan functio
 	
 	@Override
-	public ILoan getLoan() {
+	public ILoan getLoan() 
+	{
 		return loan;
 	}
 
 	// declare the returnbook function
 	@Override
-	public void returnBook(boolean damaged) {
-		if (!(state == EBookState.ON_LOAN || state == EBookState.LOST)) {
+	public void returnBook(boolean damaged)
+	{
+		if (!(state == EBookState.ON_LOAN || state == EBookState.LOST))
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
 		loan = null;
@@ -79,8 +89,10 @@ public class Book implements IBook {
 //declare the lose function with condition
 	
 	@Override
-	public void lose() {
-		if (!(state == EBookState.ON_LOAN)) {
+	public void lose() 
+	{
+		if (!(state == EBookState.ON_LOAN))
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
 		state = EBookState.LOST;
@@ -88,8 +100,10 @@ public class Book implements IBook {
 // declare the repair function which donot return any value
 	
 	@Override
-	public void repair() {
-		if (!(state == EBookState.DAMAGED)) {
+	public void repair()
+	{
+		if (!(state == EBookState.DAMAGED))
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
 		state = EBookState.AVAILABLE;
@@ -97,46 +111,57 @@ public class Book implements IBook {
 
 	// declare the disposek functio	
 	@Override
-	public void dispose() {
-		if (!(state == EBookState.AVAILABLE || state == EBookState.DAMAGED || state == EBookState.LOST)) {
+	public void dispose() 
+	{
+		if (!(state == EBookState.AVAILABLE || state == EBookState.DAMAGED || state == EBookState.LOST))
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
+		
 		state = EBookState.DISPOSED;
 	}
+	
 	// declare the ebookstate function
 	
 	@Override
-	public EBookState getState() {
+	public EBookState getState()
+	{
 		return state;
 	}
+	
 // declare the getauthor function
 	
 	@Override
-	public String getAuthor() {
+	public String getAuthor()
+	{
 		return author;
 	}
 
 // declare the gettitle function	
 	@Override
-	public String getTitle() {
+	public String getTitle()
+	{
 		return title;
 	}
 // declare thegetcall number function
 	
 	@Override
-	public String getCallNumber() {
+	public String getCallNumber()
+	{
 		return callNumber;
 	}
 
 // declare the getide function	
 	@Override
-	public int getID() {
+	public int getID() 
+	{
 		return id;
 	}
 
 // declare the tostring function	
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return String.format("Id: %d\nAuthor: %s\nTitle: %s\nCall Number %s",
 				id, author, title, callNumber);
 	}
