@@ -14,7 +14,7 @@ public class Book implements IBook {
 	
 	private ILoan loan;
 	private EBookState state;
-	
+	//method for public string 
 	
 	public Book(String author, String title, String callNumber, int bookID) {
 		if ( !sane(author, title, callNumber, bookID)) {
