@@ -1,0 +1,4 @@
+public Library()
+{
+    collection = new ArrayList<Book>();
+}
