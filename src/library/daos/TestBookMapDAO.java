@@ -72,8 +72,7 @@ public class TestBookMapDAO
 	      {
 	    	  System.out.println("Either of the values do not match our records.Pls enter correct values!");
 	      }
-	      
-	      }
+	      	      }
 	      else
 	      {
 	    	  System.out.println("You enter the wrong value. Pls enter valid charecters");//if the conditions dosent satisfy then this statement is executed
