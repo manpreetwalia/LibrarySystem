@@ -76,8 +76,20 @@ public class TestBookMapDAO
 	      }
 	      else
 	      {
-	    	  System.out.println("Pls enter valid charecters");//if the conditions dosent satisfy then this statement is executed
+	    	  System.out.println("You enter the wrong value. Pls enter valid charecters");//if the conditions dosent satisfy then this statement is executed
 	      }
 
+	       if(Author.equalsIgnoreCase("Y. Liang") && ID==123);
+	       System.out.println(" The author of book is : Y. Liang");
+
+	      {
+	      }
+	      }
+	
+	
+	
 	}
+	
+	
+	
 }
