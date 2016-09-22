@@ -13,9 +13,9 @@ public class BookMemberEligibilityTest {
 		int member4= 100;
 		int member5=100;
 		
-		Scanner in = new Scanner(System.in);  //Taking the input as Author
+		Scanner in = new Scanner(System.in);  //Taking the input as member
 		 
-	     
+		
 	}
 
 }
