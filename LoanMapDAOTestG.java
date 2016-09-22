@@ -30,6 +30,9 @@ public class LoanMapDAOTestG {
 			
 			//get LoanById
 			System.out.println("This StudentId has loans: " + borrower2.getID());
+			
+			//Find loan by borrower
+			System.out.println("This member has following loans: " + borrower2.toString()+ book2.toString());
 	}
 		
 }
