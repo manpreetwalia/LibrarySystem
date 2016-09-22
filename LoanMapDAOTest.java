@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
 //import com.sun.org.apache.xalan.internal.xsltc.compiler.Pattern;
 
 //Start of main function
+//DOA test class created here
 public class LoanMapDAOTest {
 	
 		public static void main(String[] args){
