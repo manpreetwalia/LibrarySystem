@@ -120,14 +120,14 @@ public class Book implements IBook {
 	public String getTitle() {
 		return title;
 	}
-
+// declare thegetcall number function
 	
 	@Override
 	public String getCallNumber() {
 		return callNumber;
 	}
 
-	
+// declare the getide function	
 	@Override
 	public int getID() {
 		return id;
