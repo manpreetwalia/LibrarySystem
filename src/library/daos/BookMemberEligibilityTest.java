@@ -15,8 +15,13 @@ public class BookMemberEligibilityTest {
 		
 		Scanner in = new Scanner(System.in);  //Taking the input as member
 		 
-		 System.out.println("Enter the Author name");  //Inputs for membername
-		 member = in.nextLine();// procesing input
+		 System.out.println("Enter the Author name");  //Inputs for member-name
+		 member = in.nextLine();// processing input
+		 
+		 if(member.equalsIgnoreCase("member1"))
+		 {
+			 
+		 }
 	}
 
 }
