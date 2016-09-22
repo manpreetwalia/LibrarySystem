@@ -33,7 +33,7 @@ public class BookTest
 			System.out.println("The ID of book is:    " + b1.getID());
 // Test the function toString()
 		System.out.println("Details of b1 are    " + b1.toString());
-		
+		System.out.println("Details of b1 are    " + Book1.toString());
 // Test the function getState()	
 		System.out.println("The state of book is:     " + b1.getState());
 		
