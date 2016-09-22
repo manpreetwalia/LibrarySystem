@@ -87,4 +87,4 @@ public static void main(String[] args)
 	 
 	 p2=new JPanel();
 	 p2.setLayout(gridbag);
-	 
+	 p2.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(),"Login Panel"));
