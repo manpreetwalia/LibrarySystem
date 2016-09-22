@@ -75,3 +75,11 @@ public static void main(String[] args)
 		//setupMenuBar();
 		login();
 	}
+	
+	
+	void login()
+	{
+	 fr2=new JFrame("Login Panel MyLibrarian v1.0");
+     fr2.setVisible(true);
+	 fr2.setSize(600,300);
+	 fr2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
