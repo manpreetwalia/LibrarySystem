@@ -83,7 +83,7 @@ public class Book implements IBook {
 		state = EBookState.LOST;
 	}
 
-	
+	//repair function for damaged books
 	@Override
 	public void repair() {
 		if (!(state == EBookState.DAMAGED)) {
