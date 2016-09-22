@@ -8,7 +8,7 @@ public class BookMemberEligibilityTest {
 		int member1= 100;
 		int member2 = 100;
 		int member3=100;
-		
+		int member4= 100;
 	}
 
 }
