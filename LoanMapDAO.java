@@ -95,7 +95,7 @@ public class LoanMapDAO implements ILoanDAO {
 			throw new IllegalArgumentException(
 				String.format("LoanMapDAO : findLoansByBookTitle : title cannot be null or blank."));
 		}
-		List<ILoan> list = new ArrayList<ILoan>();
+		List<ILoan> list = new ArrayList<ILoan>();//Array initialized with map for store items
 		for (ILoan loan : loanMap.values()) {
 			String tempTitle = loan.getBook().getTitle();
 			if (title.equals(tempTitle)) {
