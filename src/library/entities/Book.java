@@ -18,7 +18,7 @@ public class Book implements IBook {
 	// declare the  parametrize constructor of book entity/class with four parameters
 	public Book(String author, String title, String callNumber, int bookID) {
 		if ( !sane(author, title, callNumber, bookID)) {
-			throw new IllegalArgumentException("Member: constructor : bad parameters");
+			throw new IllegalArgumentException("Member: constructor : bad parameters"); // throw exception
 		}
 		this.author = author;
 		this.title = title;
