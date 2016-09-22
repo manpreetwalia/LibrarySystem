@@ -65,7 +65,7 @@ String msgsel1="Are You Sure?";
 String msgesel2;
 int n;
 JFrame frame;
-
+// This is the main function
 public static void main(String[] args) 
 	{
 		MyLibrarian c1=new MyLibrarian();
