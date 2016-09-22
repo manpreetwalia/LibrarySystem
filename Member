@@ -10,7 +10,7 @@ import java.util.List;
 import library.interfaces.entities.ILoan;
 import library.interfaces.entities.IMember;
 import library.interfaces.entities.EMemberState;
- // satrt of class IMemebr
+ // start of class IMemebr
 
 public class Member implements IMember {
 // declare variables of class as string and integer
@@ -202,6 +202,6 @@ public class Member implements IMember {
 			state = EMemberState.BORROWING_DISALLOWED;
 		}
 	}
-
+public class Memberinfo implements IMember{}
 
 }
