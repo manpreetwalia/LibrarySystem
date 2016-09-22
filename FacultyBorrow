@@ -61,3 +61,7 @@ public Book(int isbn, String author, String title, String genre, int
 
 
 }
+public int getISBN()
+{
+    return isbn;
+}
