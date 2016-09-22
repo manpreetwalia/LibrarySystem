@@ -1,6 +1,6 @@
 package library.interfaces.entities;
 
-import java.util.Date;
+import java.util.Date; // imort
 
 public interface ILoan {
 	

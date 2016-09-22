@@ -1,6 +1,6 @@
 package library.interfaces.daos;
 
-import library.interfaces.entities.IMember;
+import library.interfaces.entities.IMember; // interface
 
 public interface IMemberHelper {
 	

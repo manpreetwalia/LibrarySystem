@@ -1,6 +1,6 @@
 package library.interfaces.daos;
 
-import library.interfaces.entities.IBook;
+import library.interfaces.entities.IBook; // import package
 
 public interface IBookHelper {
 	

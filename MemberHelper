@@ -1,4 +1,3 @@
-package library.daos;
 
 import library.entities.Member;
 import library.interfaces.daos.IMemberHelper;

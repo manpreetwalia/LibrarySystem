@@ -1,10 +1,10 @@
 package library.interfaces.entities;
 
-import java.util.List;
+import java.util.List; // import
 
 public interface IMember {
 	
-	public static final int   LOAN_LIMIT = 5;
+	public static final int   LOAN_LIMIT = 5; 
 	
 	public static final float FINE_LIMIT = 10.0f;	
 	

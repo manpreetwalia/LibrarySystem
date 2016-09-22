@@ -24,7 +24,7 @@ public class Scanner extends JFrame implements IScanner {
 	private static final long serialVersionUID = 1L;
 	private JTextField textField;
 	private JButton btnScan;
-	private IScannerListener listener;
+	private IScannerListener listener; // testing
 
 	public Scanner() {
 		setTitle("Scanner");
@@ -61,6 +61,7 @@ public class Scanner extends JFrame implements IScanner {
 		textField.setEditable(false);
 		
 		btnScan = new JButton("Scan Book Barcode");
+		btnScan.setEnabled(false);
 		btnScan.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if (listener == null) {
