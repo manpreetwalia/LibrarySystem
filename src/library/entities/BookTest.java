@@ -17,10 +17,12 @@ public class BookTest
 // Test the function getAuthor()
 		System.out.println("The Name of author is:    " + b1.getAuthor());
 			System.out.println("The Name of author is:    " + Book1.getAuthor());
+			
 		
 // Test the function getTitle()
 		
 		System.out.println("The title of book is:    " + b1.getTitle());
+		System.out.println("The title of book is:    " + Book1.getTitle());
 		
 // Test the function getCallNumber()
 		
