@@ -61,7 +61,23 @@ public class MemberMapDAO implements IMemberDAO {
 		List<IMember> list = new ArrayList<IMember>(memberMap.values());
 		return Collections.unmodifiableList(list);
 	}
-
+/*
+	@Override
+	public List<IMember> findMembersByNames(String firstName, String lastName) {
+		if ( firstName == null || firstName.isEmpty() || lastName == null || lastName.isEmpty()) {
+			throw new IllegalArgumentException(
+				String.format("MemberMapDAO : findMembersByNames : firstName and lastName cannot be null or blank"));
+		}
+		List<IMember> list = new ArrayList<IMember>();
+		for (IMember m : memberMap.values()) {
+			if (firstName.equals(m.getFirstName()) && lastName.equals(m.getLastName())) {
+				list.add(m);
+			}
+		}
+		return Collections.unmodifiableList(list);
+	}*/
+	
+	
 	@Override
 	public List<IMember> findMembersByLastName(String lastName) {
 		if ( lastName == null || lastName.isEmpty()) {
