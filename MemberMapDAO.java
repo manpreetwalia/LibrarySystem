@@ -15,7 +15,7 @@ public class MemberMapDAO implements IMemberDAO {
 	private IMemberHelper helper;
 	private Map<Integer, IMember> memberMap;
 	private int nextID;
-	
+	//method for mapper class
 	public MemberMapDAO(IMemberHelper helper) {
 		if (helper == null ) {
 			throw new IllegalArgumentException(
