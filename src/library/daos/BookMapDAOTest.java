@@ -23,7 +23,7 @@ public class BookMapDAOTest
 		Scanner in = new Scanner(System.in);  //Taking the input as Author
 		 
 	      System.out.println("Enter the Author name");//Inputs for Author name
-	      Author = in.nextLine();// Accesing input Author Name
+	      Author = in.nextLine();// Accept the input as Author Name
 	     
 	 
 	      System.out.println("Enter Title of book");//Inputs for Title 
