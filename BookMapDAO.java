@@ -24,7 +24,7 @@ public class BookMapDAO implements IBookDAO {
 		this.helper = helper; 
 		bookMap = new HashMap<Integer, IBook>();
 	}
-	
+	//A map is instantiated for book helper
 	public BookMapDAO(IBookHelper helper, Map<Integer, IBook> bookMap) {
 		this(helper);
 		if (helper == null ) {
