@@ -12,6 +12,7 @@ public class BookTest
 // Create object b1 of class book
 		
 		Book b1 = new Book("Manpreet Walia", " Introductio to JAVA", "158643", 456);
+		Book Book1 = new Book( "Japgun Walia "," Introduction to networking "," 123456", 789);
 		
 // Test the function getAuthor()
 		System.out.println("The Name of author is:    " + b1.getAuthor());
