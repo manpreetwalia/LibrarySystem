@@ -6,7 +6,7 @@ public class BookMemberEligibilityTest {
 	
 	public static void main(String[] args)
 	{
-	
+	    String member;
 		int member1= 100;
 		int member2 = 100;
 		int member3=100;
@@ -16,7 +16,7 @@ public class BookMemberEligibilityTest {
 		Scanner in = new Scanner(System.in);  //Taking the input as member
 		 
 		 System.out.println("Enter the Author name");  //Inputs for membername
-		 
+		
 	}
 
 }
