@@ -58,7 +58,13 @@ public class Book implements IBook {
 	public ILoan getLoan() {
 		return loan;
 	}
-
+@Override
+	public void lose() {
+		if (!(state == EBookState.ON_LOAN)) {
+			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
+		}
+		state = EBookState.LOST;
+	}
 	//override method for returning book
 	@Override
 	public void returnBook(boolean damaged) {
