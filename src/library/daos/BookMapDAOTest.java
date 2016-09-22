@@ -37,9 +37,9 @@ public class BookMapDAOTest
 	    	  System.out.println("Book edition is : Increased data structure chapters 8th edition");//Print the output if condition satisfies
 	      }
 	      
-	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter2"))
+	      else if(Author.equalsIgnoreCase("Peter Revesz") && Title.equalsIgnoreCase("Introduction to database"))
 	      {
-	    	  System.out.println("Book edition is : Chamber of Secrets");//Print the output if condition satisfies
+	    	  System.out.println("Book edition is : Programming Knowledge");//Print the output if condition satisfies
 	      }
 	      
 	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter3"))
