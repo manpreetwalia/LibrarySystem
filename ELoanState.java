@@ -1,6 +1,7 @@
-package library.interfaces.entities; // package
+package library.interfaces.entities;
 
-public enum ELoanState {
+public enum ELoanState 
+{
 	
 	PENDING, CURRENT, OVERDUE, COMPLETE
 
