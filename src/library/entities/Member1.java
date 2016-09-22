@@ -1,20 +1,15 @@
 package library.entities;
 
-//new
-
 import java.util.ArrayList;
-
 import java.util.Collections;
 import java.util.List;
 
 import library.interfaces.entities.ILoan;
 import library.interfaces.entities.IMember;
 import library.interfaces.entities.EMemberState;
- // satrt of class IMemebr
 
-public class Member implements IMember {
-// declare variables of class as string and integer
-	
+public class Member1 implements IMember {
+
 	private final String firstName;
 	private final String lastName;
 	private final String contactPhone;
@@ -25,9 +20,7 @@ public class Member implements IMember {
 	private List<ILoan> loanList;
 	private float totalFines;
 	
-	// declare object of class
-	
-	public Member(String firstName, String lastName, String contactPhone,
+	public Member1(String firstName, String lastName, String contactPhone,
 			String email, int memberID) {
 		if ( !sane(firstName, lastName, contactPhone, email, memberID)) {
 			throw new IllegalArgumentException("Member: constructor : bad parameters");
@@ -53,7 +46,7 @@ public class Member implements IMember {
 				);
 	}
 
-// declare function to check the due loan
+
 	@Override
 	public boolean hasOverDueLoans() {
 		for (ILoan loan : loanList) {
@@ -64,37 +57,29 @@ public class Member implements IMember {
 		return false;
 	}
 
-// declare function to check the loan limit
-	
 	@Override
 	public boolean hasReachedLoanLimit() {
 		boolean b = loanList.size() >= IMember.LOAN_LIMIT;
 		return b;
 	}
 
-// declare function to check then fine
-	
 	@Override
 	public boolean hasFinesPayable() {
 		boolean b = totalFines > 0.0f;
 		return b;
 	}
-// declare function to check the fine limit
-	
-	
+
 	@Override
 	public boolean hasReachedFineLimit() {
 		boolean b = totalFines >= IMember.FINE_LIMIT;
 		return b;
 	}
 
-//declare function to get fine
-	
 	@Override
 	public float getFineAmount() {
 		return totalFines;
 	}
-//declare function to add fine amount
+
 	@Override
 	public void addFine(float fine) {
 		if (fine < 0) {
@@ -103,9 +88,7 @@ public class Member implements IMember {
 		totalFines += fine;
 		updateState();
 	}
-//declare function for pay fine
-	
-	
+
 	@Override
 	public void payFine(float payment) {
 		if (payment < 0 || payment > totalFines) {
@@ -114,9 +97,7 @@ public class Member implements IMember {
 		totalFines -= payment;
 		updateState();
 	}
-// declare function to add new loan
-	
-	
+
 	@Override
 	public void addLoan(ILoan loan) {
 		if (!borrowingAllowed()) {
@@ -126,13 +107,11 @@ public class Member implements IMember {
 		updateState();
 	}
 
-	// declare function to get loan
 	@Override
 	public List<ILoan> getLoans() {
 		return Collections.unmodifiableList(loanList);
 	}
 
-// declare function to remove the loan
 	@Override
 	public void removeLoan(ILoan loan) {
 		if (loan == null || !loanList.contains(loan)) {
@@ -142,43 +121,43 @@ public class Member implements IMember {
 		updateState();
 	}
 
-// declare function to check the state 	
+	
 	@Override
 	public EMemberState getState() {
 		return state;
 	}
-// declare function to enter first name 
+
 	
 	@Override
 	public String getFirstName() {
 		return firstName;
 	}
-	// declare function to enter last name 
+
 	
 	@Override
 	public String getLastName() {
 		return lastName;
 	}
-	// declare function to enter phone number 
+
 	
 	@Override
 	public String getContactPhone() {
 		return contactPhone;
 	}
 
-	// declare function to enter email id	
+	
 	@Override
 	public String getEmailAddress() {
 		return emailAddress;
 	}
 
-	// declare function to enter ID
+	
 	@Override
 	public int getID() {
 		return id;
 	}
 
-// declare function tostring()	
+	
 	@Override
 	public String toString() {
 		return String.format(
@@ -192,8 +171,7 @@ public class Member implements IMember {
 				!hasReachedLoanLimit();
 		return b;
 	}
-// declare function updateState as void type
-	
+
 	private void updateState() {
 		if (borrowingAllowed()) {
 			state = EMemberState.BORROWING_ALLOWED;
