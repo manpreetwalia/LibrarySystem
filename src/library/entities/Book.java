@@ -108,14 +108,14 @@ public class Book implements IBook {
 	public EBookState getState() {
 		return state;
 	}
-
+// declare the getauthor function
 	
 	@Override
 	public String getAuthor() {
 		return author;
 	}
 
-	
+// declare the gettitle function	
 	@Override
 	public String getTitle() {
 		return title;
