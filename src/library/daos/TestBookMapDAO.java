@@ -70,7 +70,7 @@ public class TestBookMapDAO
 	      
 	      else
 	      {
-	    	  System.out.println("Either of the values do not match our records.Pls enter correct values!");
+	    	  System.out.println("Either of the values do not match our records.Pls enter correct values!");// print a msg on screen
 	      }
 	      	      }
 	      else
