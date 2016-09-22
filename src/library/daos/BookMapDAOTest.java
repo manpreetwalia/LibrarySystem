@@ -34,7 +34,7 @@ public class BookMapDAOTest
 	      {
 	      if( Author.equalsIgnoreCase("Y. Liang") && Title.equalsIgnoreCase("Introduction to java"))
 	      {
-	    	  System.out.println("Book edition is : Socceres stone");//Print the output if condition satisfies
+	    	  System.out.println("Book edition is : Increased data structure chapters 8th edition");//Print the output if condition satisfies
 	      }
 	      
 	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter2"))
