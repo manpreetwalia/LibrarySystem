@@ -70,6 +70,8 @@ public class Membertest1 {
 	// Test the hasReachedFineLimit() function
 	System.out.println("IS borrower reached to the fine limit:" + borrower1.hasReachedFineLimit());
 	
+	
+	
 	// Test the getFineAmount() function
 	System.out.println("The fine amount of borrower is:" + borrower1.getFineAmount());
 	
