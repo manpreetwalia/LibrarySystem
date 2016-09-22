@@ -23,7 +23,7 @@ public class LoanHelperTest {
 		
 		Date borrowDate = new Date();
 		Date dueDate = new Date();		
-		
+		//getting book details
 		System.out.println("Book details:");
 		System.out.println("");
 		System.out.println("The author name is " + book2.getAuthor());
@@ -34,7 +34,7 @@ public class LoanHelperTest {
 		System.out.println("Book is " + book2.getState());
 		System.out.println("");
 		System.out.println("");
-		
+		//getting borrower details
 		System.out.println("Borrower details:");
 		System.out.println("");
 		System.out.println("Contact Number: " + borrower2.getContactPhone());
@@ -53,8 +53,7 @@ public class LoanHelperTest {
 		}
 		else
 		{
-			System.out.println("No overdue loan!");
-			
+			System.out.println("No overdue loan!");			
 		}
 	  //System.out.println("" + borrower2.getClass());		
 	}
