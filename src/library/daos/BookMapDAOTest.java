@@ -10,6 +10,7 @@ import library.entities.Book;
 
 // Start of TestBookMapDAO class
 
+<<<<<<< HEAD
 public class BookMapDAOTest
 {
 
@@ -19,6 +20,12 @@ public class BookMapDAOTest
 	{
 		String Author;  // Initializing string Author
 		String Title;//  Initializing the title
+=======
+	// Start of main function
+	public static void main(String[] args) {
+		String Author = null;//initialising string Author
+		String Title = null;//Initialising String Title
+>>>>>>> refs/remotes/origin/Aamer
 		
 		Scanner in = new Scanner(System.in);  //Taking the input as Author
 		 
