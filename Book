@@ -59,7 +59,7 @@ public class Book implements IBook {
 		return loan;
 	}
 
-	
+	//override method for returning book
 	@Override
 	public void returnBook(boolean damaged) {
 		if (!(state == EBookState.ON_LOAN || state == EBookState.LOST)) {
