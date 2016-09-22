@@ -12,7 +12,7 @@ public class TestBookHelper {
 	public static void main(String[] args)
 	{
 		
-// Create object book1 of class IBook, makebook
+// Create object book1 of class IBook, MakeBook
 		Book b1 = new Book("Japgun", "Database", "98765432", 6666);
 		// Test the function getAuthor()
 				System.out.println("The Name of author is:    " + b1.getAuthor());
