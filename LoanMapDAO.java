@@ -62,10 +62,12 @@ public class LoanMapDAO implements ILoanDAO
 	@Override
 	public ILoan getLoanByBook(IBook book) 
 	{
-		if (book == null ) {
+		if (book == null )
+		{
 			throw new IllegalArgumentException(
 				String.format("LoanMapDAO : getLoanByBook : book cannot be null."));
 		}
+		
 		for (ILoan loan : loanMap.values())
 		{
 			IBook tempBook = loan.getBook();
