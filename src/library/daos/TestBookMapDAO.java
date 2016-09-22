@@ -79,7 +79,7 @@ public class TestBookMapDAO
 	      }
 
 	       if(Author.equalsIgnoreCase("Y. Liang") && ID==123); // gives output if both condition are true
-	       System.out.println(" The author of book is : Y. Liang");
+	       System.out.println(" The author of book is : Y. Liang"); // display the author name
 
 	      {
 	      }
