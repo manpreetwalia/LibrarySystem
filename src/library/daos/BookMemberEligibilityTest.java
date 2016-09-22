@@ -26,6 +26,11 @@ public class BookMemberEligibilityTest {
 			  
 		 }
 		 
+		 else if()
+		 {
+			 
+		 }
+		 
 	}
 
 }
