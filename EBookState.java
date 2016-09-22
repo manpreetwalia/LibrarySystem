@@ -1,6 +1,7 @@
-package library.interfaces.entities;  // package
+package library.interfaces.entities;  
 
-public enum EBookState {
+public enum EBookState 
+{
 	AVAILABLE, ON_LOAN, LOST, DAMAGED, DISPOSED 
 
 }
