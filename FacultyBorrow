@@ -26,3 +26,17 @@ public String toString()
 
     return total;
 }
+public void borrowBook(String title) {
+    int found = 0;
+    for (Book b : collection) {
+        if (collection.getTitle().equals(title)) {
+            if (found == 0) {
+                found = 1;
+                }
+            if (!book.isBorrowed()) {
+                book.borrowed();
+                found = 2;
+                break;
+            };
+        }
+    }
