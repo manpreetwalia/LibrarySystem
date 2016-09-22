@@ -60,9 +60,9 @@ public class BookMapDAOTest
 	      {
 	    	  System.out.println("Book edition is : Basics of programming");//Print the output if condition satisfies
 	      }
-	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter7"))
+	      else if(Author.equalsIgnoreCase("Rajiv Malhotra ") && Title.equalsIgnoreCase("Introduction to dot net"))
 	      {
-	    	  System.out.println("Book edition is : Deathly Hallows");//Print the output if condition satisfies
+	    	  System.out.println("Book edition is : Basics of .net");//Print the output if condition satisfies
 	      }
 	      
 	      else
