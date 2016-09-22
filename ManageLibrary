@@ -88,3 +88,20 @@ public static void main(String[] args)
 	 p2=new JPanel();
 	 p2.setLayout(gridbag);
 	 p2.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(),"Login Panel"));
+	 
+	 
+	  jLabel1 = new JLabel("Enter Username : ");	
+	 jLabel1.setFont(dataFont);
+	                //c.weighty = 0.0;   	  //Vertical Space	
+					c.ipady = 1;       	  //Height of Component				
+					c.ipadx = 1; 		  //Width of Component
+			        c.anchor = GridBagConstraints.WEST; 	
+			      	c.gridwidth =1;   	  //1 columns wide				
+			        c.gridx = 0;       	  //aligned with button 0  -- Very Important 					   
+			        c.gridy = 0;       	  //0th Row  -- Very Important 	
+					// Add all these features to this Label "jLabel1"	
+			        gridbag.setConstraints(jLabel1, c);
+                    p2.add(jLabel1);
+
+	loginname = new JPasswordField(10);
+    loginname.setEchoChar('*');
