@@ -15,15 +15,15 @@ public class BookHelperTest {
 // Create object book1 of class IBook, makebook
 		Book b1 = new Book("Japgun", "Database", "98765432", 6666);
 		// Test the function getAuthor()
-				System.out.println("The Name of author is:    " + b1.getAuthor());
+				System.out.println("The Name of author is:    " + b1.getAuthor()); // display the out
 				
 		// Test the function getTitle()
 				
-				System.out.println("The title of book is:    " + b1.getTitle());
+				System.out.println("The title of book is:    " + b1.getTitle()); // display the out
 				
 		// Test the function getCallNumber()
 				
-				System.out.println("The callNumber of book is:   " + b1.getCallNumber());
+				System.out.println("The callNumber of book is:   " + b1.getCallNumber()); // display the out
 				
 		// Test the function getID()
 				System.out.println("The ID of book is:    " + b1.getID());
