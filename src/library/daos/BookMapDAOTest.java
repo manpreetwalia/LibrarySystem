@@ -29,8 +29,8 @@ public class BookMapDAOTest
 	      System.out.println("Enter the Title of book");  //Inputs for Title 
 	      Title = in.nextLine(); //accept the input as title of book
 	   
-	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null
-	    		  )
+	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null)
+	    		  
 	      {
 	      if( Author.equalsIgnoreCase("Y. Liang") && Title.equalsIgnoreCase("Introduction to java"))
 	      {
