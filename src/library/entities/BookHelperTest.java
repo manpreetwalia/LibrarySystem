@@ -14,6 +14,7 @@ public class BookHelperTest {
 		
 // Create object book1 of class IBook, makebook
 		Book b1 = new Book("Japgun", "Database", "98765432", 6666);
+		Book bk1 = new Book("Preet", "Computer Graphics", "945632", 4567);
 		// Test the function getAuthor()
 				System.out.println("The Name of author is:    " + b1.getAuthor()); // display the out
 				
