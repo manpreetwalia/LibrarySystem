@@ -45,6 +45,7 @@ public class LoanMapDAOTest {
 			      //  val = oddEven.evenNum(num);
 			       // assertEquals(ans,val);			
 			// if statemement to get title
+			//if statement to check if book is under loan or not
 			if(book2.getTitle().equalsIgnoreCase(findLoansByBookTitle))
 			{
 				System.out.println("This book is on loan.");
