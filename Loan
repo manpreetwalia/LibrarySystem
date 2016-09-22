@@ -108,7 +108,7 @@ public class Loan implements ILoan {
 	public int getID() {
 		return id;
 	}
-	
+	//A functuon to determine the state of due date
 	@Override
 	public boolean checkDue() {
 		return (state == ELoanState.OVERDUE);
