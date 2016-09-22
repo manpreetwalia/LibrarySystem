@@ -27,22 +27,23 @@ public class BookHelperTest {
 		// Test the function getCallNumber()
 				
 				System.out.println("The callNumber of book is:   " + b1.getCallNumber()); // display the out
-					System.out.println("The callNumber of book is:   " + b1.getCallNumber()); // display the out
+					System.out.println("The callNumber of book is:   " + bk1.getCallNumber()); // display the out
 				
 		// Test the function getID()
 				System.out.println("The ID of book is:    " + b1.getID()); // display the out
-				System.out.println("The ID of book is:    " + b1.getID()); // display the out
+				System.out.println("The ID of book is:    " + bk1.getID()); // display the out
 				
 		// Test the function toString()
 				System.out.println("Details of b1 are    " + b1.toString()); // display the out
-					System.out.println("Details of b1 are    " + b1.toString()); // display the out
+					System.out.println("Details of b1 are    " + bk1.toString()); // display the out
 				
 		// Test the function getState()		
 				System.out.println("The state of book is:     " + b1.getState()); // display the out
-					System.out.println("The state of book is:     " + b1.getState()); // display the out
+					System.out.println("The state of book is:     " + bk1.getState()); // display the out
 				
 		// Test the function getLoan()
 				System.out.println("The loan of book is:   " + b1.getLoan()); // display the out
+					System.out.println("The loan of book is:   " + bk1.getLoan()); // display the out
 
 			}
 		
