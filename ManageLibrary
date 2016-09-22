@@ -70,3 +70,8 @@ public static void main(String[] args)
 	{
 		MyLibrarian c1=new MyLibrarian();
 	}
+	public MyLibrarian()
+	{
+		//setupMenuBar();
+		login();
+	}
