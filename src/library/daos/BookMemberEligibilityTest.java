@@ -1,5 +1,7 @@
 package library.daos;
 
+import java.util.Scanner;
+
 public class BookMemberEligibilityTest {
 	
 	public static void main(String[] args)
@@ -10,6 +12,10 @@ public class BookMemberEligibilityTest {
 		int member3=100;
 		int member4= 100;
 		int member5=100;
+		
+		Scanner in = new Scanner(System.in);  //Taking the input as Author
+		 
+	     
 	}
 
 }
