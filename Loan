@@ -108,10 +108,16 @@ public class Loan implements ILoan {
 	public int getID() {
 		return id;
 	}
+	
+	@Override
+	public boolean checkDue() {
+		return (state == ELoanState.OVERDUE);
+	}
 // declare function to check the state of book	
 	public ELoanState getState() {
 		return state;
 	}
+	
 //declare function to string
 	@Override
 	public String toString() {
