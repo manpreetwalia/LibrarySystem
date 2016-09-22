@@ -27,3 +27,14 @@ String t1;
 String url="jdbc:odbc:BANK";
 String driver="sun.jdbc.odbc.JdbcOdbcDriver";
 String sql,sq,sqUsr,sbookd,sdUsr,squpdate,dialogmessage,serialno,squpdate_book,squpdate_mag;
+
+
+int dialogtype = JOptionPane.PLAIN_MESSAGE;
+String dialogs = "SUCCESS";
+String dialogf = "FAILURE";
+String dialogd = "DELETION OK ?";
+String dialogw = "WARNING !!!";
+DefaultTableModel defaulttablemodel = new DefaultTableModel();
+boolean DelFlag,AddFlag,DelUsrFlag,AddUsrFlag;
+Font dataFont = new Font("times new roman",Font.PLAIN,15);
+String loginnameback;
