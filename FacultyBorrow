@@ -6,3 +6,12 @@ public void addBook(Book book)
 {
     collection.add(book);
 }
+public String searchTitle(String titleSearch) {
+    if (titleSearch == null) return "\n No Books Avaliable ";
+    for(int i = 0; i < collection.size(); i++){
+        if(titleSearch.equalsIgnoreCase(collection.get(i).getTitle())){
+            return collection.get(i).toString();
+        }
+    }
+    return "\n No Books Avaliable "; //reachable only if no book found
+}
