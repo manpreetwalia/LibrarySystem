@@ -28,7 +28,7 @@ public class LoanHelperTest {
 
            Date borrowDate = new Date(year,month,date);
 
-           System.out.println("The author name is " + book3.getAuthor());
+           System.out.println("The author name is " + book3.getAuthor(
 
            System.out.println("The callNumber is: " + book3.getCallNumber());
 

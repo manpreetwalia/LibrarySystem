@@ -10,6 +10,7 @@ import library.entities.Book;
 
 // Start of TestBookMapDAO class
 
+
 public class BookMapDAOTest
 {
 
@@ -19,6 +20,8 @@ public class BookMapDAOTest
 	{
 		String Author;  // Initializing string Author
 		String Title;//  Initializing the title
+
+
 		
 		Scanner in = new Scanner(System.in);  //Taking the input as Author
 		 
@@ -73,7 +76,7 @@ public class BookMapDAOTest
 	      }
 	      else
 	      {
-	    	  System.out.println("Pls enter valid charecters");//if the conditions dosent satisfy then this statement is executed
+	    	  System.out.println("Pls enter valid charecters");//if the conditions dosen't satisfy then this statement is executed
 	      }
 
 	}
