@@ -1,22 +1,80 @@
-// Start of test class BookMapDAO
+ // Start of test class BookMapDAO
 
 package library.daos;
+
+import java.io.Console;
+import java.util.Scanner;
+import java.util.regex.Pattern;
 
 import library.entities.Book;
 
 // Start of TestBookMapDAO class
-public class TestBookMapDAO {
-	
+
+public class BookMapDAOTest
+{
+
 // Start of main function
+	
 	public static void main(String[] args)
 	{
+		String Author;  // Initializing string Author
+		String Title;//  Initializing the title
 		
-		Book b1= new Book( "abc", "adsf","42165",23);
- System.out.println("name is" + b1.getAuthor());
+		Scanner in = new Scanner(System.in);  //Taking the input as Author
+		 
+	      System.out.println("Enter the Author name");  //Inputs for Author name
+	      Author = in.nextLine();// Accept the input as Author Name
+	     
+	 
+	      System.out.println("Enter the Title of book");  //Inputs for Title 
+	      Title = in.nextLine(); //accept the input as title of book
+	   
+	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null
+	    		  )
+	      {
+	      if( Author.equalsIgnoreCase("Y. Liang") && Title.equalsIgnoreCase("Introduction to java"))
+	      {
+	    	  System.out.println("Book edition is : Increased data structure chapters 8th edition");//Print the output if condition satisfies
+	      }
+	      
+	      else if(Author.equalsIgnoreCase("Peter Revesz") && Title.equalsIgnoreCase("Introduction to database"))
+	      {
+	    	  System.out.println("Book edition is : Programming Knowledge");//Print the output if condition satisfies
+	      }
+	      
+	      else if(Author.equalsIgnoreCase("Daniel T. Larose") && Title.equalsIgnoreCase("Introduction to data minig"))
+	      {
+	    	  System.out.println("Book edition is : Prisnor of Askaban");//Print the output if condition satisfies
+	      }
+	      
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter4"))
+	      {
+	    	  System.out.println("Book edition is : Goblet of Fire");//Print the output if condition satisfies
+	      }
+	      
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter5"))
+	      {
+	    	  System.out.println("Book edition is : Order of Phoenix");//Print the output if condition satisfies
+	      }
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter6"))
+	      {
+	    	  System.out.println("Book edition is : Half Blood Prince");//Print the output if condition satisfies
+	      }
+	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter7"))
+	      {
+	    	  System.out.println("Book edition is : Deathly Hallows");//Print the output if condition satisfies
+	      }
+	      
+	      else
+	      {
+	    	  System.out.println("Either of the values do not match our records.Pls enter correct values!");
+	      }
+	      
+	      }
+	      else
+	      {
+	    	  System.out.println("Pls enter valid charecters");//if the conditions dosent satisfy then this statement is executed
+	      }
 
-// System.out.println("The Name of author is:    " + b1.getAuthor());
-	
 	}
-		
-	
 }
