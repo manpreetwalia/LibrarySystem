@@ -42,7 +42,7 @@ public class LoanMapDAOTest {
 
 			      //  val = oddEven.evenNum(num);
 			       // assertEquals(ans,val);			
-			
+			// if statemement to get title
 			if(book2.getTitle().equalsIgnoreCase(findLoansByBookTitle))
 			{
 				System.out.println("This book is on loan.");
@@ -50,7 +50,7 @@ public class LoanMapDAOTest {
 			}
 			else
 			{
-				System.out.println("Book is not on loan.");			
+				System.out.println("Book is not on by any student loan.");			
 				
 			}	
 			/*
