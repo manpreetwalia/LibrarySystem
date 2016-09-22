@@ -45,18 +45,18 @@ public class LoanTestG {
 		System.out.println("Borrower EmailID: " + borrower1.getEmailAddress());
 		System.out.println("Fine amount for this borrower is: " + borrower1.getFineAmount());
 		System.out.println("Member(Borrower) ID is: " + borrower1.getID());
-		//System.out.println("" + borrower1.getClass());
-		//System.out.println("Loan is: " + borrower1.getLoans());
-		//System.out.println("Borrowing Allowed to member? :" + borrower1.getState());
-		//System.out.println("");
+		System.out.println("" + borrower1.getClass());
+		System.out.println("Loan is: " + borrower1.getLoans());
+		System.out.println("Borrowing Allowed to member? :" + borrower1.getState());
+		System.out.println("");
 		
 		//getting book details
-		//System.out.println("Book detail are as follow:");
-		//System.out.println("");
-		//System.out.println("Book author is: " + book1.getAuthor());
-		//System.out.println("Book callNumber is: " + book1.getCallNumber());
-		//System.out.println("Book ID is: " + book1.getID());
-		//System.out.println("Book title is: " + book1.getTitle());
+		System.out.println("Book detail are as follow:");
+		System.out.println("");
+		System.out.println("Book author is: " + book1.getAuthor());
+		System.out.println("Book callNumber is: " + book1.getCallNumber());
+		System.out.println("Book ID is: " + book1.getID());
+		System.out.println("Book title is: " + book1.getTitle());
 		//System.out.println("" + book1.getClass());
 		//System.out.println("Book available? : " + book1.getState());
 		//System.out.println("");
