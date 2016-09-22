@@ -68,6 +68,7 @@ public class LoanTestG {
 	    System.out.println("Overdue loan: " + l1.isOverDue());	
 		System.out.println("Loan Id: " + loanId); 
 }	
+	//A method to auto generate the stubs
 	private static Date addDays(Date borrowDate, int i) {
 		// TODO Auto-generated method stub		
 		return null;
