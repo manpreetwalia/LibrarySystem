@@ -47,9 +47,9 @@ public class BookMapDAOTest
 	    	  System.out.println("Book edition is : Big Data");//Print the output if condition satisfies
 	      }
 	      
-	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter4"))
+	      else if(Author.equalsIgnoreCase("A. Forouzan") && Title.equalsIgnoreCase("Data Communication"))
 	      {
-	    	  System.out.println("Book edition is : Goblet of Fire");//Print the output if condition satisfies
+	    	  System.out.println("Book edition is : Introduction to communication $ data");//Print the output if condition satisfies
 	      }
 	      
 	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter5"))
