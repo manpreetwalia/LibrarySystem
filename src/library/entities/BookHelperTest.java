@@ -35,6 +35,7 @@ public class BookHelperTest {
 				
 		// Test the function toString()
 				System.out.println("Details of b1 are    " + b1.toString()); // display the out
+					System.out.println("Details of b1 are    " + b1.toString()); // display the out
 				
 		// Test the function getState()		
 				System.out.println("The state of book is:     " + b1.getState()); // display the out
