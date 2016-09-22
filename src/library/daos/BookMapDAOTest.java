@@ -42,7 +42,7 @@ public class BookMapDAOTest
 	    	  System.out.println("Book edition is : Programming Knowledge");//Print the output if condition satisfies
 	      }
 	      
-	      else if(Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter3"))
+	      else if(Author.equalsIgnoreCase("Daniel T. Larose") && Title.equalsIgnoreCase("Introduction to data minig"))
 	      {
 	    	  System.out.println("Book edition is : Prisnor of Askaban");//Print the output if condition satisfies
 	      }
