@@ -64,6 +64,7 @@ public class Main implements IMainListener
 
 	
 	private void setupTestData()
+	
 	{
         IBook[] book = new IBook[15];
 		IMember[] member = new IMember[6];
@@ -94,7 +95,8 @@ public class Main implements IMainListener
 		Calendar cal = Calendar.getInstance();
 		Date now = cal.getTime();
 				
-		//create a member with overdue loans		
+		//create a member with overdue loans
+		
 		for (int i=0; i<2; i++) {
 			ILoan loan = loanDAO.createLoan(member[1], book[i]);
 			loanDAO.commitLoan(loan);
