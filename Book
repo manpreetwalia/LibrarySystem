@@ -107,7 +107,7 @@ public class Book implements IBook {
 		return state;
 	}
 
-	
+	//override function for getting authors name
 	@Override
 	public String getAuthor() {
 		return author;
