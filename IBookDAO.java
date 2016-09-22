@@ -4,9 +4,10 @@ import java.util.List;
 
 import library.interfaces.entities.IBook;
 
-public interface IBookDAO {
+public interface IBookDAO
+{
 	
-	public IBook addBook(String author, String title, String callNo); // interface
+	public IBook addBook(String author, String title, String callNo); 
 	
 	public IBook getBookByID(int id);
 	
