@@ -112,7 +112,13 @@ public class Book implements IBook {
 	public String getAuthor() {
 		return author;
 	}
-
+	@Override
+	public void repair() {
+		if (!(state == EBookState.DAMAGED)) {
+			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
+		}
+		state = EBookState.AVAILABLE;
+	}
 	
 	@Override
 	public String getTitle() {
