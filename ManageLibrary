@@ -157,4 +157,32 @@ c.ipady = 1;
 	 JFrame.setDefaultLookAndFeelDecorated(true);
 
 	}
+void USERDEL()
+
+	{
+		try
+		{
+			String temp1 =  username.getText();
+				   temp1 =  temp1.trim();
+			Class.forName(driver);
+			Connection connection=DriverManager.getConnection(url);
+			Statement statement = connection.createStatement();
+			sdUsr="DELETE FROM login WHERE username='"+temp1+"'";
+
+			/*dialogmessage = "Are you sure ?? ";
+			dialogtype = JOptionPane.QUESTION_MESSAGE;
+			//show message
+			JOptionPane.showMessageDialog((Component) null, dialogmessage, dialogd,dialogtype);*/
+
+			statement.executeUpdate(sdUsr);					
+			connection.close();
+
+			dialogmessage = "User Deleted with Name : "+temp1;
+			dialogtype = JOptionPane.INFORMATION_MESSAGE;
+			//show message
+			JOptionPane.showMessageDialog((Component) null, dialogmessage, dialogs,dialogtype);
+
+			username.setText("");
+
+		}
 		        
