@@ -37,6 +37,7 @@ public class MemberMapDAO implements IMemberDAO {
 
 	
 	@Override
+	//overider class for adding members
 	public IMember addMember(String firstName, String lastName,
 			String contactPhone, String emailAddress) {
 		int id = getNextId();
