@@ -32,7 +32,7 @@ public class BookMapDAOTest
 	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null
 	    		  )
 	      {
-	      if( Author.equalsIgnoreCase("JK Rowling") && Title.equalsIgnoreCase("Harry Potter1"))
+	      if( Author.equalsIgnoreCase("Y. liang") && Title.equalsIgnoreCase("Introduction to java"))
 	      {
 	    	  System.out.println("Book edition is : Socceres stone");//Print the output if condition satisfies
 	      }
