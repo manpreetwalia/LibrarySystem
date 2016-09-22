@@ -127,7 +127,7 @@ public class LoanMapDAO implements ILoanDAO {
 				list.add(loan);
 			}
 			else{
-				System.out.println("Entered else block ");
+				System.out.println("Entered else block ");//This statement is executed for the purpose of error checking stratergy
 			}
 		}
 		return Collections.unmodifiableList(list);
