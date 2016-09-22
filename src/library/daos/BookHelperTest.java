@@ -32,7 +32,7 @@ public class BookHelperTest {
 				System.out.println("Details of b1 are    " + book1.toString());
 				
 		// Test the function getState()		
-				System.out.println("The state of book is:     " + book1.getState());
+				System.out.println("The state of book is:     " + book1.getState()); // display output
 				
 		// Test the function getLoan()
 				System.out.println("The loan of book is:   " + book1.getLoan()); // display output
