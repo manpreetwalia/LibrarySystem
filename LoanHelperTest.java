@@ -1,8 +1,12 @@
 package library.daos;
 
-//import java.util.Calendar;
+import java.util.Calendar;
 
 import java.util.Date;
+import java.util.Scanner;
+import java.util.regex.Pattern;
+import java.io.Console;
+
 import library.entities.Book;
 import library.entities.Member;
 //import library.interfaces.entities.IBook;
@@ -23,6 +27,10 @@ public class LoanHelperTest {
 		
 		Date borrowDate = new Date();
 		Date dueDate = new Date();	
+		String Author;
+		String BookTitle;
+		int id;
+		Scanner in = new Scanner(System.in);
 		
 		//getting book details
 		System.out.println("Book details:");
@@ -48,6 +56,24 @@ public class LoanHelperTest {
 		System.out.println("Loan is: " + borrower2.getLoans());
 		System.out.println(borrower2.getState()); //Is borrowing allowed.
 		System.out.println(damaged);				
+		
+		
+		//Checking book is on loan?
+		System.out.println("Enter author name:");
+		Author = in.nextLine();
+		System.out.println("Enter Title of book");
+		 BookTitle = in.nextLine();
+		 if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && BookTitle != null) {
+			 if(Author.equalsIgnoreCase("Mr. JK Rowling") && BookTitle.equalsIgnoreCase("Harry Potters"))
+	      {
+	    	  System.out.println("The Book is on loan");//Print the output if condition satisfies
+	      }
+			 else if(Author.equalsIgnoreCase("Mr. JK Rowling") && BookTitle.equalsIgnoreCase("Harry Potter man"))
+		      {
+		    	  System.out.println("The Book is not on loan");//Print the output if condition satisfies
+		      }
+		 }
+		
 		
 		//Checking overdues
 		
