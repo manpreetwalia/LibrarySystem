@@ -64,9 +64,14 @@ public class BookMapDAOTest
 	    	  System.out.println("Book edition is : Deathly Hallows");//Print the output if condition satisfies
 	      }
 	      
+	      else if(Author.equalsIgnoreCase("Mr. Roy Honda") && Title.equalsIgnoreCase("Seplender"))
+	      {
+	    	  System.out.println("The Book edition is : Seventh"); //Print the output if condition satisfies
+	      }
+	      
 	      else
 	      {
-	    	  System.out.println("Either of the values do not match our records.Pls enter correct values!");
+	    	  System.out.println("Either of the values do not match our records.Please enter correct values!");
 	      }
 	      
 	      }
