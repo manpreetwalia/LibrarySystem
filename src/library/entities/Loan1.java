@@ -127,5 +127,4 @@ public class Loan1 implements ILoan
 				DateFormat.getDateInstance().format(dueDate)));
 	}
 
-
 }
