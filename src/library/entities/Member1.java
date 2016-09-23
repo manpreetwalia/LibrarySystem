@@ -8,7 +8,8 @@ import library.interfaces.entities.ILoan;
 import library.interfaces.entities.IMember;
 import library.interfaces.entities.EMemberState;
 
-public class Member1 implements IMember {
+public class Member1 implements IMember 
+{
 
 	private final String firstName;
 	private final String lastName;
@@ -21,8 +22,10 @@ public class Member1 implements IMember {
 	private float totalFines;
 	
 	public Member1(String firstName, String lastName, String contactPhone,
-			String email, int memberID) {
-		if ( !sane(firstName, lastName, contactPhone, email, memberID)) {
+			String email, int memberID)
+	{
+		if ( !sane(firstName, lastName, contactPhone, email, memberID)) 
+		{
 			throw new IllegalArgumentException("Member: constructor : bad parameters");
 		}
 		this.firstName = firstName;
