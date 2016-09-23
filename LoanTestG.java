@@ -43,7 +43,7 @@ public class LoanTestG {
 		System.out.println("Borrowing Allowed to member? :" + borrower1.getState());
 		System.out.println("");
 		
-		//getting book details
+		//getting book details for borrowing
 		System.out.println("Book detail are as follow:");
 		System.out.println("");
 		System.out.println("Book author is: " + book1.getAuthor());
