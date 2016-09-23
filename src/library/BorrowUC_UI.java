@@ -148,14 +148,16 @@ public class BorrowUC_UI extends JPanel implements IBorrowUI
 
 	
 	@Override
-	public void displayConfirmingLoan(String loanDetails) {
+	public void displayConfirmingLoan(String loanDetails) 
+	{
 		IBorrowUI ui = panels.get(state);
 		ui.displayConfirmingLoan(loanDetails);		
 	}
 
 	
 	@Override
-	public void displayErrorMessage(String errorMesg) {
+	public void displayErrorMessage(String errorMesg) 
+	{
 		IBorrowUI ui = panels.get(state);
 		ui.displayErrorMessage(errorMesg);		
 	}
