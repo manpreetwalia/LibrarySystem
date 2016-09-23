@@ -36,8 +36,8 @@ public class BookMapDAOTest
 	      ID= in.nextInt(); // Accept the ID of as input
 	      
 	      
-	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null
-	    		  )
+	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null)
+	    		  
 	      {
 	      if( Author.equalsIgnoreCase("Y. Liang") && Title.equalsIgnoreCase("Introduction to java"))
 	      {
