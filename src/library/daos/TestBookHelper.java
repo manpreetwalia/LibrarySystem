@@ -18,12 +18,12 @@ public class TestBookHelper {
 		
 		// Test the function getAuthor()
 				System.out.println("The Name of author is:    " + b1.getAuthor());
-				System.out.println("The Name of author is:    " + bk.getAuthor());
+				System.out.println("The Name of author is:    " + Bk.getAuthor());
 				
 		// Test the function getTitle()
 				
 				System.out.println("The title of book is:    " + b1.getTitle());
-				System.out.println("The title of book is:    " + bk.getTitle());
+				System.out.println("The title of book is:    " + Bk.getTitle());
 				
 		// Test the function getCallNumber()
 				
