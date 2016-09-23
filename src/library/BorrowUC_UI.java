@@ -15,7 +15,8 @@ import library.panels.borrow.RestrictedPanel;
 import library.panels.borrow.ScanningPanel;
 import library.panels.borrow.SwipeCardPanel;
 
-public class BorrowUC_UI extends JPanel implements IBorrowUI {
+public class BorrowUC_UI extends JPanel implements IBorrowUI
+{
 
 	private static final long serialVersionUID = 1L;
 	@SuppressWarnings("unused")
@@ -24,7 +25,8 @@ public class BorrowUC_UI extends JPanel implements IBorrowUI {
 	private Map<EBorrowState,IBorrowUI> panels;
 
 	
-	public BorrowUC_UI(IBorrowUIListener listener) {
+	public BorrowUC_UI(IBorrowUIListener listener)
+	{
 		this.listener = listener;
 		this.panels = new HashMap<EBorrowState,IBorrowUI>();		
 		this.setLayout(new CardLayout());
