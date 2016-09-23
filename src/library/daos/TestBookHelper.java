@@ -10,6 +10,7 @@ public class TestBookHelper {
 // Start of the main function
 	
 	public static void main(String[] args)
+	
 	{
 		
 // Create object book1 of class IBook, MakeBook
