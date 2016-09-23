@@ -48,14 +48,12 @@ public class Loan implements ILoan
 	{
 		if (!(state == ELoanState.PENDING))
 		{
-			throw new RuntimeException(
-					String.format("Loan : commit : incorrect state transition  : %s -> %s\n", 
+			throw new RuntimeException(String.format("Loan : commit : incorrect state transition  : %s -> %s\n", 
 							state, ELoanState.CURRENT));
 		}
 		if (loanId <= 0) 
 		{
-			throw new RuntimeException(
-					String.format("Loan : commit : id must be a positive integer  : %d\n", 
+			throw new RuntimeException(String.format("Loan : commit : id must be a positive integer  : %d\n", 
 							loanId));
 		}
 		this.id = loanId;
@@ -71,8 +69,7 @@ public class Loan implements ILoan
 	{
 		if (!(state == ELoanState.CURRENT || state == ELoanState.OVERDUE)) 
 		{
-			throw new RuntimeException(
-					String.format("Loan : complete : incorrect state transition  : %s -> %s\n",
+			throw new RuntimeException(String.format("Loan : complete : incorrect state transition  : %s -> %s\n",
 							state, ELoanState.COMPLETE));
 		}
 		state = ELoanState.COMPLETE;		
@@ -93,8 +90,7 @@ public class Loan implements ILoan
 	{
 		if (!(state == ELoanState.CURRENT || state == ELoanState.OVERDUE ))
 		{
-			throw new RuntimeException(
-					String.format("Loan : checkOverDue : incorrect state transition  : %s -> %s\n",
+			throw new RuntimeException(String.format("Loan : checkOverDue : incorrect state transition  : %s -> %s\n",
 							state, ELoanState.OVERDUE));
 		}
 		if (currentDate.compareTo(dueDate) > 0) 
