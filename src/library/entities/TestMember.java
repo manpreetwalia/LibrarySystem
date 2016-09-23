@@ -7,7 +7,8 @@ import java.util.Date;
 
 // Test class loan starts
 
-public class TestMember {
+public class TestMember 
+{
 
 	// Start of main function
 	
