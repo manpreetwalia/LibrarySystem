@@ -97,7 +97,8 @@ public class Loan implements ILoan
 					String.format("Loan : checkOverDue : incorrect state transition  : %s -> %s\n",
 							state, ELoanState.OVERDUE));
 		}
-		if (currentDate.compareTo(dueDate) > 0) {
+		if (currentDate.compareTo(dueDate) > 0) 
+		{
 			state = ELoanState.OVERDUE;
 		}
 		return isOverDue();
@@ -106,27 +107,32 @@ public class Loan implements ILoan
 	
 	// declare function to check the detail of borrower
 	@Override
-	public IMember getBorrower() {
+	public IMember getBorrower()
+	{
 		return borrower;
 	}
 // declare function getBook()
 	
 	@Override
-	public IBook getBook() {
+	public IBook getBook() 
+	{
 		return book;
 	}
 // declare function to check the id
 	@Override
-	public int getID() {
+	public int getID()
+	{
 		return id;
 	}
 // declare function to check the state of book	
-	public ELoanState getState() {
+	public ELoanState getState()
+	{
 		return state;
 	}
 //declare function to string
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return (String.format("Loan ID:  %d\nAuthor:   %s\nTitle:    %s\nBorrower: %s %s\nBorrowed: %s\nDue Date: %s", 
 				id, book.getAuthor(), book.getTitle(), borrower.getFirstName(), borrower.getLastName(),
 				DateFormat.getDateInstance().format(borrowDate),
