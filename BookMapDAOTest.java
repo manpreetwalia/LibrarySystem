@@ -22,10 +22,10 @@ public class BookMapDAOTest
 		
 		Scanner in = new Scanner(System.in);  //Taking the input as Author
 		 
-	      System.out.println("Enter Author name");//Inputs for Author name
+	      System.out.println("Enter name of the author");//Inputs for Author name
 	      Author = in.nextLine();// Accesing input Author Name	     
 	 
-	      System.out.println("Enter Title of book");//Inputs for Title 
+	      System.out.println("Enter title of book");//Inputs for Title 
 	      Title = in.nextLine();//accessing input title
 	   //A conditional statement for checking the pattern
 	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null)
@@ -59,7 +59,7 @@ public class BookMapDAOTest
 	      {
 	    	  System.out.println("The edition of book is : Half Blood Prince");//Print the output if condition satisfies
 	      }
-	      else if(Author.equalsIgnoreCase("Mr. JK Rowling") && Title.equalsIgnoreCase("Harry Potter7"))
+	      else if(Author.equalsIgnoreCase("Mr. JK Rowlings") && Title.equalsIgnoreCase("Harry Potter8"))
 	      {
 	    	  System.out.println("Book edition is : Deathly Hallows");//Print the output if condition satisfies
 	      }

@@ -12,8 +12,8 @@ public class LoanTestG {
 		Date dueDate = new Date();	
 		int loanId = 1;
 		//System.out.println("Today's date: "+ borrowDate.toString());
-		//create objects for Classes Book, Member and Loan
 		
+		//create objects for Classes Book, Member and Loan		
 		Book book1 = new Book("Liang", "Java", "044246789", 11);
 		Member borrower1 = new Member("Gagan", "Saini", "0449783587", "gagansaini@gmail.com", 111);
 		Loan l1 = new Loan(book1, borrower1, borrowDate, dueDate);
@@ -61,7 +61,7 @@ public class LoanTestG {
 		System.out.println("Book available? : " + book1.getState());
 		System.out.println("");
 		
-		//get borrowDate and dueDate
+		//getting borrowDate and dueDate
 		System.out.println("Important dates to remember to avoid fine:");
 		System.out.println("");
 		Calendar clndr = Calendar.getInstance();
