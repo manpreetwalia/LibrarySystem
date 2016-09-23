@@ -26,25 +26,25 @@ public class CardReader extends JFrame implements ICardReader {
 
 	public CardReader() {
 		setTitle("Card Reader");
-        setBounds(50, 50, 400, 200);
+		setBounds(50, 50, 400, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
+
 		JPanel panel = new JPanel();
 		panel.setBorder(new TitledBorder(null, "Card Reader", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		panel.setBounds(10, 10, 400, 200);
 		getContentPane().add(panel);
 		panel.setLayout(null);
-		
+
 		JLabel lblErrorMesg = new JLabel("");
 		lblErrorMesg.setForeground(Color.RED);
 		lblErrorMesg.setBounds(12, 21, 358, 16);
 		panel.add(lblErrorMesg);
-		
+
 		JLabel lblNewLabel = new JLabel("Enter Member Id:");
 		lblNewLabel.setBounds(30, 50, 150, 25);
 		panel.add(lblNewLabel);
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		
+
 		textField = new JTextField();
 		textField.addKeyListener(new KeyAdapter() {
 			@Override
@@ -57,7 +57,7 @@ public class CardReader extends JFrame implements ICardReader {
 		textField.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		textField.setColumns(10);
 		textField.setEditable(false);
-		
+
 		btnReadCard = new JButton("Swipe Card");
 		btnReadCard.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -71,9 +71,8 @@ public class CardReader extends JFrame implements ICardReader {
 						throw new NumberFormatException();
 					}
 					listener.cardSwiped(memberId);
-				}
-				catch (NumberFormatException e) {
-					//e.printStackTrace(System.err);
+				} catch (NumberFormatException e) {
+					// e.printStackTrace(System.err);
 					lblErrorMesg.setText("Member Id must be a positive intger");
 				}
 				textField.setText("");
@@ -85,16 +84,14 @@ public class CardReader extends JFrame implements ICardReader {
 		panel.add(btnReadCard);
 	}
 
-
 	@Override
 	public void setEnabled(boolean enabled) {
 		btnReadCard.setEnabled(enabled);
 		textField.setEditable(enabled);
 	}
 
-
 	@Override
 	public void addListener(ICardReaderListener listener) {
-		this.listener = listener;		
+		this.listener = listener;
 	}
 }
