@@ -4,6 +4,8 @@ package library.entities;
 
 import java.util.Date;
 
+//import com.sun.java.util.jar.pack.Package.Class.Member;
+
 
 // Test class loan starts
 
@@ -21,7 +23,7 @@ public class LoanTest {
 		
 		// Create object borrower1 of Member class
 		
-		Member borrower1 = new Member("Japgun", "Walia", "045231854", "japgunwalia.2014@gmail.com", 1214);
+		Member1 borrower1 = new Member1("Japgun", "Walia", "045231854", "japgunwalia.2014@gmail.com", 1214);
 		
 		int year = 2016;
 		int month = 10;
