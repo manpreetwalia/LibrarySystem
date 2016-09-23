@@ -4,7 +4,7 @@ package library.entities;
 
 import java.util.Date;
 
-//import com.sun.java.util.jar.pack.Package.Class.Member;
+import com.sun.java.util.jar.pack.Package.Class.Member;
 
 
 // Test class loan starts
