@@ -20,12 +20,12 @@ public class LoanMapDAOTestG {
 			Member borrower2 = new Member("Gaganjot", "Saini", "123456789", "gagansaini@gmail.com", 111);			
 			LoanMapDAO lmd = new LoanMapDAO(hlpr);			
 						
-			System.out.println(book2.getLoan());
+			System.out.println(book2.getLoan());   
 			System.out.println("" + hlpr.getClass());
-			System.out.println(lmd.getLoanByID(1));
+			System.out.println(lmd.getLoanByID(1)); 
 			System.out.println("" + lmd.getLoanByBook(book2));
-			System.out.println(hlpr.makeLoan(book2, borrower2, borrowDate, dueDate));	
-			
+			System.out.println(hlpr.makeLoan(book2, borrower2, borrowDate, dueDate));	      //creating loan
+			 
 			//get LoanByBookDetails
 			System.out.println("Loan on this book is: " + book2.toString());
 			
