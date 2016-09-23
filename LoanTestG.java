@@ -54,7 +54,7 @@ public class LoanTestG {
 		System.out.println("Book available? : " + book1.getState());
 		System.out.println("");
 		
-		//getting borrowDate and dueDate
+		//getting borrowDate and dueDate for loan
 		System.out.println("Important dates to remember to avoid fine:");
 		System.out.println("");
 		Calendar clndr = Calendar.getInstance();
