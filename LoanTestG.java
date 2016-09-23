@@ -51,7 +51,7 @@ public class LoanTestG {
 		System.out.println("Book ID is: " + book1.getID());     //getting book ID
 		System.out.println("Book title is: " + book1.getTitle());  //Getting Book Title
 		System.out.println("" + book1.getClass());
-		System.out.println("Book available? : " + book1.getState());
+		System.out.println("Book available? : " + book1.getState()); //getting availability of book
 		System.out.println("");
 		
 		//getting borrowDate and dueDate for loan
