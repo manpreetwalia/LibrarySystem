@@ -48,8 +48,8 @@ public class LoanTestG {
 		System.out.println("");
 		System.out.println("Book author is: " + book1.getAuthor()); //getting bookAuthorName
 		System.out.println("Book callNumber is: " + book1.getCallNumber()); //Getting Author call number
-		System.out.println("Book ID is: " + book1.getID());
-		System.out.println("Book title is: " + book1.getTitle());
+		System.out.println("Book ID is: " + book1.getID());     //getting book ID
+		System.out.println("Book title is: " + book1.getTitle());  //Getting Book Title
 		System.out.println("" + book1.getClass());
 		System.out.println("Book available? : " + book1.getState());
 		System.out.println("");
