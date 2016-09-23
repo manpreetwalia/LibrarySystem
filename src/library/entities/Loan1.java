@@ -31,7 +31,8 @@ public class Loan1 implements ILoan
 		this.state = ELoanState.PENDING;
 	}
 	
-	private boolean sane(IBook book, IMember borrower, Date borrowDate, Date returnDate) {
+	private boolean sane(IBook book, IMember borrower, Date borrowDate, Date returnDate) 
+	{
 		return  ( book != null && 
 				  borrower != null && 
 				  borrowDate != null && 
@@ -40,13 +41,16 @@ public class Loan1 implements ILoan
 	}
 
 	@Override
-	public void commit(int loanId) {
-		if (!(state == ELoanState.PENDING)) {
+	public void commit(int loanId)
+	{
+		if (!(state == ELoanState.PENDING))
+		{
 			throw new RuntimeException(
 					String.format("Loan : commit : incorrect state transition  : %s -> %s\n", 
 							state, ELoanState.CURRENT));
 		}
-		if (loanId <= 0) {
+		if (loanId <= 0)
+		{
 			throw new RuntimeException(
 					String.format("Loan : commit : id must be a positive integer  : %d\n", 
 							loanId));
@@ -58,8 +62,10 @@ public class Loan1 implements ILoan
 	}
 
 	@Override
-	public void complete() {
-		if (!(state == ELoanState.CURRENT || state == ELoanState.OVERDUE)) {
+	public void complete() 
+	{
+		if (!(state == ELoanState.CURRENT || state == ELoanState.OVERDUE)) 
+		{
 			throw new RuntimeException(
 					String.format("Loan : complete : incorrect state transition  : %s -> %s\n",
 							state, ELoanState.COMPLETE));
@@ -68,44 +74,53 @@ public class Loan1 implements ILoan
 	}
 
 	@Override
-	public boolean isOverDue() {
+	public boolean isOverDue()
+	{
 		return (state == ELoanState.OVERDUE);
 	}
 
 	@Override
-	public boolean checkOverDue(Date currentDate) {
+	public boolean checkOverDue(Date currentDate) 
+	
+	{
 		if (!(state == ELoanState.CURRENT || state == ELoanState.OVERDUE )) {
 			throw new RuntimeException(
 					String.format("Loan : checkOverDue : incorrect state transition  : %s -> %s\n",
 							state, ELoanState.OVERDUE));
 		}
-		if (currentDate.compareTo(dueDate) > 0) {
+		if (currentDate.compareTo(dueDate) > 0) 
+		{
 			state = ELoanState.OVERDUE;
 		}
 		return isOverDue();
 	}
 
 	@Override
-	public IMember getBorrower() {
+	public IMember getBorrower() 
+	{
 		return borrower;
 	}
 
 	@Override
-	public IBook getBook() {
+	public IBook getBook() 
+	{
 		return book;
 	}
 
 	@Override
-	public int getID() {
+	public int getID()
+	{
 		return id;
 	}
 	
-	public ELoanState getState() {
+	public ELoanState getState() 
+	{
 		return state;
 	}
 
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return (String.format("Loan ID:  %d\nAuthor:   %s\nTitle:    %s\nBorrower: %s %s\nBorrowed: %s\nDue Date: %s", 
 				id, book.getAuthor(), book.getTitle(), borrower.getFirstName(), borrower.getLastName(),
 				DateFormat.getDateInstance().format(borrowDate),
