@@ -10,7 +10,9 @@ import library.interfaces.entities.IMember;
 import library.interfaces.entities.EMemberState;
  // satrt of class IMemebr
 
-public class Member implements IMember {
+public class Member implements IMember
+
+{
 // declare variables of class as string and integer
 	
 	private final String firstName;
@@ -26,8 +28,10 @@ public class Member implements IMember {
 	// declare object of class
 	
 	public Member(String firstName, String lastName, String contactPhone,
-			String email, int memberID) {
-		if ( !sane(firstName, lastName, contactPhone, email, memberID)) {
+			String email, int memberID) 
+			{
+		if ( !sane(firstName, lastName, contactPhone, email, memberID)) 
+		{
 			throw new IllegalArgumentException("Member: constructor : bad parameters");
 		}
 		this.firstName = firstName;
@@ -42,7 +46,8 @@ public class Member implements IMember {
 
 	
 	private boolean sane(String firstName, String lastName, String contactPhone,
-			String emailAddress, int memberID) {
+			String emailAddress, int memberID) 
+			{
 		return  ( firstName != null    && !firstName.isEmpty()    &&
 				  lastName != null     && !lastName.isEmpty()     &&
 				  contactPhone != null && !contactPhone.isEmpty() &&
