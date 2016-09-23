@@ -163,43 +163,50 @@ public class Member implements IMember
 
 // declare function to check the state 	
 	@Override
-	public EMemberState getState() {
+	public EMemberState getState() 
+	{
 		return state;
 	}
 // declare function to enter first name 
 	
 	@Override
-	public String getFirstName() {
+	public String getFirstName() 
+	{
 		return firstName;
 	}
 	// declare function to enter last name 
 	
 	@Override
-	public String getLastName() {
+	public String getLastName() 
+	{
 		return lastName;
 	}
 	// declare function to enter phone number 
 	
 	@Override
-	public String getContactPhone() {
+	public String getContactPhone()
+	{
 		return contactPhone;
 	}
 
 	// declare function to enter email id	
 	@Override
-	public String getEmailAddress() {
+	public String getEmailAddress()
+	{
 		return emailAddress;
 	}
 
 	// declare function to enter ID
 	@Override
-	public int getID() {
+	public int getID() 
+	{
 		return id;
 	}
 
 // declare function tostring()	
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return String.format(
 				"Id: %d\nName: %s %s\nContact Phone: %s\nEmail: %s\nOutstanding Charges: %0.2f", id,
 				firstName, lastName, contactPhone, emailAddress, totalFines);
@@ -213,11 +220,14 @@ public class Member implements IMember
 	}
 // declare function updateState as void type
 	
-	private void updateState() {
-		if (borrowingAllowed()) {
+	private void updateState() 
+	{
+		if (borrowingAllowed())
+		{
 			state = EMemberState.BORROWING_ALLOWED;
 		}
-		else {
+		else 
+		{
 			state = EMemberState.BORROWING_DISALLOWED;
 		}
 	}
