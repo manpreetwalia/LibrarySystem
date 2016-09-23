@@ -11,7 +11,7 @@ public class BookMemberEligibilityTest {
 		int member2 = 90;//static value for member
 		int member3=80;//static value for member
 		int member4= 100;//static value for member
-		int member5=10;
+		int member5=10;//static value for member
 		
 		
 		Scanner in = new Scanner(System.in);  //Taking the input as member
