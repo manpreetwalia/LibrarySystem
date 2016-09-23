@@ -28,26 +28,26 @@ public class Scanner extends JFrame implements IScanner {
 
 	public Scanner() {
 		setTitle("Scanner");
-        setBounds(50, 250, 400, 200);
+		setBounds(50, 250, 400, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//getContentPane().setLayout(null);
-		
+		// getContentPane().setLayout(null);
+
 		JPanel panel = new JPanel();
 		panel.setBorder(new TitledBorder(null, "Scanner", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		panel.setBounds(10, 10, 400, 200);
 		getContentPane().add(panel);
 		panel.setLayout(null);
-		
+
 		JLabel lblErrorMesg = new JLabel("");
 		lblErrorMesg.setForeground(Color.RED);
 		lblErrorMesg.setBounds(12, 21, 358, 16);
 		panel.add(lblErrorMesg);
-		
+
 		JLabel lblNewLabel = new JLabel("Enter Book Barcode: ");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		lblNewLabel.setBounds(30, 50, 150, 25);
 		panel.add(lblNewLabel);
-		
+
 		textField = new JTextField();
 		textField.addKeyListener(new KeyAdapter() {
 			@Override
@@ -59,7 +59,7 @@ public class Scanner extends JFrame implements IScanner {
 		panel.add(textField);
 		textField.setColumns(10);
 		textField.setEditable(false);
-		
+
 		btnScan = new JButton("Scan Book Barcode");
 		btnScan.setEnabled(false);
 		btnScan.addActionListener(new ActionListener() {
@@ -74,9 +74,8 @@ public class Scanner extends JFrame implements IScanner {
 						throw new NumberFormatException();
 					}
 					listener.bookScanned(barcode);
-				}
-				catch (NumberFormatException e) {
-					//e.printStackTrace(System.err);
+				} catch (NumberFormatException e) {
+					// e.printStackTrace(System.err);
 					lblErrorMesg.setText("Book barcode must be a positive intger");
 				}
 				textField.setText("");
@@ -86,7 +85,7 @@ public class Scanner extends JFrame implements IScanner {
 		btnScan.setBounds(85, 88, 215, 39);
 		panel.add(btnScan);
 
-		//pack();
+		// pack();
 	}
 
 	@Override
@@ -99,7 +98,7 @@ public class Scanner extends JFrame implements IScanner {
 	@Override
 	public void addListener(IScannerListener listener) {
 		this.listener = listener;
-		
+
 	}
 
 }
