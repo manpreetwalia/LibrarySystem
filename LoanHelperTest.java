@@ -58,7 +58,7 @@ public class LoanHelperTest {
 		System.out.println(damaged);				      //Checking Book status
 		
 		
-		//Checking book is on loan?
+		//Checking book is on loan or not.
 		System.out.println("Enter author name:");
 		Author = in.nextLine();
 		System.out.println("Enter Title of book");
