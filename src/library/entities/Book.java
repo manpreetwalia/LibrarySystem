@@ -4,7 +4,8 @@ import library.interfaces.entities.EBookState;
 import library.interfaces.entities.IBook;
 import library.interfaces.entities.ILoan;
 
-public class Book implements IBook {
+public class Book implements IBook
+{
 
 	
 	private String author;
@@ -16,8 +17,10 @@ public class Book implements IBook {
 	private EBookState state;
 	
 	
-	public Book(String author, String title, String callNumber, int bookID) {
-		if ( !sane(author, title, callNumber, bookID)) {
+	public Book(String author, String title, String callNumber, int bookID)
+	{
+		if ( !sane(author, title, callNumber, bookID)) 
+		{
 			throw new IllegalArgumentException("Member: constructor : bad parameters");
 		}
 		this.author = author;
@@ -39,11 +42,14 @@ public class Book implements IBook {
 
 	
 	@Override
-	public void borrow(ILoan loan) {
-		if (loan == null) {
+	public void borrow(ILoan loan)
+	{
+		if (loan == null)
+		{
 			throw new IllegalArgumentException(String.format("Book: borrow : Bad parameter: loan cannot be null"));
 		}
-		if (!(state == EBookState.AVAILABLE)) {
+		if (!(state == EBookState.AVAILABLE))
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
 		this.loan = loan;
@@ -53,38 +59,48 @@ public class Book implements IBook {
 
 	
 	@Override
-	public ILoan getLoan() {
+	public ILoan getLoan() 
+	{
 		return loan;
 	}
 
 	
 	@Override
-	public void returnBook(boolean damaged) {
-		if (!(state == EBookState.ON_LOAN || state == EBookState.LOST)) {
+	public void returnBook(boolean damaged)
+	{
+		if (!(state == EBookState.ON_LOAN || state == EBookState.LOST))
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
 		loan = null;
-		if (damaged) {
+		if (damaged)
+		{
 			state = EBookState.DAMAGED;
 		}
-		else {
+		else
+		{
 			state = EBookState.AVAILABLE;
 		}
 	}
 
 	
 	@Override
-	public void lose() {
-		if (!(state == EBookState.ON_LOAN)) {
+	public void lose()
+	{
+		if (!(state == EBookState.ON_LOAN)) 
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
+		
 		state = EBookState.LOST;
 	}
 
 	
 	@Override
-	public void repair() {
-		if (!(state == EBookState.DAMAGED)) {
+	public void repair() 
+	{
+		if (!(state == EBookState.DAMAGED)) 
+		{
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
 		state = EBookState.AVAILABLE;
@@ -92,7 +108,8 @@ public class Book implements IBook {
 
 	
 	@Override
-	public void dispose() {
+	public void dispose()
+	{
 		if (!(state == EBookState.AVAILABLE || state == EBookState.DAMAGED || state == EBookState.LOST)) {
 			throw new RuntimeException(String.format("Illegal operation in state : %s", state));
 		}
@@ -101,37 +118,43 @@ public class Book implements IBook {
 
 	
 	@Override
-	public EBookState getState() {
+	public EBookState getState() 
+	{
 		return state;
 	}
 
 	
 	@Override
-	public String getAuthor() {
+	public String getAuthor() 
+	{
 		return author;
 	}
 
 	
 	@Override
-	public String getTitle() {
+	public String getTitle()
+	{
 		return title;
 	}
 
 	
 	@Override
-	public String getCallNumber() {
+	public String getCallNumber() 
+	{
 		return callNumber;
 	}
 
 	
 	@Override
-	public int getID() {
+	public int getID() 
+	{
 		return id;
 	}
 
 	
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return String.format("Id: %d\nAuthor: %s\nTitle: %s\nCall Number %s",
 				id, author, title, callNumber);
 	}
