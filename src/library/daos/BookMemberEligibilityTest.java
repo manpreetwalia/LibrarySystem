@@ -9,7 +9,7 @@ public class BookMemberEligibilityTest {
 	    String member;
 		int member1= 100;//static value for member
 		int member2 = 90;//static value for member
-		int member3=80;
+		int member3=80;//static value for member
 		int member4= 100;
 		int member5=10;
 		
