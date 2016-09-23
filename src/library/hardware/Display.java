@@ -6,27 +6,24 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.CardLayout;
 
-
 public class Display extends JFrame implements IDisplay {
 
 	private static final long serialVersionUID = 1L;
-	
-	private JPanel current; 
+
+	private JPanel current;
 
 	public Display() {
 		setTitle("Display");
 		setBounds(500, 50, 470, 680);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(new CardLayout(0, 0));
 	}
 
-
 	@Override
 	public JPanel getDisplay() {
-		return current;		// returns value
+		return current; // returns value
 	}
-	
-	
+
 	@Override
 	public void setDisplay(JPanel panel, String id) {
 		getContentPane().add(panel, id);
@@ -39,5 +36,4 @@ public class Display extends JFrame implements IDisplay {
 		current = panel;
 	}
 
-	
 }
