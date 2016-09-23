@@ -65,14 +65,16 @@ public class BorrowUC_CTL implements ICardReaderListener,
 	}
 
 	@Override
-	public void cardSwiped(int memberID) {
+	public void cardSwiped(int memberID) 
+	{
 		throw new RuntimeException("Not implemented yet");
 	}
 	
 	
 	
 	@Override
-	public void bookScanned(int barcode) {
+	public void bookScanned(int barcode)
+	{
 		throw new RuntimeException("Not implemented yet");
 	}
 
@@ -89,23 +91,28 @@ public class BorrowUC_CTL implements ICardReaderListener,
 	}
 	
 	@Override
-	public void scansCompleted() {
+	public void scansCompleted() 
+	{
 		throw new RuntimeException("Not implemented yet");
 	}
 
 	@Override
-	public void loansConfirmed() {
+	public void loansConfirmed()
+	{
 		throw new RuntimeException("Not implemented yet");
 	}
 
 	@Override
-	public void loansRejected() {
+	public void loansRejected() 
+	{
 		throw new RuntimeException("Not implemented yet");
 	}
 
-	private String buildLoanListDisplay(List<ILoan> loans) {
+	private String buildLoanListDisplay(List<ILoan> loans)
+	{
 		StringBuilder bld = new StringBuilder();
-		for (ILoan ln : loans) {
+		for (ILoan ln : loans) 
+		{
 			if (bld.length() > 0) bld.append("\n\n");
 			bld.append(ln.toString());
 		}
