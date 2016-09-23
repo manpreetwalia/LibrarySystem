@@ -132,8 +132,10 @@ public class Member implements IMember
 	
 	
 	@Override
-	public void addLoan(ILoan loan) {
-		if (!borrowingAllowed()) {
+	public void addLoan(ILoan loan) 
+	{
+		if (!borrowingAllowed())
+		{
 			throw new RuntimeException(String.format("Member: addLoan : illegal operation in state: %s", state));
 		}
 		loanList.add(loan);
@@ -142,14 +144,17 @@ public class Member implements IMember
 
 	// declare function to get loan
 	@Override
-	public List<ILoan> getLoans() {
+	public List<ILoan> getLoans()
+	{
 		return Collections.unmodifiableList(loanList);
 	}
 
 // declare function to remove the loan
 	@Override
-	public void removeLoan(ILoan loan) {
-		if (loan == null || !loanList.contains(loan)) {
+	public void removeLoan(ILoan loan) 
+	{
+		if (loan == null || !loanList.contains(loan))
+		{
 			throw new RuntimeException(String.format("Member: removeLoan : loan is null or not found in loanList"));
 		}
 		loanList.remove(loan);
