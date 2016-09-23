@@ -27,7 +27,7 @@ public class LoanMapDAOTestG {
 			//get LoanByBook
 			System.out.println("Loan on this book is: " + book2.toString());
 			
-			//get LoanById
+			//get LoanByBorrowerId
 			System.out.println("This StudentId has loans: " + borrower2.getID());
 			
 			//Find loan by borrower details
