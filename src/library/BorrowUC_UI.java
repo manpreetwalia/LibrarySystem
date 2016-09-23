@@ -1,4 +1,4 @@
-package library;  package
+package library;  //package
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;
