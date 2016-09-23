@@ -44,7 +44,8 @@ public class MemberMapDAO implements IMemberDAO
 	
 	@Override
 	public IMember addMember(String firstName, String lastName,
-			String contactPhone, String emailAddress) {
+			String contactPhone, String emailAddress) 
+			{
 		int id = getNextId();
 		IMember mem = helper.makeMember(firstName, lastName, contactPhone, emailAddress, id);
 		memberMap.put(Integer.valueOf(id), mem);
@@ -52,28 +53,35 @@ public class MemberMapDAO implements IMemberDAO
 	}
 
 	@Override
-	public IMember getMemberByID(int id) {
-		if (memberMap.keySet().contains(Integer.valueOf(id))) {
+	public IMember getMemberByID(int id) 
+	{
+		if (memberMap.keySet().contains(Integer.valueOf(id)))
+		{
 			return memberMap.get(Integer.valueOf(id));
 		}
 		return null;
 	}
 
 	@Override
-	public List<IMember> listMembers() {
+	public List<IMember> listMembers() 
+	{
 		List<IMember> list = new ArrayList<IMember>(memberMap.values());
 		return Collections.unmodifiableList(list);
 	}
 
 	@Override
-	public List<IMember> findMembersByLastName(String lastName) {
-		if ( lastName == null || lastName.isEmpty()) {
+	public List<IMember> findMembersByLastName(String lastName)
+	{
+		if ( lastName == null || lastName.isEmpty()) 
+		{
 			throw new IllegalArgumentException(
 				String.format("MemberMapDAO : findMembersByLastName : lastName cannot be null or blank"));
 		}
 		List<IMember> list = new ArrayList<IMember>();
-		for (IMember m : memberMap.values()) {
-			if (lastName.equals(m.getLastName())) {
+		for (IMember m : memberMap.values())
+		{
+			if (lastName.equals(m.getLastName()))
+			{
 				list.add(m);
 			}
 		}
