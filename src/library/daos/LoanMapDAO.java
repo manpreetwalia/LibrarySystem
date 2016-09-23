@@ -50,21 +50,26 @@ public class LoanMapDAO implements ILoanDAO
 	@Override
 	public ILoan getLoanByID(int id)
 	{
-		if (loanMap.containsKey(Integer.valueOf(id))) {
+		if (loanMap.containsKey(Integer.valueOf(id))) 
+		{
 			return loanMap.get(Integer.valueOf(id));
 		}
 		return null;
 	}
 
 	@Override
-	public ILoan getLoanByBook(IBook book) {
-		if (book == null ) {
+	public ILoan getLoanByBook(IBook book) 
+	{
+		if (book == null )
+		{
 			throw new IllegalArgumentException(
 				String.format("LoanMapDAO : getLoanByBook : book cannot be null."));
 		}
-		for (ILoan loan : loanMap.values()) {
+		for (ILoan loan : loanMap.values()) 
+		{
 			IBook tempBook = loan.getBook();
-			if (book.equals(tempBook)) {
+			if (book.equals(tempBook)) 
+			{
 				return loan;
 			}
 		}
@@ -72,7 +77,8 @@ public class LoanMapDAO implements ILoanDAO
 	}
 
 	@Override
-	public List<ILoan> listLoans() {
+	public List<ILoan> listLoans()
+	{
 		List<ILoan> list = new ArrayList<ILoan>(loanMap.values());
 		return Collections.unmodifiableList(list);
 	}
@@ -85,7 +91,8 @@ public class LoanMapDAO implements ILoanDAO
 		}
 		List<ILoan> list = new ArrayList<ILoan>();
 		for (ILoan loan : loanMap.values()) {
-			if (borrower.equals(loan.getBorrower())) {
+			if (borrower.equals(loan.getBorrower())) 
+			{
 				list.add(loan);
 			}
 		}
@@ -93,15 +100,20 @@ public class LoanMapDAO implements ILoanDAO
 	}
 
 	@Override
-	public List<ILoan> findLoansByBookTitle(String title) {
-		if (title == null || title.isEmpty()) {
+	public List<ILoan> findLoansByBookTitle(String title)
+	{
+		if (title == null || title.isEmpty()) 
+		{
 			throw new IllegalArgumentException(
 				String.format("LoanMapDAO : findLoansByBookTitle : title cannot be null or blank."));
 		}
 		List<ILoan> list = new ArrayList<ILoan>();
-		for (ILoan loan : loanMap.values()) {
+		for (ILoan loan : loanMap.values())
+		{
 			String tempTitle = loan.getBook().getTitle();
-			if (title.equals(tempTitle)) {
+			if (title.equals(tempTitle)) 
+			
+			{
 				list.add(loan);
 			}
 		}
@@ -109,16 +121,21 @@ public class LoanMapDAO implements ILoanDAO
 	}
 
 	@Override
-	public void updateOverDueStatus(Date currentDate) {
-		for (ILoan loan : loanMap.values()) {
+	public void updateOverDueStatus(Date currentDate) 
+	{
+		for (ILoan loan : loanMap.values())
+		{
 			loan.checkOverDue(currentDate);
 		}
 	}
 
 	@Override
-	public List<ILoan> findOverDueLoans() {
+	public List<ILoan> findOverDueLoans()
+	{
 		List<ILoan> list = new ArrayList<ILoan>();
-		for (ILoan loan : loanMap.values()) {
+		for (ILoan loan : loanMap.values())
+		
+		{
 			if (loan.isOverDue()) {
 				list.add(loan);
 			}
