@@ -75,7 +75,7 @@ public class LoanHelperTest {
 		      }
 		 }		
 		
-		//Checking overdues
+		//Checking overdue loans
 		
 		if(borrowDate.compareTo(dueDate)<0)
 		{
