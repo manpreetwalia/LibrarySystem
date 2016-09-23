@@ -25,9 +25,9 @@ public class LoanHelperTest {
 		//Date borrowDate = new Date(year,month,date);
 		boolean damaged = false;
 		
-		Date borrowDate = new Date();
-		Date dueDate = new Date();	
-		String Author;
+		Date borrowDate = new Date();     //create object borrowDate for Date
+		Date dueDate = new Date();	     //create object dueDate for Date
+		String Author;      
 		String BookTitle;
 		int id;
 		Scanner in = new Scanner(System.in);
@@ -35,7 +35,7 @@ public class LoanHelperTest {
 		//getting book details
 		System.out.println("Book details:");
 		System.out.println("");
-		System.out.println("The author name is " + book2.getAuthor());
+		System.out.println("The author name is " + book2.getAuthor());      //get author name from book class
 		System.out.println("The callNumber is: " + book2.getCallNumber());
 		System.out.println("ID: " + book2.getID());
 		System.out.println("Book title: " + book2.getTitle());		
