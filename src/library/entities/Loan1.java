@@ -8,7 +8,8 @@ import library.interfaces.entities.ILoan;
 import library.interfaces.entities.IMember;
 import library.interfaces.entities.ELoanState;
 
-public class Loan1 implements ILoan {
+public class Loan1 implements ILoan 
+{
 
 	private int id;
 	private final IMember borrower;
@@ -17,8 +18,10 @@ public class Loan1 implements ILoan {
 	private Date dueDate;
 	private ELoanState state;
 	
-	public Loan1(IBook book, IMember borrower, Date borrowDate, Date returnDate) {
-		if (!sane(book, borrower, borrowDate, returnDate)) {
+	public Loan1(IBook book, IMember borrower, Date borrowDate, Date returnDate) 
+	{
+		if (!sane(book, borrower, borrowDate, returnDate)) 
+		{
 			throw new IllegalArgumentException("Loan: constructor : bad parameters");
 		}
 		this.book = book;
