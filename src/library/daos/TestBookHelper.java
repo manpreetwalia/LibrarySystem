@@ -23,6 +23,7 @@ public class TestBookHelper {
 		// Test the function getTitle()
 				
 				System.out.println("The title of book is:    " + b1.getTitle());
+				System.out.println("The title of book is:    " + bk.getTitle());
 				
 		// Test the function getCallNumber()
 				
