@@ -77,6 +77,7 @@ public class TestBookMapDAO
 	      {
 	    	  System.out.println("You enter the wrong value. Pls enter valid charecters");//if the conditions dosent satisfy then this statement is executed
 	      }
+	      
 
 	       if(Author.equalsIgnoreCase("Y. Liang") && ID==123); // gives output if both condition are true
 	       System.out.println(" The author of book is : Y. Liang"); // display the author name
