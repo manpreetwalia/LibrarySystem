@@ -44,10 +44,10 @@ public class LoanTestG {
 		System.out.println("");
 		
 		//getting book details for borrowing
-		System.out.println("Book detail are as follow:");
+		System.out.println("Book detail are as follow:"); 
 		System.out.println("");
-		System.out.println("Book author is: " + book1.getAuthor());
-		System.out.println("Book callNumber is: " + book1.getCallNumber());
+		System.out.println("Book author is: " + book1.getAuthor()); //getting bookAuthorName
+		System.out.println("Book callNumber is: " + book1.getCallNumber()); //Getting Author call number
 		System.out.println("Book ID is: " + book1.getID());
 		System.out.println("Book title is: " + book1.getTitle());
 		System.out.println("" + book1.getClass());
