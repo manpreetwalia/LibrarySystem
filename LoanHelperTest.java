@@ -48,7 +48,7 @@ public class LoanHelperTest {
 		System.out.println("Borrower details:");
 		System.out.println("");
 		System.out.println("Contact Number: " + borrower2.getContactPhone());      //getting borrower contact number from member class
-		System.out.println("Email ID: " + borrower2.getEmailAddress());
+		System.out.println("Email ID: " + borrower2.getEmailAddress());            //getting borrower email address from member class
 		System.out.println("The fine amount is: " + borrower2.getFineAmount());
 		System.out.println("First Name: " + borrower2.getFirstName());		
 		System.out.println("Last Name: " + borrower2.getLastName());
