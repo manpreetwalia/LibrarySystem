@@ -20,7 +20,7 @@ public class BookMapDAOTest
 	{
 		String Author;  // Initializing string Author
 		String Title;//  Initializing the title
-
+         int ID; // Initializing Integer ID
 
 		
 		Scanner in = new Scanner(System.in);  //Taking the input as Author
