@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BookMemberEligibilityTest {
 	
 	public static void main(String[] args)
-	{
+	{//Start
 	    String member;
 		int member1= 100;//static value for member
 		int member2 = 90;//static value for member
