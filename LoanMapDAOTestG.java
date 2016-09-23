@@ -9,11 +9,13 @@ public class LoanMapDAOTestG {
 	
 		public static void main(String[] args){
 			
+			//creating objects for LoanHelper and Date
 			LoanHelper hlpr = new LoanHelper();			
 			Date borrowDate = new Date();
 			Date dueDate = new Date();
 						
 			//Date dt = new Date();
+			//Creating objects for classess Book, Member and LoanMapDAO
 			Book book2 = new Book("Gaganjot", "Java", "123456789", 1111);
 			Member borrower2 = new Member("Gaganjot", "Saini", "123456789", "gagansaini@gmail.com", 111);			
 			LoanMapDAO lmd = new LoanMapDAO(hlpr);			
