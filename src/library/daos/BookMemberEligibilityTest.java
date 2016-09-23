@@ -50,3 +50,4 @@ public class BookMemberEligibilityTest {
 	}
 
 }//end
+//testing completed successfully
