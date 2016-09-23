@@ -10,7 +10,7 @@ public class BookMemberEligibilityTest {
 		int member1= 100;//static value for member
 		int member2 = 90;//static value for member
 		int member3=80;//static value for member
-		int member4= 100;
+		int member4= 100;//static value for member
 		int member5=10;
 		
 		
