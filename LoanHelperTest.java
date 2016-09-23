@@ -54,8 +54,8 @@ public class LoanHelperTest {
 		System.out.println("Last Name: " + borrower2.getLastName());          //getting borrowerLastName
 		System.out.println("ID is: " + borrower2.getID());
 		System.out.println("Loan is: " + borrower2.getLoans());
-		System.out.println(borrower2.getState());       //Is borrowing allowed.
-		System.out.println(damaged);				
+		System.out.println(borrower2.getState());       //checking Is borrowing allowed.
+		System.out.println(damaged);				      //Checking Book status
 		
 		
 		//Checking book is on loan?
