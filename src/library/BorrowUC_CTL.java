@@ -24,7 +24,8 @@ import library.interfaces.hardware.IScannerListener;
 
 public class BorrowUC_CTL implements ICardReaderListener, 
 									 IScannerListener, 
-									 IBorrowUIListener {
+									 IBorrowUIListener 
+									 {
 	
 	private ICardReader reader;
 	private IScanner scanner; 
