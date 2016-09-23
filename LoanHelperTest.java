@@ -15,7 +15,7 @@ import library.entities.Member;
 
 public class LoanHelperTest {
 	public static void main(String[] args){
-		
+		//create objects for book and member classes
 		Book book2 = new Book("Gurwinder Singh", "Database Management System", "+919876512345", 1);
 		Member borrower2 = new Member("Gagan", "Saini", "047894467", "gagansaini@gmail.com", 111);
 		
@@ -63,6 +63,7 @@ public class LoanHelperTest {
 		Author = in.nextLine();
 		System.out.println("Enter Title of book");
 		 BookTitle = in.nextLine();
+		 
 		 if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && BookTitle != null) {
 			 if(Author.equalsIgnoreCase("Mr. JK Rowling") && BookTitle.equalsIgnoreCase("Harry Potters"))
 	      {
@@ -72,8 +73,7 @@ public class LoanHelperTest {
 		      {
 		    	  System.out.println("The Book is not on loan");//Print the output if condition satisfies
 		      }
-		 }
-		
+		 }		
 		
 		//Checking overdues
 		
