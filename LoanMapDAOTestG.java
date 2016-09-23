@@ -15,8 +15,7 @@ public class LoanMapDAOTestG {
 						
 			//Date dt = new Date();
 			Book book2 = new Book("Gaganjot", "Java", "123456789", 1111);
-			Member borrower2 = new Member("Gaganjot", "Saini", "123456789", "gagansaini@gmail.com", 111);
-			
+			Member borrower2 = new Member("Gaganjot", "Saini", "123456789", "gagansaini@gmail.com", 111);			
 			LoanMapDAO lmd = new LoanMapDAO(hlpr);			
 						
 			System.out.println(book2.getLoan());
@@ -31,7 +30,7 @@ public class LoanMapDAOTestG {
 			//get LoanById
 			System.out.println("This StudentId has loans: " + borrower2.getID());
 			
-			//Find loan by borrower
+			//Find loan by borrower details
 			System.out.println("This member has following loans: " + borrower2.toString()+ book2.toString());
 	}
 		
