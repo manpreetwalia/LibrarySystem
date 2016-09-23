@@ -84,13 +84,16 @@ public class LoanMapDAO implements ILoanDAO
 	}
 
 	@Override
-	public List<ILoan> findLoansByBorrower(IMember borrower) {
-		if (borrower == null ) {
+	public List<ILoan> findLoansByBorrower(IMember borrower) 
+	{
+		if (borrower == null ) 
+		{
 			throw new IllegalArgumentException(
 				String.format("LoanMapDAO : findLoansByBorrower : borrower cannot be null."));
 		}
 		List<ILoan> list = new ArrayList<ILoan>();
-		for (ILoan loan : loanMap.values()) {
+		for (ILoan loan : loanMap.values())
+		{
 			if (borrower.equals(loan.getBorrower())) 
 			{
 				list.add(loan);
@@ -143,13 +146,15 @@ public class LoanMapDAO implements ILoanDAO
 		return Collections.unmodifiableList(list);
 	}
 
-	private int getNextId() {
+	private int getNextId() 
+	{
 		return ++nextID;
 	}
 
 
 	@Override
-	public ILoan createLoan(IMember borrower, IBook book) {
+	public ILoan createLoan(IMember borrower, IBook book) 
+	{
 		Date borrowDate = new Date();
 		cal.setTime(borrowDate);
 		cal.add(Calendar.DATE, ILoan.LOAN_PERIOD);
@@ -160,7 +165,8 @@ public class LoanMapDAO implements ILoanDAO
 
 	
 	@Override
-	public void commitLoan(ILoan loan) {
+	public void commitLoan(ILoan loan) 
+	{
 		int id = getNextId();
 		loan.commit(id);		
 		loanMap.put(id, loan);		
