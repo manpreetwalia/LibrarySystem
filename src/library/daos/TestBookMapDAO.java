@@ -33,8 +33,10 @@ public class TestBookMapDAO
 	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null // checks the condition
 	    		  )
 	      {
+	    	  
 	      if( Author.equalsIgnoreCase("Y. Liang") && Title.equalsIgnoreCase("Introduction to java"))
 	      {
+	    	  
 	    	  System.out.println("Book edition is : Increased data structure chapters 8th edition");//Print the output if condition satisfies
 	      }
 	      
