@@ -89,14 +89,17 @@ public class MemberMapDAO implements IMemberDAO
 	}
 
 	@Override
-	public List<IMember> findMembersByEmailAddress(String emailAddress) {
-		if ( emailAddress == null || emailAddress.isEmpty()) {
+	public List<IMember> findMembersByEmailAddress(String emailAddress) 
+	{
+		if ( emailAddress == null || emailAddress.isEmpty())
+		{
 			throw new IllegalArgumentException(
 				String.format("MemberMapDAO : findMembersByEmailAddress : emailAddress cannot be null or blank"));
 		}
 		List<IMember> list = new ArrayList<IMember>();
 		for (IMember m : memberMap.values()) {
-			if (emailAddress.equals(m.getEmailAddress())) {
+			if (emailAddress.equals(m.getEmailAddress())) 
+			{
 				list.add(m);
 			}
 		}
@@ -104,21 +107,26 @@ public class MemberMapDAO implements IMemberDAO
 	}
 
 	@Override
-	public List<IMember> findMembersByNames(String firstName, String lastName) {
-		if ( firstName == null || firstName.isEmpty() || lastName == null || lastName.isEmpty()) {
+	public List<IMember> findMembersByNames(String firstName, String lastName)
+	{
+		if ( firstName == null || firstName.isEmpty() || lastName == null || lastName.isEmpty())
+		{
 			throw new IllegalArgumentException(
 				String.format("MemberMapDAO : findMembersByNames : firstName and lastName cannot be null or blank"));
 		}
 		List<IMember> list = new ArrayList<IMember>();
-		for (IMember m : memberMap.values()) {
-			if (firstName.equals(m.getFirstName()) && lastName.equals(m.getLastName())) {
+		for (IMember m : memberMap.values()) 
+		{
+			if (firstName.equals(m.getFirstName()) && lastName.equals(m.getLastName())) 
+			{
 				list.add(m);
 			}
 		}
 		return Collections.unmodifiableList(list);
 	}
 
-	private int getNextId() {
+	private int getNextId() 
+	{
 		return nextID++;
 	}
 
