@@ -45,7 +45,7 @@ public class BookMemberEligibilityTest {
 		 {
 			 member5=  member5 - 10;//member5 loses book points for loan
 			 System.out.println("Remaining balance is : "+ member5);//printing the result value
-		 }
+		
 		 
 	}
 
