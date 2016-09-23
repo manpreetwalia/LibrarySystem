@@ -9,7 +9,8 @@ import library.interfaces.entities.IMember;
 import library.interfaces.entities.ELoanState;
 // Start of class ILOan
 
-public class Loan implements ILoan {
+public class Loan implements ILoan
+{
 
 // declare variables of class as intger and date type
 	private int id;
@@ -20,8 +21,10 @@ public class Loan implements ILoan {
 	private ELoanState state;
 // dEclare function of class with four variables as parameter
 	
-	public Loan(IBook book, IMember borrower, Date borrowDate, Date returnDate) {
-		if (!sane(book, borrower, borrowDate, returnDate)) {
+	public Loan(IBook book, IMember borrower, Date borrowDate, Date returnDate) 
+	{
+		if (!sane(book, borrower, borrowDate, returnDate))
+		{
 			throw new IllegalArgumentException("Loan: constructor : bad parameters");
 		}
 		this.book = book;
@@ -31,7 +34,8 @@ public class Loan implements ILoan {
 		this.state = ELoanState.PENDING;
 	}
 	
-	private boolean sane(IBook book, IMember borrower, Date borrowDate, Date returnDate) {
+	private boolean sane(IBook book, IMember borrower, Date borrowDate, Date returnDate) 
+	{
 		return  ( book != null && 
 				  borrower != null && 
 				  borrowDate != null && 
@@ -40,13 +44,16 @@ public class Loan implements ILoan {
 	}
 
 	@Override
-	public void commit(int loanId) {
-		if (!(state == ELoanState.PENDING)) {
+	public void commit(int loanId)
+	{
+		if (!(state == ELoanState.PENDING))
+		{
 			throw new RuntimeException(
 					String.format("Loan : commit : incorrect state transition  : %s -> %s\n", 
 							state, ELoanState.CURRENT));
 		}
-		if (loanId <= 0) {
+		if (loanId <= 0) 
+		{
 			throw new RuntimeException(
 					String.format("Loan : commit : id must be a positive integer  : %d\n", 
 							loanId));
@@ -60,8 +67,10 @@ public class Loan implements ILoan {
 	// declare function complete()
 	
 	@Override
-	public void complete() {
-		if (!(state == ELoanState.CURRENT || state == ELoanState.OVERDUE)) {
+	public void complete() 
+	{
+		if (!(state == ELoanState.CURRENT || state == ELoanState.OVERDUE)) 
+		{
 			throw new RuntimeException(
 					String.format("Loan : complete : incorrect state transition  : %s -> %s\n",
 							state, ELoanState.COMPLETE));
@@ -72,15 +81,18 @@ public class Loan implements ILoan {
 	
 	// declare function isOverdue()
 	@Override
-	public boolean isOverDue() {
+	public boolean isOverDue()
+	{
 		return (state == ELoanState.OVERDUE);
 	}
 
 	
 	// declare function for checking overduedate
 	@Override
-	public boolean checkOverDue(Date currentDate) {
-		if (!(state == ELoanState.CURRENT || state == ELoanState.OVERDUE )) {
+	public boolean checkOverDue(Date currentDate) 
+	{
+		if (!(state == ELoanState.CURRENT || state == ELoanState.OVERDUE ))
+		{
 			throw new RuntimeException(
 					String.format("Loan : checkOverDue : incorrect state transition  : %s -> %s\n",
 							state, ELoanState.OVERDUE));
