@@ -29,9 +29,7 @@ public class TestBookMapDAO
 	      System.out.println("Enter the Title of book");  //Inputs for Title 
 	      Title = in.nextLine(); //accept the input as title of book
 	      
-	      System.out.println("Enter the id of book"); // Enter the id of book
-	      ID= in.nextInt(); // Accept the ID of as input
-	   
+	      	   
 	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null // checks the condition
 	    		  )
 	      {
@@ -79,8 +77,7 @@ public class TestBookMapDAO
 	      }
 	      
 
-	       if(Author.equalsIgnoreCase("Y. Liang") && ID==123); // gives output if both condition are true
-	       System.out.println(" The author of book is : Y. Liang"); // display the author name
+	      
 
 	      {
 	      }
