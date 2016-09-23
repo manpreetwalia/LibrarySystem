@@ -62,7 +62,7 @@ public class LoanTestG {
 	    System.out.println("Borrowed on: " + today);
 	    clndr.add(Calendar.DAY_OF_YEAR, 15);
 	    
-	    //Checking Overdues
+	    //Checking Overdues for loan
 	    System.out.println("Due on: " + clndr.getTime());	
 	    System.out.println("");
 	    System.out.println("Overdue loan: " + l1.isOverDue());	
