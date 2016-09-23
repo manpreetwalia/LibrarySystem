@@ -29,18 +29,18 @@ public class LoanTestG {
 		//int month = 10;
 		//int date2 = 31;	
 		
-		//getting borrower details
+		//getting borrower details for making loan
 		System.out.println("Borrower detail are as follow:");
 		System.out.println("");
-		System.out.println("Borrower first name: " + borrower1.getFirstName());
-		System.out.println("Borrower last name: " + borrower1.getLastName());
-		System.out.println("Borrower contact number: " + borrower1.getContactPhone());
-		System.out.println("Borrower EmailID: " + borrower1.getEmailAddress());
-		System.out.println("Fine amount for this borrower is: " + borrower1.getFineAmount());
+		System.out.println("Borrower first name: " + borrower1.getFirstName()); //get borrower first name
+		System.out.println("Borrower last name: " + borrower1.getLastName()); //get borrower last name
+		System.out.println("Borrower contact number: " + borrower1.getContactPhone()); //get borrower contact number
+		System.out.println("Borrower EmailID: " + borrower1.getEmailAddress());  //get borrower email address
+		System.out.println("Fine amount for this borrower is: " + borrower1.getFineAmount()); 
 		System.out.println("Member(Borrower) ID is: " + borrower1.getID());
-		System.out.println("" + borrower1.getClass());
+		//System.out.println("" + borrower1.getClass());
 		System.out.println("Loan is: " + borrower1.getLoans());
-		System.out.println("Borrowing Allowed to member? :" + borrower1.getState());
+		System.out.println("Borrowing Allowed to member? :" + borrower1.getState()); //checking that whether member is allowed or borrowing
 		System.out.println("");
 		
 		//getting book details for borrowing
