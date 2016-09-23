@@ -11,9 +11,7 @@ public class LoanTestG {
 		Date borrowDate = new Date();				
 		Date dueDate = new Date();	
 		int loanId = 1;
-		//System.out.println("Today's date: "+ borrowDate.toString());
 		
-		//create objects for Classes Book, Member and Loan		
 		Book book1 = new Book("Liang", "Java", "044246789", 11);
 		Member borrower1 = new Member("Gagan", "Saini", "0449783587", "gagansaini@gmail.com", 111);
 		Loan l1 = new Loan(book1, borrower1, borrowDate, dueDate);
@@ -23,6 +21,9 @@ public class LoanTestG {
 		//System.out.println(l1.getState());		
 		//System.out.println(l1.getID());						
 			
+		//System.out.println("Today's date: "+ borrowDate.toString());
+				//create objects for Classes Book, Member and Loan
+						
 		//int year = 2016;
 		//int month = 10;
 		//int date = 15;		
@@ -55,7 +56,7 @@ public class LoanTestG {
 		System.out.println("Book available? : " + book1.getState());
 		System.out.println("");
 		
-		//getting borrowDate and dueDate
+		get borrowDate and dueDate
 		System.out.println("Important dates to remember to avoid fine:");
 		System.out.println("");
 		Calendar clndr = Calendar.getInstance();
@@ -63,7 +64,6 @@ public class LoanTestG {
 	   System.out.println("Borrowed on: " + today);
 	    clndr.add(Calendar.DAY_OF_YEAR, 15);
 	    
-	    //Checking Overdues
 	    System.out.println("Due on: " + clndr.getTime());	
 	    System.out.println("");
 	    System.out.println("Overdue loan: " + l1.isOverDue());	
