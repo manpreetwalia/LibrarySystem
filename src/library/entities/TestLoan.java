@@ -8,7 +8,8 @@ import java.util.Calendar;
 
  
 
-public class TestLoan {
+public class TestLoan
+{
 
     
 
@@ -80,7 +81,8 @@ public class TestLoan {
 
  
 
-     private static Date addDays(Date borrowDate, int i) {
+     private static Date addDays(Date borrowDate, int i) 
+     {
 
            // TODO Auto-generated method stub             
 
