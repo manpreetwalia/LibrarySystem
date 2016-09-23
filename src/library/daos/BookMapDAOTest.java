@@ -20,7 +20,7 @@ public class BookMapDAOTest
 	{
 		String Author;  // Initializing string Author
 		String Title;//  Initializing the title
-
+         int ID; // Initializing Integer ID
 
 		
 		Scanner in = new Scanner(System.in);  //Taking the input as Author
@@ -32,8 +32,12 @@ public class BookMapDAOTest
 	      System.out.println("Enter the Title of book");  //Inputs for Title 
 	      Title = in.nextLine(); //accept the input as title of book
 	   
-	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null
-	    		  )
+	      System.out.println("Enter the id of book"); // Enter the id of book
+	      ID= in.nextInt(); // Accept the ID of as input
+	      
+	      
+	      if(Pattern.matches("[a-zA-Z]+", Author) == false &&  Author !=null && Title != null)
+	    		  
 	      {
 	      if( Author.equalsIgnoreCase("Y. Liang") && Title.equalsIgnoreCase("Introduction to java"))
 	      {
@@ -79,5 +83,13 @@ public class BookMapDAOTest
 	    	  System.out.println("Pls enter valid charecters");//if the conditions dosen't satisfy then this statement is executed
 	      }
 
+	      
+	      if(Author.equalsIgnoreCase("Y. Liang") && ID == 123); // gives output if both condition are true
+	       System.out.println(" The author of book is : Y. Liang"); // display the author name
+
+	       if(Author.equalsIgnoreCase("Rajiv Malhotra") && ID == 321); // gives output if both condition are true
+	       System.out.println(" The author of book is : Rajiv Malhotra"); // display the author name
+
+	
 	}
 }
