@@ -51,7 +51,7 @@ public class LoanHelperTest {
 		System.out.println("Email ID: " + borrower2.getEmailAddress());            //getting borrower email address from member class
 		System.out.println("The fine amount is: " + borrower2.getFineAmount());      //Getting fine amount
 		System.out.println("First Name: " + borrower2.getFirstName());		//getting borrowerFirstName
-		System.out.println("Last Name: " + borrower2.getLastName());
+		System.out.println("Last Name: " + borrower2.getLastName());          //getting borrowerLastName
 		System.out.println("ID is: " + borrower2.getID());
 		System.out.println("Loan is: " + borrower2.getLoans());
 		System.out.println(borrower2.getState()); //Is borrowing allowed.
