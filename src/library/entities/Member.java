@@ -58,9 +58,12 @@ public class Member implements IMember
 
 // declare function to check the due loan
 	@Override
-	public boolean hasOverDueLoans() {
-		for (ILoan loan : loanList) {
-			if (loan.isOverDue()) {
+	public boolean hasOverDueLoans()
+	{
+		for (ILoan loan : loanList)
+		{
+			if (loan.isOverDue()) 
+			{
 				return true;
 			}
 		}
@@ -70,7 +73,8 @@ public class Member implements IMember
 // declare function to check the loan limit
 	
 	@Override
-	public boolean hasReachedLoanLimit() {
+	public boolean hasReachedLoanLimit() 
+	{
 		boolean b = loanList.size() >= IMember.LOAN_LIMIT;
 		return b;
 	}
@@ -78,7 +82,8 @@ public class Member implements IMember
 // declare function to check then fine
 	
 	@Override
-	public boolean hasFinesPayable() {
+	public boolean hasFinesPayable()
+	{
 		boolean b = totalFines > 0.0f;
 		return b;
 	}
@@ -86,7 +91,8 @@ public class Member implements IMember
 	
 	
 	@Override
-	public boolean hasReachedFineLimit() {
+	public boolean hasReachedFineLimit()
+	{
 		boolean b = totalFines >= IMember.FINE_LIMIT;
 		return b;
 	}
@@ -94,13 +100,16 @@ public class Member implements IMember
 //declare function to get fine
 	
 	@Override
-	public float getFineAmount() {
+	public float getFineAmount()
+	{
 		return totalFines;
 	}
 //declare function to add fine amount
 	@Override
-	public void addFine(float fine) {
-		if (fine < 0) {
+	public void addFine(float fine)
+	{
+		if (fine < 0) 
+		{
 			throw new RuntimeException(String.format("Member: addFine : fine cannot be negative"));
 		}
 		totalFines += fine;
@@ -110,8 +119,10 @@ public class Member implements IMember
 	
 	
 	@Override
-	public void payFine(float payment) {
-		if (payment < 0 || payment > totalFines) {
+	public void payFine(float payment) 
+	{
+		if (payment < 0 || payment > totalFines)
+		{
 			throw new RuntimeException(String.format("Member: addFine : payment cannot be negative or greater than totalFines"));
 		}
 		totalFines -= payment;
