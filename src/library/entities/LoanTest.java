@@ -86,6 +86,6 @@ public class LoanTest {
 	
 	}	
 	// End of Main Function
-	
+
 }
 // End of Test class loan
