@@ -11,13 +11,12 @@ public class LoanTestG {
 		Date borrowDate = new Date();				
 		Date dueDate = new Date();	
 		int loanId = 1;
-		//System.out.println("Today's date: "+ borrowDate.toString());
-		
+		//System.out.println("Today's date: "+ borrowDate.toString());		
 		//create objects for Classes Book, Member and Loan		
 		Book book1 = new Book("Liang", "Java", "044246789", 11);
 		Member borrower1 = new Member("Gagan", "Saini", "0449783587", "gagansaini@gmail.com", 111);
 		Loan l1 = new Loan(book1, borrower1, borrowDate, dueDate);
-			int monpl=12; 	
+				
 		//System.out.println(l1.getBook());
 		//System.out.println(l1.toString());		
 		//System.out.println(l1.getState());		
@@ -30,13 +29,7 @@ public class LoanTestG {
 		//int month = 10;
 		//int date2 = 31;	
 		
-			//getting borrower details
-			//A method for conversion to toString
-			public String toString()
-			{
-			    return "\nISBN: " +isbn + "\nAuthor: " +author + "\nTitle: " +title + 
-			  "\nGenre: " +genre + "\nNumber Of Copies " +numcopies +"\n ";
-			}
+		//getting borrower details
 		System.out.println("Borrower detail are as follow:");
 		System.out.println("");
 		System.out.println("Borrower first name: " + borrower1.getFirstName());
@@ -66,7 +59,7 @@ public class LoanTestG {
 		System.out.println("");
 		Calendar clndr = Calendar.getInstance();
 		Date today = clndr.getTime();
-	   System.out.println("Borrowed on: " + today);
+	    System.out.println("Borrowed on: " + today);
 	    clndr.add(Calendar.DAY_OF_YEAR, 15);
 	    
 	    //Checking Overdues
@@ -75,7 +68,6 @@ public class LoanTestG {
 	    System.out.println("Overdue loan: " + l1.isOverDue());	
 		System.out.println("Loan Id: " + loanId); 
 }	
-	//A method to auto generate the stubs
 	private static Date addDays(Date borrowDate, int i) {
 		// TODO Auto-generated method stub		
 		return null;
