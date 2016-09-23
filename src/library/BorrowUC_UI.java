@@ -26,6 +26,7 @@ public class BorrowUC_UI extends JPanel implements IBorrowUI
 
 	
 	public BorrowUC_UI(IBorrowUIListener listener)
+	
 	{
 		this.listener = listener;
 		this.panels = new HashMap<EBorrowState,IBorrowUI>();		
@@ -39,17 +40,20 @@ public class BorrowUC_UI extends JPanel implements IBorrowUI
 		//addPanel(new CompletedPanel(),           EBorrowState.COMPLETED);
 	}
 	
-	private void addPanel(ABorrowPanel panel, EBorrowState state) {
+	private void addPanel(ABorrowPanel panel, EBorrowState state) 
+	{
         this.panels.put(state, panel);
         this.add(panel, state.toString());
  	}
 
 
 	@Override
-	public void setState(EBorrowState state) {
+	public void setState(EBorrowState state) 
+	{
 		CardLayout cl = (CardLayout) (this.getLayout());
 
-		switch (state) {
+		switch (state) 
+		{
 		case INITIALIZED:
 			cl.show(this, state.toString());
 			break;
@@ -80,56 +84,64 @@ public class BorrowUC_UI extends JPanel implements IBorrowUI
 
 
 	@Override
-	public void displayMemberDetails(int memberID, String memberName, String memberPhone) {
+	public void displayMemberDetails(int memberID, String memberName, String memberPhone)
+	{
 		IBorrowUI ui = panels.get(state);
 		ui.displayMemberDetails( memberID,  memberName, memberPhone);		
 	}
 
 
 	@Override
-	public void displayOverDueMessage() {
+	public void displayOverDueMessage()
+	{
 		IBorrowUI ui = panels.get(state);
 		ui.displayOverDueMessage();		
 	}
 
 
 	@Override
-	public void displayAtLoanLimitMessage() {
+	public void displayAtLoanLimitMessage()
+	{
 		IBorrowUI ui = panels.get(state);
 		ui.displayAtLoanLimitMessage();		
 	}
 
 
 	@Override
-	public void displayOutstandingFineMessage(float amountOwing) {
+	public void displayOutstandingFineMessage(float amountOwing) 
+	{
 		IBorrowUI ui = panels.get(state);
 		ui.displayOutstandingFineMessage(amountOwing);		
 	}
 
 	
 	@Override
-	public void displayOverFineLimitMessage(float amountOwing) {
+	public void displayOverFineLimitMessage(float amountOwing)
+	{
 		IBorrowUI ui = panels.get(state);
 		ui.displayOverFineLimitMessage(amountOwing);				
 	}
 
 	
 	@Override
-	public void displayExistingLoan(String loanDetails) {
+	public void displayExistingLoan(String loanDetails)
+	{
 		IBorrowUI ui = panels.get(state);
 		ui.displayExistingLoan(loanDetails);		
 	}
 
 	
 	@Override
-	public void displayScannedBookDetails(String bookDetails) {
+	public void displayScannedBookDetails(String bookDetails)
+	{
 		IBorrowUI ui = panels.get(state);
 		ui.displayScannedBookDetails(bookDetails);		
 	}
 
 	
 	@Override
-	public void displayPendingLoan(String loanDetails) {
+	public void displayPendingLoan(String loanDetails) 
+	{
 		IBorrowUI ui = panels.get(state);
 		ui.displayPendingLoan(loanDetails);		
 	}
