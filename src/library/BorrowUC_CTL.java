@@ -24,7 +24,8 @@ import library.interfaces.hardware.IScannerListener;
 
 public class BorrowUC_CTL implements ICardReaderListener, 
 									 IScannerListener, 
-									 IBorrowUIListener {
+									 IBorrowUIListener
+									 {
 	
 	private ICardReader reader;
 	private IScanner scanner; 
@@ -76,12 +77,14 @@ public class BorrowUC_CTL implements ICardReaderListener,
 	}
 
 	
-	private void setState(EBorrowState state) {
+	private void setState(EBorrowState state) 
+	{
 		throw new RuntimeException("Not implemented yet");
 	}
 
 	@Override
-	public void cancelled() {
+	public void cancelled()
+	{
 		close();
 	}
 	
